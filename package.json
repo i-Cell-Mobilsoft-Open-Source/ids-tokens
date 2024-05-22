@@ -1,0 +1,29 @@
+{
+  "name": "@i-cell/ids-tokens",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Utility scripts, design token definitions and CSS variable collection for the i-Cell Design System",
+  "scripts": {
+    "generate:css": "node scripts/tokens2css.mjs ./tokens/tokens.json ./css/tokens.css",
+    "prepublish": "npm run generate:css"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-Cell-Mobilsoft-Open-Source/ids-tokens.git"
+  },
+  "contributors": [
+    "Barsi Balázs",
+    "Nagy Gábor",
+    "Onofer Dávid",
+    "Váradi András"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/i-Cell-Mobilsoft-Open-Source/ids-tokens/issues"
+  },
+  "homepage": "https://github.com/i-Cell-Mobilsoft-Open-Source/ids-tokens#readme"
+}
