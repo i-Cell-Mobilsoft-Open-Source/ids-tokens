@@ -93,7 +93,7 @@ function fixUnit(obj, correctUnit) {
     console.warn("fixUnit: argument is not an object");
     return;
   }
-  if (!correctUnit) {
+  if (correctUnit === null || correctUnit === undefined) {
     console.warn("fixUnit: 'correctUnit' parameter is required");
     return;
   }
