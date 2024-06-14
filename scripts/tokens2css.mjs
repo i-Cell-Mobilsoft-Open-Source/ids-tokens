@@ -1,5 +1,7 @@
 import { readFileSync, writeFile } from "fs";
 
+import { compareAlphaNumericStrings } from "../utils/compare-alphanumeric-strings.mjs";
+
 const tokenPrefix = "--ids";
 const valueRefRegExp = /^\{([\w.-]+(?:\.[\w.-]+)+)\}$/;
 const CSS_MAX_DECIMAL_PRECISION = 4;
@@ -90,12 +92,10 @@ function roundDecimals(value, decimal) {
 
 function fixUnit(obj, correctUnit) {
   if (!obj) {
-    console.warn("fixUnit: argument is not an object");
-    return;
+    throw new Error("fixUnit: argument is not an object");
   }
-  if (!correctUnit) {
-    console.warn("fixUnit: 'correctUnit' parameter is required");
-    return;
+  if (correctUnit === null || correctUnit === undefined) {
+    throw new Error("fixUnit: 'correctUnit' parameter is required");
   }
   Object.keys(obj).forEach((percentageConfigKey) => {
     const percentageConfig = obj[percentageConfigKey];
@@ -128,11 +128,15 @@ function convertTokens2css() {
 
   const data = [
     ":root {",
-    ...root.sort(),
+    ...root.sort(compareAlphaNumericStrings),
     "}",
     "",
     ...Object.entries(themes)
-      .map(([name, values]) => [`.ids-theme-${name} {`, ...values.sort(), "}"])
+      .map(([name, values]) => [
+        `.ids-theme-${name} {`,
+        ...values.sort(compareAlphaNumericStrings),
+        "}",
+      ])
       .flat(),
   ]
     .join("\n")
