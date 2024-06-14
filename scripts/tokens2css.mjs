@@ -132,7 +132,11 @@ function convertTokens2css() {
     "}",
     "",
     ...Object.entries(themes)
-      .map(([name, values]) => [`.ids-theme-${name} {`, ...values.sort(), "}"])
+      .map(([name, values]) => [
+        `.ids-theme-${name} {`,
+        ...values.sort(compareAlphaNumericStrings),
+        "}",
+      ])
       .flat(),
   ]
     .join("\n")
