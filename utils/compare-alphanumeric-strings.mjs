@@ -1,7 +1,9 @@
 // Function to extract numeric part from the string
 function extractNumber(str) {
   const match = str.match(/\d+/); // Extract the first occurrence of a number
-  return match ? [parseInt(match[0], 10), match[0]] : [0, 0]; // Convert the extracted number to an integer
+  return match
+    ? { original: match[0], parsed: parseInt(match[0], 10) }
+    : { original: "0", parsed: 0 }; // Convert the extracted number to an integer
 }
 
 // Function to extract non-numeric part from the string
@@ -16,32 +18,22 @@ export function compareAlphaNumericStrings(a, b) {
   const nonNumericB = extractNonNumeric(b);
 
   // Compare the non-numeric parts
-  if (nonNumericA < nonNumericB) {
-    return -1;
-  }
-  if (nonNumericA > nonNumericB) {
-    return 1;
+  if (nonNumericA !== nonNumericB) {
+    return nonNumericA.localeCompare(nonNumericB);
   }
 
   // Non-numeric parts are the same, compare the numeric parts
   const numA = extractNumber(a);
   const numB = extractNumber(b);
 
-  // Numeric value, and A < B
-  if (numA[0] < numB[0]) {
-    return -1;
+  // Numeric value
+  if (numA.parsed !== numB.parsed) {
+    return Math.sign(numA.parsed - numB.parsed);
   }
-  // Numeric value, A > B
-  if (numA[0] > numB[0]) {
-    return 1;
-  }
-  // Numeric converted values are the same, original string should be comared, A < B
-  if (numA[1] < numB[1]) {
-    return -1;
-  }
-  // Numeric converted values are the same, original string should be comared, A > B
-  if (numA[1] > numB[1]) {
-    return 1;
+
+  // Numeric converted values are the same, original string should be comared
+  if (numA.original !== numB.original) {
+    return numA.original.localeCompare(numB.original);
   }
 
   // Same
