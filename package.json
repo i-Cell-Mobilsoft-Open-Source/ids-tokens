@@ -5,7 +5,10 @@
   "description": "Utility scripts, design token definitions and CSS variable collection for the i-Cell Design System",
   "scripts": {
     "generate:css": "node scripts/tokens2css.mjs ./tokens/tokens.json ./css/tokens.css",
-    "prepublish": "npm run generate:css"
+    "generate:testData": "node scripts/tokens2testData.mjs ./tokens/tokens.json ./test/testData.json",
+    "generate": "npm run generate:css && npm run generate:testData",
+    "prepack": "npm run generate",
+    "prepublish": "npm run generate"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

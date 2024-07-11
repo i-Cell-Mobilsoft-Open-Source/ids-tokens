@@ -1,24 +1,15 @@
 import { readFileSync, writeFile } from "fs";
 
 import { compareAlphaNumericStrings } from "../utils/compare-alphanumeric-strings.mjs";
+import { fixUnit, getValueRefPath, isValueRef, hasModeExtensions } from "../utils/shared.mjs";
 
 const tokenPrefix = "--ids";
-const valueRefRegExp = /^\{([\w.-]+(?:\.[\w.-]+)+)\}$/;
-const CSS_MAX_DECIMAL_PRECISION = 4;
 
 const themes = {
   light: [],
   dark: [],
 };
 const root = [];
-
-function isValueRef(value) {
-  return typeof value === "string" && valueRefRegExp.test(value);
-}
-
-function getValueRefPath(value) {
-  return valueRefRegExp.exec(value)[1].split(".");
-}
 
 function valueRefToCssVar(value) {
   let valueRefPath = [tokenPrefix, ...getValueRefPath(value)];
@@ -27,13 +18,6 @@ function valueRefToCssVar(value) {
 
 function pushNewVariable(path, value, tokenArray = root) {
   tokenArray.push(`  ${path.join("-").toLowerCase()}: ${String(value)};`);
-}
-
-function hasModeExtensions(obj) {
-  const modes = obj.$extensions.mode;
-  return (
-    !!modes && modes.constructor === Object && Object.keys(modes).length > 0
-  );
 }
 
 function flattenObject(obj, path = []) {
@@ -86,25 +70,6 @@ function flattenObject(obj, path = []) {
   pushNewVariable(path, valueRefToCssVar(obj.value));
 }
 
-function roundDecimals(value, decimal) {
-  return +parseFloat(value).toFixed(decimal);
-}
-
-function fixUnit(obj, correctUnit) {
-  if (!obj) {
-    throw new Error("fixUnit: argument is not an object");
-  }
-  if (correctUnit === null || correctUnit === undefined) {
-    throw new Error("fixUnit: 'correctUnit' parameter is required");
-  }
-  Object.keys(obj).forEach((percentageConfigKey) => {
-    const percentageConfig = obj[percentageConfigKey];
-    obj[percentageConfigKey].value =
-      roundDecimals(percentageConfig.value, CSS_MAX_DECIMAL_PRECISION) +
-      correctUnit;
-  });
-}
-
 function convertTokens2css() {
   if (process.argv.length !== 4) {
     throw new Error(
@@ -146,7 +111,7 @@ function convertTokens2css() {
     if (error) {
       throw new Error(error);
     } else {
-      console.info("CSS generation was completed successfull.");
+      console.info("CSS generation was completed successfully.");
     }
   });
 }
