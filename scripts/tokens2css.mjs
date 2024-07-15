@@ -1,9 +1,9 @@
-import { readFileSync, writeFile } from "fs";
+import { readFileSync, writeFile } from 'fs';
 
-import { compareAlphaNumericStrings } from "../utils/compare-alphanumeric-strings.mjs";
-import { fixUnit, getValueRefPath, isValueRef, hasModeExtensions } from "../utils/shared.mjs";
+import { compareAlphaNumericStrings } from '../utils/compare-alphanumeric-strings.mjs';
+import { fixUnit, getValueRefPath, isValueRef, hasModeExtensions } from '../utils/shared.mjs';
 
-const tokenPrefix = "--ids";
+const tokenPrefix = '--ids';
 
 const themes = {
   light: [],
@@ -13,20 +13,20 @@ const root = [];
 
 function valueRefToCssVar(value) {
   let valueRefPath = [tokenPrefix, ...getValueRefPath(value)];
-  return `var(${valueRefPath.join("-").toLowerCase()})`;
+  return `var(${valueRefPath.join('-').toLowerCase()})`;
 }
 
 function pushNewVariable(path, value, tokenArray = root) {
-  tokenArray.push(`  ${path.join("-").toLowerCase()}: ${String(value)};`);
+  tokenArray.push(`  ${path.join('-').toLowerCase()}: ${String(value)};`);
 }
 
 function flattenObject(obj, path = []) {
-  if (!obj.hasOwnProperty("value")) {
+  if (!obj.hasOwnProperty('value')) {
     // obj is not a token definition object, continue parsing its object props
     for (const key in obj) {
       const value = obj[key];
 
-      if (typeof value === "object" && value !== null) {
+      if (typeof value === 'object' && value !== null) {
         flattenObject(value, [...path, key]);
       }
     }
@@ -42,8 +42,7 @@ function flattenObject(obj, path = []) {
   if (hasModeExtensions(obj)) {
     const modeExtensions = obj.$extensions.mode;
     const modes = Object.keys(modeExtensions);
-    const isThemeModes =
-      new Set([...modes, ...Object.keys(themes)]).size === modes.length;
+    const isThemeModes = new Set([...modes, ...Object.keys(themes)]).size === modes.length;
 
     if (isThemeModes) {
       // push the default value to :root
@@ -52,16 +51,9 @@ function flattenObject(obj, path = []) {
 
     modes.forEach((mode) => {
       if (isThemeModes) {
-        pushNewVariable(
-          path,
-          valueRefToCssVar(modeExtensions[mode]),
-          themes[mode]
-        );
+        pushNewVariable(path, valueRefToCssVar(modeExtensions[mode]), themes[mode]);
       } else {
-        pushNewVariable(
-          [...path, mode],
-          valueRefToCssVar(modeExtensions[mode])
-        );
+        pushNewVariable([...path, mode], valueRefToCssVar(modeExtensions[mode]));
       }
     });
     return;
@@ -70,48 +62,44 @@ function flattenObject(obj, path = []) {
   pushNewVariable(path, valueRefToCssVar(obj.value));
 }
 
+function replaceCollectionNames(data) {
+  return data.map((item) => item.replace('comp-size', 'comp').replace('comp-color', 'comp'));
+}
+
 function convertTokens2css() {
   if (process.argv.length !== 4) {
-    throw new Error(
-      "Usage: node tokens2css.mjs /path/to/tokens.json /path/to/tokens.css"
-    );
+    throw new Error('Usage: node tokens2css.mjs /path/to/tokens.json /path/to/tokens.css');
   }
 
   const sourceJson = process.argv[2];
   const cssOutput = process.argv[3];
 
-  console.info("Reading source JSON...");
-  const tokensRaw = JSON.parse(readFileSync(sourceJson, "utf-8"));
+  console.info('Reading source JSON...');
+  const tokensRaw = JSON.parse(readFileSync(sourceJson, 'utf-8'));
 
-  console.info("Generating CSS from JSON...");
+  console.info('Generating CSS from JSON...');
 
   // JSON contains some values with incorrect unit.
-  fixUnit(tokensRaw.base.percentage, "%");
-  fixUnit(tokensRaw.base.typography.weight, "");
+  fixUnit(tokensRaw.base.percentage, '%');
+  fixUnit(tokensRaw.base.typography.weight, '');
 
   flattenObject(tokensRaw, [tokenPrefix]);
 
   const data = [
-    ":root {",
-    ...root.sort(compareAlphaNumericStrings),
-    "}",
-    "",
+    ':root {',
+    ...replaceCollectionNames(root).sort(compareAlphaNumericStrings),
+    '}',
+    '',
     ...Object.entries(themes)
-      .map(([name, values]) => [
-        `.ids-theme-${name} {`,
-        ...values.sort(compareAlphaNumericStrings),
-        "}",
-      ])
+      .map(([name, values]) => [`.ids-theme-${name} {`, ...values.sort(compareAlphaNumericStrings), '}'])
       .flat(),
-  ]
-    .join("\n")
-    .replaceAll("ids-component", "ids-comp");
+  ].join('\n');
 
   writeFile(cssOutput, data, (error) => {
     if (error) {
       throw new Error(error);
     } else {
-      console.info("CSS generation was completed successfully.");
+      console.info('CSS generation was completed successfully.');
     }
   });
 }
