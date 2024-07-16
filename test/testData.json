@@ -4082,7 +4082,7 @@
                 }
               },
               "surface": {
-                "enabled": {
+                "default": {
                   "light": "rgb(100, 116, 139)",
                   "dark": "rgb(100, 116, 139)"
                 },
@@ -6296,7 +6296,7 @@
             "disabled": "rgba(255, 255, 255, 0)"
           },
           "dark": {
-            "enabled": "rgba(255, 255, 255, 0)",
+            "default": "rgba(255, 255, 255, 0)",
             "hovered": "rgba(255, 255, 255, 0)",
             "focused": "rgba(255, 255, 255, 0)",
             "pressed": "rgba(255, 255, 255, 0)",
@@ -8265,7 +8265,7 @@
                 "pressed": "rgba(255, 255, 255, 0)",
                 "disabled": "rgba(255, 255, 255, 0)",
                 "error": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(239, 68, 68)",
                     "dark": "rgb(248, 113, 113)"
                   },
@@ -8335,7 +8335,7 @@
               }
             },
             "dark": {
-              "enabled": {
+              "default": {
                 "light": "rgb(2, 6, 23)",
                 "dark": "rgb(248, 250, 252)"
               },
@@ -10360,7 +10360,7 @@
           },
           "border": {
             "surface": {
-              "enabled": "rgba(255, 255, 255, 0)",
+              "default": "rgba(255, 255, 255, 0)",
               "hovered": "rgba(255, 255, 255, 0)",
               "focused": "rgba(255, 255, 255, 0)",
               "active": "rgba(255, 255, 255, 0)",
@@ -10822,7 +10822,7 @@
               "disabled": "rgba(255, 255, 255, 0)"
             },
             "surface": {
-              "enabled": "rgba(255, 255, 255, 0)",
+              "default": "rgba(255, 255, 255, 0)",
               "hovered": "rgba(255, 255, 255, 0)",
               "focused": "rgba(255, 255, 255, 0)",
               "pressed": "rgba(255, 255, 255, 0)",
@@ -11986,7 +11986,7 @@
             "fg": {
               "icon": {
                 "surface": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -12012,7 +12012,7 @@
                   }
                 },
                 "primary": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -12040,7 +12040,7 @@
               },
               "label": {
                 "surface": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -12066,7 +12066,7 @@
                   }
                 },
                 "primary": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -12095,7 +12095,7 @@
             },
             "bg": {
               "surface": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgb(255, 255, 255)",
                   "dark": "rgb(0, 0, 0)"
@@ -12115,7 +12115,7 @@
                 }
               },
               "primary": {
-                "enabled": {
+                "default": {
                   "light": "rgb(241, 245, 249)",
                   "dark": "rgb(15, 23, 42)"
                 },
@@ -12140,7 +12140,7 @@
             },
             "border": {
               "surface": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": "rgba(255, 255, 255, 0)",
                 "focused": "rgba(255, 255, 255, 0)",
                 "pressed": "rgba(255, 255, 255, 0)",
@@ -12148,7 +12148,7 @@
                 "active": "rgba(255, 255, 255, 0)"
               },
               "primary": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": "rgba(255, 255, 255, 0)",
                 "focused": "rgba(255, 255, 255, 0)",
                 "pressed": "rgba(255, 255, 255, 0)",
@@ -12162,7 +12162,7 @@
           "color": {
             "border": {
               "surface": {
-                "enabled": {
+                "default": {
                   "light": "rgb(203, 213, 225)",
                   "dark": "rgb(203, 213, 225)"
                 },
@@ -12188,7 +12188,7 @@
                 }
               },
               "primary": {
-                "enabled": {
+                "default": {
                   "light": "rgb(203, 213, 225)",
                   "dark": "rgb(203, 213, 225)"
                 },
@@ -12214,7 +12214,7 @@
                 }
               },
               "light": {
-                "enabled": {
+                "default": {
                   "light": "rgb(226, 232, 240)",
                   "dark": "rgb(226, 232, 240)"
                 },
@@ -12242,7 +12242,7 @@
             },
             "bg": {
               "surface": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgba(100, 140, 180, 0.1)",
                   "dark": "rgba(255, 255, 255, 0.1)"
@@ -12256,7 +12256,7 @@
                 "active": "rgba(255, 255, 255, 0)"
               },
               "primary": {
-                "enabled": {
+                "default": {
                   "light": "rgb(241, 245, 249)",
                   "dark": "rgb(15, 23, 42)"
                 },
@@ -12276,7 +12276,7 @@
                 }
               },
               "light": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgba(100, 140, 180, 0.1)",
                   "dark": "rgba(255, 255, 255, 0.1)"
@@ -12296,7 +12296,7 @@
             "fg": {
               "label": {
                 "primary": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -12322,7 +12322,7 @@
                   }
                 },
                 "surface": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -12348,7 +12348,7 @@
                   }
                 },
                 "light": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(255, 255, 255)",
                     "dark": "rgb(255, 255, 255)"
                   },
@@ -12376,7 +12376,7 @@
               },
               "icon": {
                 "primary": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -12402,7 +12402,7 @@
                   }
                 },
                 "surface": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -12428,7 +12428,7 @@
                   }
                 },
                 "light": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(255, 255, 255)",
                     "dark": "rgb(255, 255, 255)"
                   },
@@ -12463,21 +12463,21 @@
           "color": {
             "bg": {
               "surface": {
-                "enabled": {
+                "default": {
                   "light": "rgb(241, 245, 249)",
                   "dark": "rgb(15, 23, 42)"
                 }
               },
               "light": {
-                "enabled": "rgba(255, 255, 255, 0)"
+                "default": "rgba(255, 255, 255, 0)"
               }
             },
             "border": {
               "surface": {
-                "enabled": "rgba(255, 255, 255, 0)"
+                "default": "rgba(255, 255, 255, 0)"
               },
               "light": {
-                "enabled": "rgba(255, 255, 255, 0)"
+                "default": "rgba(255, 255, 255, 0)"
               }
             }
           }
@@ -12486,18 +12486,18 @@
           "color": {
             "bg": {
               "surface": {
-                "enabled": "rgba(255, 255, 255, 0)"
+                "default": "rgba(255, 255, 255, 0)"
               },
               "light": {
-                "enabled": "rgba(255, 255, 255, 0)"
+                "default": "rgba(255, 255, 255, 0)"
               }
             },
             "border": {
               "surface": {
-                "enabled": "rgba(255, 255, 255, 0)"
+                "default": "rgba(255, 255, 255, 0)"
               },
               "light": {
-                "enabled": "rgba(255, 255, 255, 0)"
+                "default": "rgba(255, 255, 255, 0)"
               }
             }
           }
@@ -13963,13 +13963,13 @@
           "color": {
             "bg": {
               "surface": {
-                "enabled": {
+                "default": {
                   "light": "rgb(241, 245, 249)",
                   "dark": "rgb(15, 23, 42)"
                 }
               },
               "light": {
-                "enabled": {
+                "default": {
                   "light": "rgb(255, 255, 255)",
                   "dark": "rgb(0, 0, 0)"
                 }
@@ -13981,13 +13981,13 @@
           "color": {
             "bg": {
               "surface": {
-                "enabled": {
+                "default": {
                   "light": "rgb(241, 245, 249)",
                   "dark": "rgb(15, 23, 42)"
                 }
               },
               "light": {
-                "enabled": {
+                "default": {
                   "light": "rgb(255, 255, 255)",
                   "dark": "rgb(0, 0, 0)"
                 }
@@ -14002,7 +14002,7 @@
             "fg": {
               "label": {
                 "primary": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14028,7 +14028,7 @@
                   }
                 },
                 "surface": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14054,7 +14054,7 @@
                   }
                 },
                 "light": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14082,7 +14082,7 @@
               },
               "icon": {
                 "primary": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14108,7 +14108,7 @@
                   }
                 },
                 "surface": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14134,7 +14134,7 @@
                   }
                 },
                 "light": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14163,7 +14163,7 @@
             },
             "bg": {
               "primary": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgba(100, 140, 180, 0.1)",
                   "dark": "rgba(255, 255, 255, 0.1)"
@@ -14183,7 +14183,7 @@
                 "disabled": "rgba(255, 255, 255, 0)"
               },
               "surface": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgba(100, 140, 180, 0.1)",
                   "dark": "rgba(255, 255, 255, 0.1)"
@@ -14223,12 +14223,12 @@
                   "light": "rgb(226, 232, 240)",
                   "dark": "rgb(30, 41, 59)"
                 },
-                "enabled": "rgba(255, 255, 255, 0)"
+                "default": "rgba(255, 255, 255, 0)"
               }
             },
             "border": {
               "primary": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": "rgba(255, 255, 255, 0)",
                 "focused": "rgba(255, 255, 255, 0)",
                 "pressed": "rgba(255, 255, 255, 0)",
@@ -14236,7 +14236,7 @@
                 "disabled": "rgba(255, 255, 255, 0)"
               },
               "surface": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": "rgba(255, 255, 255, 0)",
                 "focused": "rgba(255, 255, 255, 0)",
                 "pressed": "rgba(255, 255, 255, 0)",
@@ -14244,7 +14244,7 @@
                 "disabled": "rgba(255, 255, 255, 0)"
               },
               "light": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": "rgba(255, 255, 255, 0)",
                 "focused": "rgba(255, 255, 255, 0)",
                 "pressed": "rgba(255, 255, 255, 0)",
@@ -14259,7 +14259,7 @@
             "fg": {
               "label": {
                 "primary": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14285,7 +14285,7 @@
                   }
                 },
                 "surface": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14311,7 +14311,7 @@
                   }
                 },
                 "light": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14339,7 +14339,7 @@
               },
               "icon": {
                 "primary": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14365,7 +14365,7 @@
                   }
                 },
                 "surface": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14391,7 +14391,7 @@
                   }
                 },
                 "light": {
-                  "enabled": {
+                  "default": {
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
@@ -14420,7 +14420,7 @@
             },
             "bg": {
               "primary": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgba(100, 140, 180, 0.1)",
                   "dark": "rgba(255, 255, 255, 0.1)"
@@ -14437,7 +14437,7 @@
                 "disabled": "rgba(255, 255, 255, 0)"
               },
               "surface": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgba(100, 140, 180, 0.1)",
                   "dark": "rgba(255, 255, 255, 0.1)"
@@ -14451,7 +14451,7 @@
                 "disabled": "rgba(255, 255, 255, 0)"
               },
               "light": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgba(100, 140, 180, 0.1)",
                   "dark": "rgba(255, 255, 255, 0.1)"
@@ -14470,7 +14470,7 @@
             },
             "border": {
               "primary": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgb(203, 213, 225)",
                   "dark": "rgb(203, 213, 225)"
@@ -14493,7 +14493,7 @@
                 }
               },
               "surface": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgb(203, 213, 225)",
                   "dark": "rgb(203, 213, 225)"
@@ -14516,7 +14516,7 @@
                 }
               },
               "light": {
-                "enabled": "rgba(255, 255, 255, 0)",
+                "default": "rgba(255, 255, 255, 0)",
                 "hovered": {
                   "light": "rgb(51, 65, 85)",
                   "dark": "rgb(226, 232, 240)"
