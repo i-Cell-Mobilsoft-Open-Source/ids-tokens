@@ -33,6 +33,17 @@ function flattenObject(obj, path = []) {
     return;
   }
 
+  // obj has value, but has childs with value property, continue parsing its childrens containing value prop
+  const childrensWithValue = Object.entries(obj).filter(
+    ([, val]) => typeof val === 'object' && val.hasOwnProperty('value') && val !== null,
+  );
+  if (childrensWithValue.length > 0) {
+    childrensWithValue.forEach(([childKey, childVal]) => {
+      flattenObject(childVal, [...path, childKey]);
+      return;
+    });
+  }
+
   if (!isValueRef(obj.value)) {
     // The value is not a token reference, push plain value to CSS
     pushNewVariable(path, obj.value);
