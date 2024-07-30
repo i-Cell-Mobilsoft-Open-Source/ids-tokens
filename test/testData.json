@@ -14749,6 +14749,991 @@
           }
         }
       }
+    },
+    "radio": {
+      "input": {
+        "unselected": {
+          "color": {
+            "bg": {
+              "surface": {
+                "default": "rgba(255, 255, 255, 0)",
+                "hovered": {
+                  "light": "rgba(100, 140, 180, 0.05)",
+                  "dark": "rgba(255, 255, 255, 0.05)"
+                },
+                "focused": {
+                  "light": "rgb(248, 250, 252)",
+                  "dark": "rgb(2, 6, 23)"
+                },
+                "pressed": {
+                  "light": "rgb(226, 232, 240)",
+                  "dark": "rgb(30, 41, 59)"
+                },
+                "disabled": "rgba(100, 140, 180, 0.2)"
+              },
+              "light": {
+                "default": {
+                  "light": "rgb(248, 250, 252)",
+                  "dark": "rgb(2, 6, 23)"
+                },
+                "hovered": {
+                  "light": "rgb(255, 255, 255)",
+                  "dark": "rgb(0, 0, 0)"
+                },
+                "focused": {
+                  "light": "rgb(255, 255, 255)",
+                  "dark": "rgb(0, 0, 0)"
+                },
+                "pressed": {
+                  "light": "rgb(248, 250, 252)",
+                  "dark": "rgb(2, 6, 23)"
+                },
+                "disabled": "rgba(100, 140, 180, 0.25)"
+              },
+              "dark": {
+                "default": "rgba(255, 255, 255, 0)",
+                "hovered": {
+                  "light": "rgba(100, 140, 180, 0.05)",
+                  "dark": "rgba(255, 255, 255, 0.05)"
+                },
+                "focused": {
+                  "light": "rgba(100, 140, 180, 0.05)",
+                  "dark": "rgba(255, 255, 255, 0.05)"
+                },
+                "pressed": {
+                  "light": "rgba(100, 140, 180, 0.05)",
+                  "dark": "rgba(255, 255, 255, 0.05)"
+                },
+                "disabled": "rgba(100, 140, 180, 0.2)"
+              }
+            },
+            "border": {
+              "surface": {
+                "default": {
+                  "light": "rgb(148, 163, 184)",
+                  "dark": "rgb(71, 85, 105)"
+                },
+                "error": {
+                  "default": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "hovered": {
+                    "light": "rgb(185, 28, 28)",
+                    "dark": "rgb(254, 202, 202)"
+                  },
+                  "focused": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "pressed": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  }
+                },
+                "hovered": {
+                  "light": "rgb(51, 65, 85)",
+                  "dark": "rgb(203, 213, 225)"
+                },
+                "focused": {
+                  "light": "rgb(148, 163, 184)",
+                  "dark": "rgb(71, 85, 105)"
+                },
+                "pressed": {
+                  "light": "rgb(51, 65, 85)",
+                  "dark": "rgb(203, 213, 225)"
+                },
+                "disabled": {
+                  "light": "rgb(203, 213, 225)",
+                  "dark": "rgb(51, 65, 85)"
+                }
+              },
+              "light": {
+                "default": {
+                  "light": "rgb(203, 213, 225)",
+                  "dark": "rgb(51, 65, 85)"
+                },
+                "hovered": {
+                  "light": "rgb(148, 163, 184)",
+                  "dark": "rgb(71, 85, 105)"
+                },
+                "focused": {
+                  "light": "rgb(203, 213, 225)",
+                  "dark": "rgb(51, 65, 85)"
+                },
+                "pressed": {
+                  "light": "rgb(148, 163, 184)",
+                  "dark": "rgb(71, 85, 105)"
+                },
+                "disabled": {
+                  "light": "rgba(255, 255, 255, 0.25)",
+                  "dark": "rgba(100, 140, 180, 0.25)"
+                },
+                "error": {
+                  "default": {
+                    "light": "rgb(248, 113, 113)",
+                    "dark": "rgb(220, 38, 38)"
+                  },
+                  "hovered": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "focused": {
+                    "light": "rgb(248, 113, 113)",
+                    "dark": "rgb(220, 38, 38)"
+                  },
+                  "pressed": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  }
+                }
+              },
+              "dark": {
+                "default": {
+                  "light": "rgb(2, 6, 23)",
+                  "dark": "rgb(248, 250, 252)"
+                },
+                "hovered": {
+                  "light": "rgb(30, 41, 59)",
+                  "dark": "rgb(226, 232, 240)"
+                },
+                "focused": {
+                  "light": "rgb(30, 41, 59)",
+                  "dark": "rgb(226, 232, 240)"
+                },
+                "pressed": {
+                  "light": "rgb(0, 0, 0)",
+                  "dark": "rgb(255, 255, 255)"
+                },
+                "disabled": "rgba(100, 140, 180, 0.25)",
+                "error": {
+                  "default": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "hovered": {
+                    "light": "rgb(185, 28, 28)",
+                    "dark": "rgb(254, 202, 202)"
+                  },
+                  "focused": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "pressed": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  }
+                }
+              }
+            },
+            "focused-outline": {
+              "dark": {
+                "focused": {
+                  "light": "rgb(0, 0, 0)",
+                  "dark": "rgb(255, 255, 255)"
+                }
+              },
+              "light": {
+                "focused": {
+                  "light": "rgb(255, 255, 255)",
+                  "dark": "rgb(0, 0, 0)"
+                }
+              },
+              "surface": {
+                "focused": {
+                  "light": "rgb(0, 0, 0)",
+                  "dark": "rgb(255, 255, 255)"
+                }
+              }
+            }
+          }
+        },
+        "selected": {
+          "color": {
+            "bg": {
+              "surface": {
+                "default": "rgba(255, 255, 255, 0)",
+                "hovered": {
+                  "light": "rgba(100, 140, 180, 0.05)",
+                  "dark": "rgba(255, 255, 255, 0.05)"
+                },
+                "focused": {
+                  "light": "rgba(100, 140, 180, 0.05)",
+                  "dark": "rgba(255, 255, 255, 0.05)"
+                },
+                "pressed": {
+                  "light": "rgba(100, 140, 180, 0.05)",
+                  "dark": "rgba(255, 255, 255, 0.05)"
+                },
+                "disabled": "rgba(100, 140, 180, 0.2)",
+                "error": {
+                  "default": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "hovered": {
+                    "light": "rgb(185, 28, 28)",
+                    "dark": "rgb(254, 202, 202)"
+                  },
+                  "focused": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "pressed": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  }
+                }
+              },
+              "light": {
+                "default": {
+                  "light": "rgb(248, 250, 252)",
+                  "dark": "rgb(2, 6, 23)"
+                },
+                "hovered": {
+                  "light": "rgb(255, 255, 255)",
+                  "dark": "rgb(0, 0, 0)"
+                },
+                "focused": {
+                  "light": "rgb(255, 255, 255)",
+                  "dark": "rgb(0, 0, 0)"
+                },
+                "pressed": {
+                  "light": "rgb(248, 250, 252)",
+                  "dark": "rgb(2, 6, 23)"
+                },
+                "disabled": "rgba(100, 140, 180, 0.25)",
+                "error": {
+                  "default": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "hovered": {
+                    "light": "rgb(185, 28, 28)",
+                    "dark": "rgb(254, 202, 202)"
+                  },
+                  "focused": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "pressed": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  }
+                }
+              },
+              "dark": {
+                "default": {
+                  "light": "rgb(2, 6, 23)",
+                  "dark": "rgb(248, 250, 252)"
+                },
+                "hovered": {
+                  "light": "rgb(30, 41, 59)",
+                  "dark": "rgb(226, 232, 240)"
+                },
+                "focused": {
+                  "light": "rgb(30, 41, 59)",
+                  "dark": "rgb(226, 232, 240)"
+                },
+                "pressed": {
+                  "light": "rgb(0, 0, 0)",
+                  "dark": "rgb(255, 255, 255)"
+                },
+                "disabled": "rgba(100, 140, 180, 0.2)",
+                "error": {
+                  "default": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "hovered": {
+                    "light": "rgb(185, 28, 28)",
+                    "dark": "rgb(254, 202, 202)"
+                  },
+                  "focused": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "pressed": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  }
+                }
+              }
+            },
+            "fg": {
+              "icon": {
+                "surface": {
+                  "default": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "hovered": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "focused": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "pressed": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "disabled": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "error": {
+                    "default": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "hovered": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "focused": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "pressed": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    }
+                  }
+                },
+                "light": {
+                  "default": {
+                    "light": "rgb(71, 85, 105)",
+                    "dark": "rgb(148, 163, 184)"
+                  },
+                  "hovered": {
+                    "light": "rgb(51, 65, 85)",
+                    "dark": "rgb(203, 213, 225)"
+                  },
+                  "focused": {
+                    "light": "rgb(71, 85, 105)",
+                    "dark": "rgb(148, 163, 184)"
+                  },
+                  "pressed": {
+                    "light": "rgb(51, 65, 85)",
+                    "dark": "rgb(203, 213, 225)"
+                  },
+                  "disabled": {
+                    "light": "rgba(255, 255, 255, 0.25)",
+                    "dark": "rgba(100, 140, 180, 0.25)"
+                  },
+                  "error": {
+                    "default": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "hovered": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "focused": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "pressed": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    }
+                  }
+                },
+                "dark": {
+                  "default": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "hovered": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "focused": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "pressed": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "disabled": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "error": {
+                    "default": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "hovered": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "focused": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "pressed": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    }
+                  }
+                }
+              }
+            },
+            "border": {
+              "surface": {
+                "default": {
+                  "light": "rgb(0, 60, 255)",
+                  "dark": "rgb(71, 117, 255)"
+                },
+                "hovered": {
+                  "light": "rgb(0, 60, 255)",
+                  "dark": "rgb(71, 117, 255)"
+                },
+                "focused": {
+                  "light": "rgb(0, 60, 255)",
+                  "dark": "rgb(71, 117, 255)"
+                },
+                "pressed": {
+                  "light": "rgb(0, 60, 255)",
+                  "dark": "rgb(71, 117, 255)"
+                },
+                "disabled": {
+                  "light": "rgb(0, 60, 255)",
+                  "dark": "rgb(71, 117, 255)"
+                },
+                "error": {
+                  "default": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "hovered": {
+                    "light": "rgb(185, 28, 28)",
+                    "dark": "rgb(254, 202, 202)"
+                  },
+                  "focused": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "pressed": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  }
+                }
+              },
+              "light": {
+                "default": {
+                  "light": "rgb(255, 255, 255)",
+                  "dark": "rgb(0, 0, 0)"
+                },
+                "hovered": {
+                  "light": "rgb(255, 255, 255)",
+                  "dark": "rgb(0, 0, 0)"
+                },
+                "focused": {
+                  "light": "rgb(255, 255, 255)",
+                  "dark": "rgb(0, 0, 0)"
+                },
+                "pressed": {
+                  "light": "rgb(255, 255, 255)",
+                  "dark": "rgb(0, 0, 0)"
+                },
+                "disabled": {
+                  "light": "rgba(255, 255, 255, 0.25)",
+                  "dark": "rgba(100, 140, 180, 0.25)"
+                },
+                "error": {
+                  "default": {
+                    "light": "rgb(248, 113, 113)",
+                    "dark": "rgb(220, 38, 38)"
+                  },
+                  "hovered": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "focused": {
+                    "light": "rgb(248, 113, 113)",
+                    "dark": "rgb(220, 38, 38)"
+                  },
+                  "pressed": {
+                    "light": "rgb(248, 113, 113)",
+                    "dark": "rgb(220, 38, 38)"
+                  }
+                }
+              },
+              "dark": {
+                "default": {
+                  "light": "rgb(15, 23, 42)",
+                  "dark": "rgb(241, 245, 249)"
+                },
+                "hovered": {
+                  "light": "rgb(15, 23, 42)",
+                  "dark": "rgb(241, 245, 249)"
+                },
+                "focused": {
+                  "light": "rgb(15, 23, 42)",
+                  "dark": "rgb(241, 245, 249)"
+                },
+                "pressed": {
+                  "light": "rgb(15, 23, 42)",
+                  "dark": "rgb(241, 245, 249)"
+                },
+                "disabled": {
+                  "light": "rgba(0, 0, 0, 0.25)",
+                  "dark": "rgba(255, 255, 255, 0.25)"
+                },
+                "error": {
+                  "default": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "hovered": {
+                    "light": "rgb(185, 28, 28)",
+                    "dark": "rgb(254, 202, 202)"
+                  },
+                  "focused": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  },
+                  "pressed": {
+                    "light": "rgb(239, 68, 68)",
+                    "dark": "rgb(248, 113, 113)"
+                  }
+                }
+              }
+            },
+            "focused-outline": {
+              "dark": {
+                "focused": {
+                  "light": "rgb(0, 0, 0)",
+                  "dark": "rgb(255, 255, 255)"
+                }
+              },
+              "light": {
+                "focused": {
+                  "light": "rgb(255, 255, 255)",
+                  "dark": "rgb(0, 0, 0)"
+                }
+              },
+              "surface": {
+                "focused": {
+                  "light": "rgb(0, 0, 0)",
+                  "dark": "rgb(255, 255, 255)"
+                }
+              }
+            }
+          },
+          "inner-circle": {
+            "color": {
+              "bg": {
+                "surface": {
+                  "default": {
+                    "light": "rgb(0, 60, 255)",
+                    "dark": "rgb(71, 117, 255)"
+                  },
+                  "hovered": {
+                    "light": "rgb(0, 47, 189)",
+                    "dark": "rgb(163, 186, 255)"
+                  },
+                  "focused": {
+                    "light": "rgb(0, 60, 255)",
+                    "dark": "rgb(71, 117, 255)"
+                  },
+                  "pressed": {
+                    "light": "rgb(0, 36, 143)",
+                    "dark": "rgb(209, 221, 255)"
+                  },
+                  "disabled": "rgba(100, 140, 180, 0.2)",
+                  "error": {
+                    "default": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "hovered": {
+                      "light": "rgb(185, 28, 28)",
+                      "dark": "rgb(254, 202, 202)"
+                    },
+                    "focused": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "pressed": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    }
+                  }
+                },
+                "light": {
+                  "default": {
+                    "light": "rgb(248, 250, 252)",
+                    "dark": "rgb(2, 6, 23)"
+                  },
+                  "hovered": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "focused": {
+                    "light": "rgb(255, 255, 255)",
+                    "dark": "rgb(0, 0, 0)"
+                  },
+                  "pressed": {
+                    "light": "rgb(248, 250, 252)",
+                    "dark": "rgb(2, 6, 23)"
+                  },
+                  "disabled": "rgba(100, 140, 180, 0.25)",
+                  "error": {
+                    "default": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "hovered": {
+                      "light": "rgb(185, 28, 28)",
+                      "dark": "rgb(254, 202, 202)"
+                    },
+                    "focused": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "pressed": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    }
+                  }
+                },
+                "dark": {
+                  "default": {
+                    "light": "rgb(2, 6, 23)",
+                    "dark": "rgb(248, 250, 252)"
+                  },
+                  "hovered": {
+                    "light": "rgb(30, 41, 59)",
+                    "dark": "rgb(226, 232, 240)"
+                  },
+                  "focused": {
+                    "light": "rgb(30, 41, 59)",
+                    "dark": "rgb(226, 232, 240)"
+                  },
+                  "pressed": {
+                    "light": "rgb(0, 0, 0)",
+                    "dark": "rgb(255, 255, 255)"
+                  },
+                  "disabled": "rgba(100, 140, 180, 0.2)",
+                  "error": {
+                    "default": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "hovered": {
+                      "light": "rgb(185, 28, 28)",
+                      "dark": "rgb(254, 202, 202)"
+                    },
+                    "focused": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "pressed": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    }
+                  }
+                }
+              },
+              "fg": {
+                "icon": {
+                  "surface": {
+                    "default": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "hovered": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "focused": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "pressed": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "disabled": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "error": {
+                      "default": {
+                        "light": "rgb(255, 255, 255)",
+                        "dark": "rgb(0, 0, 0)"
+                      },
+                      "hovered": {
+                        "light": "rgb(255, 255, 255)",
+                        "dark": "rgb(0, 0, 0)"
+                      },
+                      "focused": {
+                        "light": "rgb(255, 255, 255)",
+                        "dark": "rgb(0, 0, 0)"
+                      },
+                      "pressed": {
+                        "light": "rgb(255, 255, 255)",
+                        "dark": "rgb(0, 0, 0)"
+                      }
+                    }
+                  },
+                  "light": {
+                    "default": {
+                      "light": "rgb(71, 85, 105)",
+                      "dark": "rgb(148, 163, 184)"
+                    },
+                    "hovered": {
+                      "light": "rgb(51, 65, 85)",
+                      "dark": "rgb(203, 213, 225)"
+                    },
+                    "focused": {
+                      "light": "rgb(71, 85, 105)",
+                      "dark": "rgb(148, 163, 184)"
+                    },
+                    "pressed": {
+                      "light": "rgb(51, 65, 85)",
+                      "dark": "rgb(203, 213, 225)"
+                    },
+                    "disabled": {
+                      "light": "rgba(255, 255, 255, 0.25)",
+                      "dark": "rgba(100, 140, 180, 0.25)"
+                    },
+                    "error": {
+                      "default": {
+                        "light": "rgb(239, 68, 68)",
+                        "dark": "rgb(248, 113, 113)"
+                      },
+                      "hovered": {
+                        "light": "rgb(239, 68, 68)",
+                        "dark": "rgb(248, 113, 113)"
+                      },
+                      "focused": {
+                        "light": "rgb(239, 68, 68)",
+                        "dark": "rgb(248, 113, 113)"
+                      },
+                      "pressed": {
+                        "light": "rgb(239, 68, 68)",
+                        "dark": "rgb(248, 113, 113)"
+                      }
+                    }
+                  },
+                  "dark": {
+                    "default": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "hovered": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "focused": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "pressed": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "disabled": {
+                      "light": "rgb(255, 255, 255)",
+                      "dark": "rgb(0, 0, 0)"
+                    },
+                    "error": {
+                      "default": {
+                        "light": "rgb(255, 255, 255)",
+                        "dark": "rgb(0, 0, 0)"
+                      },
+                      "hovered": {
+                        "light": "rgb(255, 255, 255)",
+                        "dark": "rgb(0, 0, 0)"
+                      },
+                      "focused": {
+                        "light": "rgb(255, 255, 255)",
+                        "dark": "rgb(0, 0, 0)"
+                      },
+                      "pressed": {
+                        "light": "rgb(255, 255, 255)",
+                        "dark": "rgb(0, 0, 0)"
+                      }
+                    }
+                  }
+                }
+              },
+              "border": {
+                "surface": {
+                  "default": "rgba(255, 255, 255, 0)",
+                  "hovered": "rgba(255, 255, 255, 0)",
+                  "focused": "rgba(255, 255, 255, 0)",
+                  "pressed": "rgba(255, 255, 255, 0)",
+                  "disabled": "rgba(255, 255, 255, 0)",
+                  "error": {
+                    "default": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "hovered": {
+                      "light": "rgb(185, 28, 28)",
+                      "dark": "rgb(254, 202, 202)"
+                    },
+                    "focused": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "pressed": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    }
+                  }
+                },
+                "light": {
+                  "default": "rgba(255, 255, 255, 0)",
+                  "hovered": "rgba(255, 255, 255, 0)",
+                  "focused": "rgba(255, 255, 255, 0)",
+                  "pressed": "rgba(255, 255, 255, 0)",
+                  "disabled": "rgba(255, 255, 255, 0)",
+                  "error": {
+                    "default": {
+                      "light": "rgb(248, 113, 113)",
+                      "dark": "rgb(220, 38, 38)"
+                    },
+                    "hovered": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "focused": {
+                      "light": "rgb(248, 113, 113)",
+                      "dark": "rgb(220, 38, 38)"
+                    },
+                    "pressed": {
+                      "light": "rgb(248, 113, 113)",
+                      "dark": "rgb(220, 38, 38)"
+                    }
+                  }
+                },
+                "dark": {
+                  "default": "rgba(255, 255, 255, 0)",
+                  "hovered": "rgba(255, 255, 255, 0)",
+                  "focused": "rgba(255, 255, 255, 0)",
+                  "pressed": "rgba(255, 255, 255, 0)",
+                  "disabled": "rgba(255, 255, 255, 0)",
+                  "error": {
+                    "default": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "hovered": {
+                      "light": "rgb(185, 28, 28)",
+                      "dark": "rgb(254, 202, 202)"
+                    },
+                    "focused": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    },
+                    "pressed": {
+                      "light": "rgb(239, 68, 68)",
+                      "dark": "rgb(248, 113, 113)"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "label": {
+        "color": {
+          "fg": {
+            "surface": {
+              "default": {
+                "light": "rgb(100, 116, 139)",
+                "dark": "rgb(100, 116, 139)"
+              },
+              "hovered": {
+                "light": "rgb(51, 65, 85)",
+                "dark": "rgb(203, 213, 225)"
+              },
+              "focused": {
+                "light": "rgb(51, 65, 85)",
+                "dark": "rgb(203, 213, 225)"
+              },
+              "pressed": {
+                "light": "rgb(51, 65, 85)",
+                "dark": "rgb(203, 213, 225)"
+              },
+              "disabled": {
+                "light": "rgb(148, 163, 184)",
+                "dark": "rgb(71, 85, 105)"
+              }
+            },
+            "light": {
+              "default": {
+                "light": "rgb(248, 250, 252)",
+                "dark": "rgb(2, 6, 23)"
+              },
+              "hovered": {
+                "light": "rgb(255, 255, 255)",
+                "dark": "rgb(0, 0, 0)"
+              },
+              "focused": {
+                "light": "rgb(255, 255, 255)",
+                "dark": "rgb(0, 0, 0)"
+              },
+              "pressed": {
+                "light": "rgb(248, 250, 252)",
+                "dark": "rgb(2, 6, 23)"
+              },
+              "disabled": {
+                "light": "rgba(255, 255, 255, 0.5)",
+                "dark": "rgba(100, 140, 180, 0.5)"
+              }
+            },
+            "dark": {
+              "default": {
+                "light": "rgb(2, 6, 23)",
+                "dark": "rgb(248, 250, 252)"
+              },
+              "hovered": {
+                "light": "rgb(2, 6, 23)",
+                "dark": "rgb(248, 250, 252)"
+              },
+              "focused": {
+                "light": "rgb(2, 6, 23)",
+                "dark": "rgb(248, 250, 252)"
+              },
+              "pressed": {
+                "light": "rgb(2, 6, 23)",
+                "dark": "rgb(248, 250, 252)"
+              },
+              "disabled": {
+                "light": "rgb(148, 163, 184)",
+                "dark": "rgb(71, 85, 105)"
+              }
+            }
+          }
+        }
+      },
+      "asterisk": {
+        "color": {
+          "fg": {
+            "default": {
+              "light": "rgb(239, 68, 68)",
+              "dark": "rgb(248, 113, 113)"
+            },
+            "disabled": {
+              "light": "rgb(148, 163, 184)",
+              "dark": "rgb(71, 85, 105)"
+            }
+          }
+        }
+      },
+      "disabled": "25%"
     }
   },
   "comp-size": {
@@ -15272,6 +16257,20 @@
               "spacious": "0%",
               "dense": "0%"
             }
+          },
+          "size": {
+            "padding-left": {
+              "compact": "8px",
+              "comfortable": "8px",
+              "spacious": "8px",
+              "dense": "6px"
+            },
+            "padding-right": {
+              "compact": "8px",
+              "comfortable": "10px",
+              "spacious": "16px",
+              "dense": "6px"
+            }
           }
         },
         "page-link-first": {
@@ -15283,10 +16282,10 @@
               "dense": "1000px"
             },
             "border-radius-right": {
-              "compact": "0px",
-              "comfortable": "0px",
-              "spacious": "0px",
-              "dense": "0px"
+              "compact": "1000px",
+              "comfortable": "1000px",
+              "spacious": "1000px",
+              "dense": "1000px"
             }
           }
         },
@@ -15299,10 +16298,10 @@
               "dense": "1000px"
             },
             "border-radius-left": {
-              "compact": "0px",
-              "comfortable": "0px",
-              "spacious": "0px",
-              "dense": "0px"
+              "compact": "1000px",
+              "comfortable": "1000px",
+              "spacious": "1000px",
+              "dense": "1000px"
             }
           }
         },
@@ -16689,7 +17688,7 @@
           }
         }
       },
-      "form-field": {
+      "text-input": {
         "standard": {
           "input": {
             "typography": {
@@ -16950,57 +17949,57 @@
             }
           }
         }
-      }
-    },
-    "text-field": {
-      "standard": {
-        "size": {
-          "gap": {
-            "compact": "4px",
-            "comfortable": "4px",
-            "spacious": "4px",
-            "dense": "4px"
-          }
-        },
-        "label": {
-          "typography": {
-            "font-family": {
-              "compact": "Montserrat",
-              "comfortable": "Montserrat",
-              "spacious": "Montserrat",
-              "dense": "Montserrat"
-            },
-            "font-size": {
-              "compact": "16px",
-              "comfortable": "18px",
-              "spacious": "22px",
-              "dense": "16px"
-            },
-            "font-weight": {
-              "compact": "600",
-              "comfortable": "600",
-              "spacious": "600",
-              "dense": "600"
-            },
-            "line-height": {
-              "compact": "20px",
-              "comfortable": "20px",
-              "spacious": "20px",
-              "dense": "20px"
-            },
-            "letter-spacing": {
-              "compact": "0%",
-              "comfortable": "0%",
-              "spacious": "0%",
-              "dense": "0%"
-            }
-          },
+      },
+      "field": {
+        "standard": {
           "size": {
-            "padding-y": {
-              "compact": "2px",
+            "gap": {
+              "compact": "4px",
               "comfortable": "4px",
               "spacious": "4px",
-              "dense": "2px"
+              "dense": "4px"
+            }
+          },
+          "label": {
+            "typography": {
+              "font-family": {
+                "compact": "Montserrat",
+                "comfortable": "Montserrat",
+                "spacious": "Montserrat",
+                "dense": "Montserrat"
+              },
+              "font-size": {
+                "compact": "16px",
+                "comfortable": "18px",
+                "spacious": "22px",
+                "dense": "16px"
+              },
+              "font-weight": {
+                "compact": "600",
+                "comfortable": "600",
+                "spacious": "600",
+                "dense": "600"
+              },
+              "line-height": {
+                "compact": "20px",
+                "comfortable": "20px",
+                "spacious": "20px",
+                "dense": "20px"
+              },
+              "letter-spacing": {
+                "compact": "0%",
+                "comfortable": "0%",
+                "spacious": "0%",
+                "dense": "0%"
+              }
+            },
+            "size": {
+              "padding-y": {
+                "compact": "2px",
+                "comfortable": "4px",
+                "spacious": "4px",
+                "dense": "2px"
+              }
             }
           }
         }
@@ -17332,6 +18331,222 @@
             "comfortable": "12px",
             "spacious": "12px",
             "dense": "12px"
+          }
+        }
+      }
+    },
+    "radio": {
+      "focused-outline": {
+        "outline": {
+          "compact": "3px",
+          "comfortable": "3px",
+          "spacious": "3px",
+          "dense": "3px"
+        }
+      },
+      "button": {
+        "input": {
+          "size": {
+            "width": {
+              "compact": "24px",
+              "comfortable": "32px",
+              "spacious": "40px",
+              "dense": "20px"
+            },
+            "height": {
+              "compact": "24px",
+              "comfortable": "32px",
+              "spacious": "40px",
+              "dense": "20px"
+            },
+            "border-radius": {
+              "compact": "1000px",
+              "comfortable": "1000px",
+              "spacious": "1000px",
+              "dense": "1000px"
+            },
+            "border-width": {
+              "compact": "1px",
+              "comfortable": "1px",
+              "spacious": "1px",
+              "dense": "1px"
+            },
+            "touchtarget": {
+              "width": {
+                "compact": "40px",
+                "comfortable": "48px",
+                "spacious": "56px",
+                "dense": "32px"
+              },
+              "height": {
+                "compact": "40px",
+                "comfortable": "48px",
+                "spacious": "56px",
+                "dense": "32px"
+              }
+            }
+          },
+          "inner-circle": {
+            "size": {
+              "width": {
+                "compact": "16px",
+                "comfortable": "20px",
+                "spacious": "28px",
+                "dense": "12px"
+              },
+              "height": {
+                "compact": "16px",
+                "comfortable": "20px",
+                "spacious": "28px",
+                "dense": "12px"
+              },
+              "border-radius": {
+                "compact": "1000px",
+                "comfortable": "1000px",
+                "spacious": "1000px",
+                "dense": "1000px"
+              },
+              "border-width": {
+                "compact": "0px",
+                "comfortable": "0px",
+                "spacious": "0px",
+                "dense": "0px"
+              }
+            }
+          }
+        },
+        "container": {
+          "size": {
+            "padding-x": {
+              "compact": "0px",
+              "comfortable": "0px",
+              "spacious": "0px",
+              "dense": "0px"
+            },
+            "padding-y": {
+              "compact": "8px",
+              "comfortable": "8px",
+              "spacious": "16px",
+              "dense": "4px"
+            },
+            "gap": {
+              "compact": "8px",
+              "comfortable": "8px",
+              "spacious": "8px",
+              "dense": "8px"
+            }
+          }
+        },
+        "label": {
+          "typography": {
+            "font-family": {
+              "compact": "Montserrat",
+              "comfortable": "Montserrat",
+              "spacious": "Montserrat",
+              "dense": "Montserrat"
+            },
+            "font-size": {
+              "compact": "16px",
+              "comfortable": "18px",
+              "spacious": "24px",
+              "dense": "14px"
+            },
+            "font-weight": {
+              "compact": "400",
+              "comfortable": "400",
+              "spacious": "400",
+              "dense": "400"
+            },
+            "line-height": {
+              "compact": "20px",
+              "comfortable": "24px",
+              "spacious": "32px",
+              "dense": "16px"
+            },
+            "letter-spacing": {
+              "compact": "0%",
+              "comfortable": "0%",
+              "spacious": "0%",
+              "dense": "0%"
+            }
+          },
+          "size": {
+            "padding-y": {
+              "compact": "2px",
+              "comfortable": "2px",
+              "spacious": "2px",
+              "dense": "2px"
+            }
+          }
+        }
+      },
+      "group": {
+        "size": {
+          "padding-x": {
+            "compact": "0px",
+            "comfortable": "0px",
+            "spacious": "0px",
+            "dense": "0px"
+          },
+          "padding-y": {
+            "compact": "8px",
+            "comfortable": "8px",
+            "spacious": "16px",
+            "dense": "4px"
+          },
+          "gap": {
+            "compact": "8px",
+            "comfortable": "8px",
+            "spacious": "8px",
+            "dense": "8px"
+          }
+        },
+        "vertical": {
+          "container": {
+            "size": {
+              "padding-x": {
+                "compact": "0px",
+                "comfortable": "0px",
+                "spacious": "0px",
+                "dense": "0px"
+              },
+              "padding-y": {
+                "compact": "0px",
+                "comfortable": "0px",
+                "spacious": "0px",
+                "dense": "0px"
+              },
+              "gap": {
+                "compact": "8px",
+                "comfortable": "8px",
+                "spacious": "8px",
+                "dense": "8px"
+              }
+            }
+          }
+        },
+        "horizontal": {
+          "container": {
+            "size": {
+              "padding-x": {
+                "compact": "0px",
+                "comfortable": "0px",
+                "spacious": "0px",
+                "dense": "0px"
+              },
+              "padding-y": {
+                "compact": "0px",
+                "comfortable": "0px",
+                "spacious": "0px",
+                "dense": "0px"
+              },
+              "gap": {
+                "compact": "24px",
+                "comfortable": "24px",
+                "spacious": "24px",
+                "dense": "24px"
+              }
+            }
           }
         }
       }
