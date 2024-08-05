@@ -1,5 +1,5 @@
-import { existsSync, mkdirSync, readFileSync, writeFile } from "fs";
-import { dirname } from "path";
+import { existsSync, mkdirSync, readFileSync, writeFile } from 'fs';
+import { dirname } from 'path';
 
 import { fixUnit, getPropValue, getValueRefPath, isValueRef, hasModeExtensions, setPropValue } from '../utils/shared.mjs';
 
@@ -36,8 +36,7 @@ function readTokens(inputObj, rawTokens, propPath = [], outputObj = {}) {
   } else if (!isValueRef(inputObj.value)) {
     // The value is not a token reference, set plain value
     setPropValue(outputObj, propPath, inputObj.value);
-  }
-  else if (hasModeExtensions(inputObj)) {
+  } else if (hasModeExtensions(inputObj)) {
     // The token definition has a mode extension sub-object, which is also added to the output
     const modeExtensions = inputObj.$extensions.mode;
     Object.keys(modeExtensions).forEach((modeKey) => {
@@ -69,6 +68,7 @@ function generateTestData() {
   // JSON contains some values with incorrect unit.
   fixUnit(tokensRaw.base.percentage, '%');
   fixUnit(tokensRaw.base.typography.weight, '');
+  fixUnit(tokensRaw.base.em, 'em', (val) => val / 100);
   const testData = readTokens(tokensRaw, tokensRaw);
 
   const outputDir = dirname(testDataOutputPath);
@@ -80,7 +80,7 @@ function generateTestData() {
     if (error) {
       throw new Error(error);
     } else {
-      console.info("Test data generation was completed successfully.");
+      console.info('\x1b[30;102m Test data generation was completed successfully. \x1b[0;0m');
     }
   });
 }

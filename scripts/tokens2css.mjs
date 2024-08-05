@@ -82,6 +82,7 @@ function convertTokens2css() {
   // JSON contains some values with incorrect unit.
   fixUnit(tokensRaw.base.percentage, '%');
   fixUnit(tokensRaw.base.typography.weight, '');
+  fixUnit(tokensRaw.base.em, 'em', (val) => val / 100);
 
   flattenObject(tokensRaw, [tokenPrefix]);
 
@@ -100,6 +101,7 @@ function convertTokens2css() {
       throw new Error(error);
     } else {
       console.info('CSS generation was completed successfully.');
+      console.info('\x1b[30;102m CSS generation was completed successfully. \x1b[0;0m');
     }
   });
 }
