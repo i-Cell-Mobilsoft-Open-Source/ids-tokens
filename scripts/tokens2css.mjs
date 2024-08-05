@@ -101,6 +101,7 @@ function convertTokens2css() {
       throw new Error(error);
     } else {
       console.info('CSS generation was completed successfully.');
+      console.info('\x1b[30;102m CSS generation was completed successfully. \x1b[0;0m');
     }
   });
 }

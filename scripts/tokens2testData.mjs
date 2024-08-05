@@ -80,7 +80,7 @@ function generateTestData() {
     if (error) {
       throw new Error(error);
     } else {
-      console.info('Test data generation was completed successfully.');
+      console.info('\x1b[30;102m Test data generation was completed successfully. \x1b[0;0m');
     }
   });
 }
