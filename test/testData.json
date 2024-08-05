@@ -425,6 +425,19 @@
         "800": "800",
         "900": "900"
       }
+    },
+    "em": {
+      "0": "0em",
+      "50": "0.05em",
+      "100": "0.1em",
+      "150": "0.15em",
+      "-15": "-0.015em",
+      "-050": "-0.005em",
+      "-025": "-0.0025em",
+      "-015": "-0.0015em",
+      "015": "0.0015em",
+      "025": "0.0025em",
+      "050": "0.005em"
     }
   },
   "smc-colors": {
@@ -2723,14 +2736,14 @@
         "Black": "900"
       },
       "letter-spacing": {
-        "tightest": "-1.5%",
-        "tighter-10": "-0.5%",
-        "tighter": "-0.25%",
-        "tight": "-0.15%",
-        "default": "0%",
-        "loose": "0.15%",
-        "looser": "0.25%",
-        "loosest": "0.5%"
+        "tightest": "-0.015em",
+        "tighter-10": "-0.005em",
+        "tighter": "-0.0025em",
+        "tight": "-0.0015em",
+        "default": "0em",
+        "loose": "0.0015em",
+        "looser": "0.0025em",
+        "loosest": "0.005em"
       },
       "font-family": {
         "default": "Montserrat"
@@ -15558,10 +15571,10 @@
             "dense": "600"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       },
@@ -15592,10 +15605,10 @@
             "dense": "400"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       },
@@ -15626,10 +15639,10 @@
             "dense": "400"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       }
@@ -15712,10 +15725,10 @@
             "dense": "700"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       }
@@ -15900,10 +15913,10 @@
             "dense": "600"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       }
@@ -15995,10 +16008,10 @@
               "dense": "700"
             },
             "letter-spacing": {
-              "compact": "0%",
-              "comfortable": "0%",
-              "spacious": "0%",
-              "dense": "0%"
+              "compact": "0em",
+              "comfortable": "0em",
+              "spacious": "0em",
+              "dense": "0em"
             }
           },
           "size": {
@@ -16119,10 +16132,10 @@
               "dense": "500"
             },
             "letter-spacing": {
-              "compact": "0%",
-              "comfortable": "0%",
-              "spacious": "0%",
-              "dense": "0%"
+              "compact": "0em",
+              "comfortable": "0em",
+              "spacious": "0em",
+              "dense": "0em"
             }
           }
         }
@@ -16200,10 +16213,10 @@
             "dense": "600"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       },
@@ -16370,10 +16383,10 @@
             "dense": "400"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       }
@@ -16440,10 +16453,10 @@
             "dense": "700"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       },
@@ -16474,10 +16487,10 @@
             "dense": "400"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       }
@@ -16574,10 +16587,10 @@
             "dense": "400"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       },
@@ -16707,10 +16720,10 @@
               "dense": "700"
             },
             "letter-spacing": {
-              "compact": "0%",
-              "comfortable": "0%",
-              "spacious": "0%",
-              "dense": "0%"
+              "compact": "0em",
+              "comfortable": "0em",
+              "spacious": "0em",
+              "dense": "0em"
             }
           }
         },
@@ -16741,10 +16754,10 @@
               "dense": "400"
             },
             "letter-spacing": {
-              "compact": "0%",
-              "comfortable": "0%",
-              "spacious": "0%",
-              "dense": "0%"
+              "compact": "0em",
+              "comfortable": "0em",
+              "spacious": "0em",
+              "dense": "0em"
             }
           }
         }
@@ -16948,10 +16961,10 @@
             "dense": "16px"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           },
           "font-weight": {
             "compact": "400",
@@ -17068,10 +17081,10 @@
             "dense": "600"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       },
@@ -17356,10 +17369,10 @@
             "dense": "500"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         }
       }
@@ -17392,10 +17405,10 @@
             "dense": "12px"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         },
         "size": {
@@ -17461,10 +17474,10 @@
                   "dense": "16px"
                 },
                 "letter-spacing": {
-                  "compact": "0%",
-                  "comfortable": "0%",
-                  "spacious": "0%",
-                  "dense": "0%"
+                  "compact": "0em",
+                  "comfortable": "0em",
+                  "spacious": "0em",
+                  "dense": "0em"
                 }
               },
               "empty": {
@@ -17493,10 +17506,10 @@
                   "dense": "16px"
                 },
                 "letter-spacing": {
-                  "compact": "0%",
-                  "comfortable": "0%",
-                  "spacious": "0%",
-                  "dense": "0%"
+                  "compact": "0em",
+                  "comfortable": "0em",
+                  "spacious": "0em",
+                  "dense": "0em"
                 }
               }
             }
@@ -17598,10 +17611,10 @@
                 "dense": "16px"
               },
               "letter-spacing": {
-                "compact": "0%",
-                "comfortable": "0%",
-                "spacious": "0%",
-                "dense": "0%"
+                "compact": "0em",
+                "comfortable": "0em",
+                "spacious": "0em",
+                "dense": "0em"
               }
             }
           },
@@ -17632,10 +17645,10 @@
                 "dense": "16px"
               },
               "letter-spacing": {
-                "compact": "0%",
-                "comfortable": "0%",
-                "spacious": "0%",
-                "dense": "0%"
+                "compact": "0em",
+                "comfortable": "0em",
+                "spacious": "0em",
+                "dense": "0em"
               }
             }
           },
@@ -17730,10 +17743,10 @@
                 "dense": "20px"
               },
               "letter-spacing": {
-                "compact": "0%",
-                "comfortable": "0%",
-                "spacious": "0%",
-                "dense": "0%"
+                "compact": "0em",
+                "comfortable": "0em",
+                "spacious": "0em",
+                "dense": "0em"
               }
             },
             "size": {
@@ -17816,10 +17829,10 @@
             "dense": "600"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         },
         "size": {
@@ -17998,10 +18011,10 @@
             "dense": "400"
           },
           "letter-spacing": {
-            "compact": "0%",
-            "comfortable": "0%",
-            "spacious": "0%",
-            "dense": "0%"
+            "compact": "0em",
+            "comfortable": "0em",
+            "spacious": "0em",
+            "dense": "0em"
           }
         },
         "size": {
@@ -18207,10 +18220,10 @@
               "dense": "16px"
             },
             "letter-spacing": {
-              "compact": "0%",
-              "comfortable": "0%",
-              "spacious": "0%",
-              "dense": "0%"
+              "compact": "0em",
+              "comfortable": "0em",
+              "spacious": "0em",
+              "dense": "0em"
             }
           },
           "size": {
@@ -18311,10 +18324,10 @@
           "xlarge": "72px"
         },
         "letter-spacing": {
-          "small": "0%",
-          "medium": "0%",
-          "large": "0%",
-          "xlarge": "0%"
+          "small": "0em",
+          "medium": "0em",
+          "large": "0em",
+          "xlarge": "0em"
         },
         "font-family": {
           "small": "Montserrat",
@@ -18337,10 +18350,10 @@
           "xlarge": "32px"
         },
         "letter-spacing": {
-          "small": "0%",
-          "medium": "0%",
-          "large": "0%",
-          "xlarge": "0%"
+          "small": "0em",
+          "medium": "0em",
+          "large": "0em",
+          "xlarge": "0em"
         },
         "font-family": {
           "small": "Montserrat",
@@ -18363,10 +18376,10 @@
           "xlarge": "28px"
         },
         "letter-spacing": {
-          "small": "0%",
-          "medium": "0%",
-          "large": "0%",
-          "xlarge": "0%"
+          "small": "0em",
+          "medium": "0em",
+          "large": "0em",
+          "xlarge": "0em"
         },
         "font-family": {
           "small": "Montserrat",
@@ -18389,10 +18402,10 @@
           "xlarge": "16px"
         },
         "letter-spacing": {
-          "small": "0%",
-          "medium": "0%",
-          "large": "0%",
-          "xlarge": "0%"
+          "small": "0em",
+          "medium": "0em",
+          "large": "0em",
+          "xlarge": "0em"
         },
         "font-family": {
           "small": "Montserrat",

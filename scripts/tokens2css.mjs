@@ -82,6 +82,7 @@ function convertTokens2css() {
   // JSON contains some values with incorrect unit.
   fixUnit(tokensRaw.base.percentage, '%');
   fixUnit(tokensRaw.base.typography.weight, '');
+  fixUnit(tokensRaw.base.em, 'em', (val) => val / 100);
 
   flattenObject(tokensRaw, [tokenPrefix]);
 
