@@ -13124,6 +13124,58 @@
                   }
                 }
               }
+            },
+            "select": {
+              "filled": {
+                "color": {
+                  "fg": {
+                    "surface": {
+                      "default": {
+                        "light": "rgb(100, 116, 139)",
+                        "dark": "rgb(100, 116, 139)"
+                      },
+                      "hovered": {
+                        "light": "rgb(51, 65, 85)",
+                        "dark": "rgb(203, 213, 225)"
+                      },
+                      "focused": {
+                        "light": "rgb(51, 65, 85)",
+                        "dark": "rgb(203, 213, 225)"
+                      },
+                      "pressed": {
+                        "light": "rgb(51, 65, 85)",
+                        "dark": "rgb(203, 213, 225)"
+                      },
+                      "disabled": {
+                        "light": "rgb(148, 163, 184)",
+                        "dark": "rgb(71, 85, 105)"
+                      }
+                    },
+                    "light": {
+                      "default": {
+                        "light": "rgb(248, 250, 252)",
+                        "dark": "rgb(2, 6, 23)"
+                      },
+                      "hovered": {
+                        "light": "rgb(255, 255, 255)",
+                        "dark": "rgb(0, 0, 0)"
+                      },
+                      "focused": {
+                        "light": "rgb(255, 255, 255)",
+                        "dark": "rgb(0, 0, 0)"
+                      },
+                      "pressed": {
+                        "light": "rgb(248, 250, 252)",
+                        "dark": "rgb(2, 6, 23)"
+                      },
+                      "disabled": {
+                        "light": "rgba(255, 255, 255, 0.5)",
+                        "dark": "rgba(100, 140, 180, 0.5)"
+                      }
+                    }
+                  }
+                }
+              }
             }
           },
           "label": {
@@ -17415,10 +17467,10 @@
                     "dense": "400"
                   },
                   "line-height": {
-                    "compact": "16px",
-                    "comfortable": "16px",
-                    "spacious": "16px",
-                    "dense": "16px"
+                    "compact": "20px",
+                    "comfortable": "20px",
+                    "spacious": "20px",
+                    "dense": "20px"
                   },
                   "letter-spacing": {
                     "compact": "0em",
@@ -17459,6 +17511,14 @@
                     "dense": "0em"
                   }
                 }
+              },
+              "size": {
+                "padding-y": {
+                  "compact": "8px",
+                  "comfortable": "8px",
+                  "spacious": "8px",
+                  "dense": "8px"
+                }
               }
             },
             "size": {
@@ -17491,12 +17551,6 @@
                 "comfortable": "1px",
                 "spacious": "1px",
                 "dense": "1px"
-              },
-              "height": {
-                "compact": "40px",
-                "comfortable": "48px",
-                "spacious": "56px",
-                "dense": "32px"
               }
             },
             "leading-icon": {
@@ -17644,6 +17698,22 @@
                   "dense": "0px"
                 },
                 "gap": {
+                  "compact": "8px",
+                  "comfortable": "8px",
+                  "spacious": "8px",
+                  "dense": "8px"
+                },
+                "min-height": {
+                  "compact": "40px",
+                  "comfortable": "48px",
+                  "spacious": "56px",
+                  "dense": "32px"
+                }
+              }
+            },
+            "clear-value": {
+              "size": {
+                "padding-y": {
                   "compact": "8px",
                   "comfortable": "8px",
                   "spacious": "8px",
