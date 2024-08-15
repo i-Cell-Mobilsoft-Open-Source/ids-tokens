@@ -13002,11 +13002,16 @@
                 "border": {
                   "surface": {
                     "default": "rgba(100, 140, 180, 0.25)",
-                    "error": "rgba(100, 140, 180, 0.25)",
+                    "error": {
+                      "default": "rgba(100, 140, 180, 0.25)"
+                    },
                     "success": {
-                      "light": "rgb(34, 197, 94)",
-                      "dark": "rgb(74, 222, 128)"
-                    }
+                      "default": {
+                        "light": "rgb(34, 197, 94)",
+                        "dark": "rgb(74, 222, 128)"
+                      }
+                    },
+                    "disabled": "rgba(100, 140, 180, 0.25)"
                   },
                   "light": {
                     "default": {
@@ -13014,12 +13019,20 @@
                       "dark": "rgba(100, 140, 180, 0.25)"
                     },
                     "error": {
-                      "light": "rgb(239, 68, 68)",
-                      "dark": "rgb(248, 113, 113)"
+                      "default": {
+                        "light": "rgb(239, 68, 68)",
+                        "dark": "rgb(248, 113, 113)"
+                      }
                     },
                     "success": {
-                      "light": "rgb(34, 197, 94)",
-                      "dark": "rgb(74, 222, 128)"
+                      "default": {
+                        "light": "rgb(34, 197, 94)",
+                        "dark": "rgb(74, 222, 128)"
+                      }
+                    },
+                    "disabled": {
+                      "light": "rgba(255, 255, 255, 0.25)",
+                      "dark": "rgba(100, 140, 180, 0.25)"
                     }
                   }
                 }

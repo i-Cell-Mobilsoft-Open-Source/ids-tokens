@@ -2699,11 +2699,13 @@
   --ids-comp-forms-form-field-standard-field-wrapper-action-color-bg-light-default: var(--ids-smc-reference-container-color-bg-surface-transparent-100);
   --ids-comp-forms-form-field-standard-field-wrapper-action-color-bg-surface-default: var(--ids-smc-reference-container-color-bg-surface-transparent-100);
   --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-light-default: var(--ids-smc-reference-container-color-border-light-transparent-250);
-  --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-light-error: var(--ids-smc-reference-container-color-border-error-default);
-  --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-light-success: var(--ids-smc-reference-container-color-border-success-default);
+  --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-light-disabled: var(--ids-smc-reference-container-color-border-light-transparent-250);
+  --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-light-error-default: var(--ids-smc-reference-container-color-border-error-default);
+  --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-light-success-default: var(--ids-smc-reference-container-color-border-success-default);
   --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-surface-default: var(--ids-smc-reference-container-color-border-surface-transparent-250);
-  --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-surface-error: var(--ids-smc-reference-container-color-bg-surface-transparent-250);
-  --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-surface-success: var(--ids-smc-reference-container-color-border-success-default);
+  --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-surface-disabled: var(--ids-smc-reference-container-color-border-surface-transparent-250);
+  --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-surface-error-default: var(--ids-smc-reference-container-color-bg-surface-transparent-250);
+  --ids-comp-forms-form-field-standard-field-wrapper-action-color-border-surface-success-default: var(--ids-smc-reference-container-color-border-success-default);
   --ids-comp-forms-form-field-standard-field-wrapper-action-size-border-left-comfortable: var(--ids-smc-reference-container-border-width-sm);
   --ids-comp-forms-form-field-standard-field-wrapper-action-size-border-left-compact: var(--ids-smc-reference-container-border-width-sm);
   --ids-comp-forms-form-field-standard-field-wrapper-action-size-border-left-dense: var(--ids-smc-reference-container-border-width-sm);
