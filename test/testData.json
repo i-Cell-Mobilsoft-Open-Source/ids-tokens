@@ -12787,7 +12787,7 @@
             "disabled": {
               "default": "25%"
             },
-            "input": {
+            "infix": {
               "filled": {
                 "color": {
                   "fg": {
@@ -12796,21 +12796,9 @@
                         "light": "rgb(100, 116, 139)",
                         "dark": "rgb(100, 116, 139)"
                       },
-                      "hovered": {
-                        "light": "rgb(51, 65, 85)",
-                        "dark": "rgb(203, 213, 225)"
-                      },
-                      "focused": {
-                        "light": "rgb(51, 65, 85)",
-                        "dark": "rgb(203, 213, 225)"
-                      },
                       "disabled": {
                         "light": "rgb(148, 163, 184)",
                         "dark": "rgb(71, 85, 105)"
-                      },
-                      "pressed": {
-                        "light": "rgb(51, 65, 85)",
-                        "dark": "rgb(203, 213, 225)"
                       }
                     },
                     "light": {
@@ -13137,58 +13125,6 @@
                   }
                 }
               }
-            },
-            "select": {
-              "filled": {
-                "color": {
-                  "fg": {
-                    "surface": {
-                      "default": {
-                        "light": "rgb(100, 116, 139)",
-                        "dark": "rgb(100, 116, 139)"
-                      },
-                      "hovered": {
-                        "light": "rgb(51, 65, 85)",
-                        "dark": "rgb(203, 213, 225)"
-                      },
-                      "focused": {
-                        "light": "rgb(51, 65, 85)",
-                        "dark": "rgb(203, 213, 225)"
-                      },
-                      "pressed": {
-                        "light": "rgb(51, 65, 85)",
-                        "dark": "rgb(203, 213, 225)"
-                      },
-                      "disabled": {
-                        "light": "rgb(148, 163, 184)",
-                        "dark": "rgb(71, 85, 105)"
-                      }
-                    },
-                    "light": {
-                      "default": {
-                        "light": "rgb(248, 250, 252)",
-                        "dark": "rgb(2, 6, 23)"
-                      },
-                      "hovered": {
-                        "light": "rgb(255, 255, 255)",
-                        "dark": "rgb(0, 0, 0)"
-                      },
-                      "focused": {
-                        "light": "rgb(255, 255, 255)",
-                        "dark": "rgb(0, 0, 0)"
-                      },
-                      "pressed": {
-                        "light": "rgb(248, 250, 252)",
-                        "dark": "rgb(2, 6, 23)"
-                      },
-                      "disabled": {
-                        "light": "rgba(255, 255, 255, 0.5)",
-                        "dark": "rgba(100, 140, 180, 0.5)"
-                      }
-                    }
-                  }
-                }
-              }
             }
           },
           "label": {
@@ -13199,73 +13135,25 @@
                     "light": "rgb(100, 116, 139)",
                     "dark": "rgb(100, 116, 139)"
                   },
-                  "hovered": {
-                    "light": "rgb(51, 65, 85)",
-                    "dark": "rgb(203, 213, 225)"
-                  },
-                  "focused": {
-                    "light": "rgb(51, 65, 85)",
-                    "dark": "rgb(203, 213, 225)"
-                  },
-                  "pressed": {
-                    "light": "rgb(51, 65, 85)",
-                    "dark": "rgb(203, 213, 225)"
-                  },
                   "disabled": {
                     "light": "rgb(148, 163, 184)",
                     "dark": "rgb(71, 85, 105)"
                   },
                   "error": {
                     "default": {
-                      "light": "rgb(51, 65, 85)",
-                      "dark": "rgb(203, 213, 225)"
-                    },
-                    "hovered": {
-                      "light": "rgb(51, 65, 85)",
-                      "dark": "rgb(203, 213, 225)"
-                    },
-                    "focused": {
-                      "light": "rgb(51, 65, 85)",
-                      "dark": "rgb(203, 213, 225)"
-                    },
-                    "pressed": {
-                      "light": "rgb(51, 65, 85)",
-                      "dark": "rgb(203, 213, 225)"
+                      "light": "rgb(100, 116, 139)",
+                      "dark": "rgb(100, 116, 139)"
                     }
                   },
                   "success": {
                     "default": {
-                      "light": "rgb(51, 65, 85)",
-                      "dark": "rgb(203, 213, 225)"
-                    },
-                    "hovered": {
-                      "light": "rgb(51, 65, 85)",
-                      "dark": "rgb(203, 213, 225)"
-                    },
-                    "focused": {
-                      "light": "rgb(51, 65, 85)",
-                      "dark": "rgb(203, 213, 225)"
-                    },
-                    "pressed": {
-                      "light": "rgb(51, 65, 85)",
-                      "dark": "rgb(203, 213, 225)"
+                      "light": "rgb(100, 116, 139)",
+                      "dark": "rgb(100, 116, 139)"
                     }
                   }
                 },
                 "light": {
                   "default": {
-                    "light": "rgb(248, 250, 252)",
-                    "dark": "rgb(2, 6, 23)"
-                  },
-                  "hovered": {
-                    "light": "rgb(255, 255, 255)",
-                    "dark": "rgb(0, 0, 0)"
-                  },
-                  "focused": {
-                    "light": "rgb(255, 255, 255)",
-                    "dark": "rgb(0, 0, 0)"
-                  },
-                  "pressed": {
                     "light": "rgb(248, 250, 252)",
                     "dark": "rgb(2, 6, 23)"
                   },
@@ -13277,34 +13165,10 @@
                     "default": {
                       "light": "rgb(248, 250, 252)",
                       "dark": "rgb(2, 6, 23)"
-                    },
-                    "hovered": {
-                      "light": "rgb(255, 255, 255)",
-                      "dark": "rgb(0, 0, 0)"
-                    },
-                    "focused": {
-                      "light": "rgb(255, 255, 255)",
-                      "dark": "rgb(0, 0, 0)"
-                    },
-                    "pressed": {
-                      "light": "rgb(248, 250, 252)",
-                      "dark": "rgb(2, 6, 23)"
                     }
                   },
                   "success": {
                     "default": {
-                      "light": "rgb(248, 250, 252)",
-                      "dark": "rgb(2, 6, 23)"
-                    },
-                    "hovered": {
-                      "light": "rgb(255, 255, 255)",
-                      "dark": "rgb(0, 0, 0)"
-                    },
-                    "focused": {
-                      "light": "rgb(255, 255, 255)",
-                      "dark": "rgb(0, 0, 0)"
-                    },
-                    "pressed": {
                       "light": "rgb(248, 250, 252)",
                       "dark": "rgb(2, 6, 23)"
                     }
@@ -13763,8 +13627,8 @@
               },
               "error": {
                 "default": {
-                  "light": "rgb(51, 65, 85)",
-                  "dark": "rgb(203, 213, 225)"
+                  "light": "rgb(100, 116, 139)",
+                  "dark": "rgb(100, 116, 139)"
                 },
                 "hovered": {
                   "light": "rgb(51, 65, 85)",
@@ -13785,8 +13649,8 @@
               },
               "success": {
                 "default": {
-                  "light": "rgb(51, 65, 85)",
-                  "dark": "rgb(203, 213, 225)"
+                  "light": "rgb(100, 116, 139)",
+                  "dark": "rgb(100, 116, 139)"
                 },
                 "hovered": {
                   "light": "rgb(51, 65, 85)",
