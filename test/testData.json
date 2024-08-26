@@ -12837,52 +12837,6 @@
                           "dark": "rgb(2, 6, 23)"
                         }
                       }
-                    },
-                    "icon": {
-                      "surface": {
-                        "default": {
-                          "light": "rgb(100, 116, 139)",
-                          "dark": "rgb(100, 116, 139)"
-                        },
-                        "hovered": {
-                          "light": "rgb(51, 65, 85)",
-                          "dark": "rgb(203, 213, 225)"
-                        },
-                        "focused": {
-                          "light": "rgb(51, 65, 85)",
-                          "dark": "rgb(203, 213, 225)"
-                        },
-                        "pressed": {
-                          "light": "rgb(51, 65, 85)",
-                          "dark": "rgb(203, 213, 225)"
-                        },
-                        "disabled": {
-                          "light": "rgb(148, 163, 184)",
-                          "dark": "rgb(71, 85, 105)"
-                        }
-                      },
-                      "light": {
-                        "default": {
-                          "light": "rgb(248, 250, 252)",
-                          "dark": "rgb(2, 6, 23)"
-                        },
-                        "hovered": {
-                          "light": "rgb(255, 255, 255)",
-                          "dark": "rgb(0, 0, 0)"
-                        },
-                        "focused": {
-                          "light": "rgb(255, 255, 255)",
-                          "dark": "rgb(0, 0, 0)"
-                        },
-                        "pressed": {
-                          "light": "rgb(248, 250, 252)",
-                          "dark": "rgb(2, 6, 23)"
-                        },
-                        "disabled": {
-                          "light": "rgba(255, 255, 255, 0.5)",
-                          "dark": "rgba(100, 140, 180, 0.5)"
-                        }
-                      }
                     }
                   }
                 }
@@ -12891,52 +12845,6 @@
                 "color": {
                   "fg": {
                     "text": {
-                      "surface": {
-                        "default": {
-                          "light": "rgb(148, 163, 184)",
-                          "dark": "rgb(71, 85, 105)"
-                        },
-                        "hovered": {
-                          "light": "rgb(71, 85, 105)",
-                          "dark": "rgb(148, 163, 184)"
-                        },
-                        "focused": {
-                          "light": "rgb(71, 85, 105)",
-                          "dark": "rgb(148, 163, 184)"
-                        },
-                        "pressed": {
-                          "light": "rgb(148, 163, 184)",
-                          "dark": "rgb(71, 85, 105)"
-                        },
-                        "disabled": {
-                          "light": "rgb(148, 163, 184)",
-                          "dark": "rgb(71, 85, 105)"
-                        }
-                      },
-                      "light": {
-                        "default": {
-                          "light": "rgba(255, 255, 255, 0.5)",
-                          "dark": "rgba(100, 140, 180, 0.5)"
-                        },
-                        "hovered": {
-                          "light": "rgba(255, 255, 255, 0.5)",
-                          "dark": "rgba(100, 140, 180, 0.5)"
-                        },
-                        "focused": {
-                          "light": "rgba(255, 255, 255, 0.5)",
-                          "dark": "rgba(100, 140, 180, 0.5)"
-                        },
-                        "pressed": {
-                          "light": "rgba(255, 255, 255, 0.5)",
-                          "dark": "rgba(100, 140, 180, 0.5)"
-                        },
-                        "disabled": {
-                          "light": "rgba(255, 255, 255, 0.5)",
-                          "dark": "rgba(100, 140, 180, 0.5)"
-                        }
-                      }
-                    },
-                    "icon": {
                       "surface": {
                         "default": {
                           "light": "rgb(148, 163, 184)",
@@ -13100,7 +13008,10 @@
                   "surface": {
                     "default": "rgba(100, 140, 180, 0.25)",
                     "error": {
-                      "default": "rgba(100, 140, 180, 0.25)"
+                      "default": {
+                        "light": "rgb(239, 68, 68)",
+                        "dark": "rgb(248, 113, 113)"
+                      }
                     },
                     "success": {
                       "default": {
@@ -18072,10 +17983,10 @@
             "dense": "4px"
           },
           "border-radius": {
-            "compact": "12px",
-            "comfortable": "12px",
-            "spacious": "12px",
-            "dense": "12px"
+            "compact": "4px",
+            "comfortable": "4px",
+            "spacious": "4px",
+            "dense": "4px"
           }
         }
       }
@@ -18406,6 +18317,30 @@
             "comfortable": "12px",
             "spacious": "12px",
             "dense": "12px"
+          }
+        }
+      },
+      "group": {
+        "container": {
+          "size": {
+            "gap": {
+              "compact": "8px",
+              "comfortable": "8px",
+              "spacious": "8px",
+              "dense": "8px"
+            },
+            "padding-x": {
+              "compact": "16px",
+              "comfortable": "24px",
+              "spacious": "24px",
+              "dense": "16px"
+            },
+            "padding-y": {
+              "compact": "16px",
+              "comfortable": "24px",
+              "spacious": "24px",
+              "dense": "16px"
+            }
           }
         }
       }
