@@ -4703,6 +4703,14 @@
   --ids-comp-snackbar-group-container-size-gap-compact: var(--ids-smc-reference-container-gap-8);
   --ids-comp-snackbar-group-container-size-gap-dense: var(--ids-smc-reference-container-gap-8);
   --ids-comp-snackbar-group-container-size-gap-spacious: var(--ids-smc-reference-container-gap-8);
+  --ids-comp-snackbar-group-container-size-padding-x-comfortable: var(--ids-smc-reference-container-padding-24);
+  --ids-comp-snackbar-group-container-size-padding-x-compact: var(--ids-smc-reference-container-padding-16);
+  --ids-comp-snackbar-group-container-size-padding-x-dense: var(--ids-smc-reference-container-padding-16);
+  --ids-comp-snackbar-group-container-size-padding-x-spacious: var(--ids-smc-reference-container-padding-24);
+  --ids-comp-snackbar-group-container-size-padding-y-comfortable: var(--ids-smc-reference-container-padding-24);
+  --ids-comp-snackbar-group-container-size-padding-y-compact: var(--ids-smc-reference-container-padding-16);
+  --ids-comp-snackbar-group-container-size-padding-y-dense: var(--ids-smc-reference-container-padding-16);
+  --ids-comp-snackbar-group-container-size-padding-y-spacious: var(--ids-smc-reference-container-padding-24);
   --ids-comp-snackbar-icon-button-size-icon-button-comfortable: var(--ids-smc-reference-container-icon-nested-sm);
   --ids-comp-snackbar-icon-button-size-icon-button-compact: var(--ids-smc-reference-container-icon-nested-sm);
   --ids-comp-snackbar-icon-button-size-icon-button-dense: var(--ids-smc-reference-container-icon-nested-xs);

@@ -18328,6 +18328,18 @@
               "comfortable": "8px",
               "spacious": "8px",
               "dense": "8px"
+            },
+            "padding-x": {
+              "compact": "16px",
+              "comfortable": "24px",
+              "spacious": "24px",
+              "dense": "16px"
+            },
+            "padding-y": {
+              "compact": "16px",
+              "comfortable": "24px",
+              "spacious": "24px",
+              "dense": "16px"
             }
           }
         }
