@@ -15589,8 +15589,8 @@
                     "dark": "rgb(100, 116, 139)"
                   },
                   "disabled": {
-                    "light": "rgb(148, 163, 184)",
-                    "dark": "rgb(71, 85, 105)"
+                    "light": "rgba(255, 255, 255, 0.25)",
+                    "dark": "rgba(100, 140, 180, 0.25)"
                   }
                 }
               }
@@ -15639,8 +15639,8 @@
                     "dark": "rgb(100, 116, 139)"
                   },
                   "disabled": {
-                    "light": "rgb(148, 163, 184)",
-                    "dark": "rgb(71, 85, 105)"
+                    "light": "rgba(255, 255, 255, 0.25)",
+                    "dark": "rgba(100, 140, 180, 0.25)"
                   }
                 },
                 "primary": {
@@ -15714,6 +15714,28 @@
                 "light": "rgba(255, 255, 255, 0.5)",
                 "dark": "rgba(100, 140, 180, 0.5)"
               }
+            },
+            "primary": {
+              "default": {
+                "light": "rgb(100, 116, 139)",
+                "dark": "rgb(100, 116, 139)"
+              },
+              "hovered": {
+                "light": "rgb(51, 65, 85)",
+                "dark": "rgb(203, 213, 225)"
+              },
+              "focused": {
+                "light": "rgb(51, 65, 85)",
+                "dark": "rgb(203, 213, 225)"
+              },
+              "pressed": {
+                "light": "rgb(51, 65, 85)",
+                "dark": "rgb(203, 213, 225)"
+              },
+              "disabled": {
+                "light": "rgb(148, 163, 184)",
+                "dark": "rgb(71, 85, 105)"
+              }
             }
           }
         }
@@ -15783,10 +15805,7 @@
                   "light": "rgb(148, 163, 184)",
                   "dark": "rgb(71, 85, 105)"
                 },
-                "disabled": {
-                  "light": "rgba(255, 255, 255, 0.25)",
-                  "dark": "rgba(100, 140, 180, 0.25)"
-                }
+                "disabled": "rgba(100, 140, 180, 0.2)"
               }
             },
             "fg": {
@@ -15817,8 +15836,8 @@
                     "dark": "rgb(148, 163, 184)"
                   },
                   "disabled": {
-                    "light": "rgb(148, 163, 184)",
-                    "dark": "rgb(71, 85, 105)"
+                    "light": "rgba(255, 255, 255, 0.25)",
+                    "dark": "rgba(100, 140, 180, 0.25)"
                   }
                 }
               }
@@ -15930,10 +15949,24 @@
         }
       },
       "focused-outline": {
-        "surface": {
-          "focused": {
-            "light": "rgb(0, 0, 0)",
-            "dark": "rgb(255, 255, 255)"
+        "color": {
+          "surface": {
+            "focused": {
+              "light": "rgb(0, 0, 0)",
+              "dark": "rgb(255, 255, 255)"
+            }
+          },
+          "primary": {
+            "focused": {
+              "light": "rgb(0, 0, 0)",
+              "dark": "rgb(255, 255, 255)"
+            }
+          },
+          "light": {
+            "focused": {
+              "light": "rgb(255, 255, 255)",
+              "dark": "rgb(0, 0, 0)"
+            }
           }
         }
       }
@@ -19070,13 +19103,13 @@
           "padding-x": {
             "compact": "2px",
             "comfortable": "2px",
-            "spacious": "2px",
+            "spacious": "4px",
             "dense": "2px"
           },
           "padding-y": {
             "compact": "2px",
             "comfortable": "2px",
-            "spacious": "2px",
+            "spacious": "4px",
             "dense": "2px"
           },
           "border-radius": {
