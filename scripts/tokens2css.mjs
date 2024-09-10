@@ -66,6 +66,16 @@ function replaceCollectionNames(data) {
   return data.map((item) => item.replaceAll('comp-size', 'comp').replaceAll('comp-color', 'comp'));
 }
 
+function fontFamilyValue(obj) {
+  Object.keys(obj).forEach((propName) => {
+    const tokenObj = obj[propName];
+    const value = tokenObj.value;
+    if (value.includes(' ')) {
+      tokenObj.value = `"${tokenObj.value}"`;
+    }
+  });
+}
+
 function convertTokens2css() {
   if (process.argv.length !== 4) {
     throw new Error('Usage: node tokens2css.mjs /path/to/tokens.json /path/to/tokens.css');
@@ -83,6 +93,7 @@ function convertTokens2css() {
   fixUnit(tokensRaw.base.percentage, '%');
   fixUnit(tokensRaw.base.typography.weight, '');
   fixUnit(tokensRaw.base.em, 'em', (val) => val / 100);
+  fontFamilyValue(tokensRaw.base.typography['font-family']);
 
   flattenObject(tokensRaw, [tokenPrefix]);
 

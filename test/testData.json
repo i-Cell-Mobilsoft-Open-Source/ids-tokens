@@ -413,7 +413,9 @@
     },
     "typography": {
       "font-family": {
-        "Montserrat": "Montserrat"
+        "Montserrat": "Montserrat",
+        "MaterialIcons": "Material Icons",
+        "FontAwesome": "Font Awesome 5 Free"
       },
       "weight": {
         "100": "100",
@@ -2755,6 +2757,10 @@
       },
       "font-family": {
         "default": "Montserrat"
+      },
+      "iconset": {
+        "default": "Material Icons",
+        "custom": "Font Awesome 5 Free"
       }
     }
   },
@@ -14080,6 +14086,28 @@
             }
           }
         }
+      },
+      "fieldset": {
+        "legend": {
+          "color": {
+            "fg": {
+              "text": {
+                "surface": {
+                  "default": {
+                    "light": "rgb(100, 116, 139)",
+                    "dark": "rgb(100, 116, 139)"
+                  }
+                },
+                "light": {
+                  "default": {
+                    "light": "rgb(248, 250, 252)",
+                    "dark": "rgb(2, 6, 23)"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "segmented-control-toggle": {
@@ -16157,7 +16185,7 @@
           "compact": "20px",
           "comfortable": "24px",
           "spacious": "32px",
-          "dense": "32px"
+          "dense": "16px"
         },
         "height": {
           "compact": "24px",
@@ -16215,6 +16243,42 @@
             "comfortable": "0em",
             "spacious": "0em",
             "dense": "0em"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "icon": {
+            "compact": "20px",
+            "comfortable": "24px",
+            "spacious": "32px",
+            "dense": "16px"
+          }
+        },
+        "typography": {
+          "font-family": {
+            "compact": "Material Icons",
+            "comfortable": "Material Icons",
+            "spacious": "Material Icons",
+            "dense": "Material Icons"
+          },
+          "font-size": {
+            "compact": "16px",
+            "comfortable": "24px",
+            "spacious": "32px",
+            "dense": "14px"
+          },
+          "line-height": {
+            "compact": "16px",
+            "comfortable": "24px",
+            "spacious": "32px",
+            "dense": "14px"
+          },
+          "font-weight": {
+            "compact": "400",
+            "comfortable": "400",
+            "spacious": "400",
+            "dense": "400"
           }
         }
       }
@@ -18389,68 +18453,136 @@
         }
       },
       "option": {
-        "size": {
-          "padding-x": {
-            "compact": "12px",
-            "comfortable": "12px",
-            "spacious": "12px",
-            "dense": "12px"
+        "item": {
+          "size": {
+            "padding-x": {
+              "compact": "12px",
+              "comfortable": "12px",
+              "spacious": "12px",
+              "dense": "12px"
+            },
+            "padding-y": {
+              "compact": "0px",
+              "comfortable": "0px",
+              "spacious": "0px",
+              "dense": "0px"
+            },
+            "border-radius": {
+              "compact": "4px",
+              "comfortable": "4px",
+              "spacious": "4px",
+              "dense": "4px"
+            },
+            "height": {
+              "compact": "44px",
+              "comfortable": "48px",
+              "spacious": "56px",
+              "dense": "32px"
+            }
           },
-          "padding-y": {
-            "compact": "0px",
-            "comfortable": "0px",
-            "spacious": "0px",
-            "dense": "0px"
-          },
-          "gap": {
-            "compact": "8px",
-            "comfortable": "8px",
-            "spacious": "8px",
-            "dense": "8px"
-          },
-          "border-radius": {
-            "compact": "4px",
-            "comfortable": "4px",
-            "spacious": "4px",
-            "dense": "4px"
-          },
-          "height": {
-            "compact": "44px",
-            "comfortable": "48px",
-            "spacious": "56px",
-            "dense": "32px"
+          "icon": {
+            "size": {
+              "height": {
+                "compact": "16px",
+                "comfortable": "20px",
+                "spacious": "24px",
+                "dense": "12px"
+              },
+              "width": {
+                "compact": "16px",
+                "comfortable": "20px",
+                "spacious": "24px",
+                "dense": "12px"
+              }
+            }
           }
         },
-        "typography": {
-          "font-family": {
-            "compact": "Montserrat",
-            "comfortable": "Montserrat",
-            "spacious": "Montserrat",
-            "dense": "Montserrat"
+        "container": {
+          "size": {
+            "gap": {
+              "compact": "8px",
+              "comfortable": "8px",
+              "spacious": "8px",
+              "dense": "8px"
+            },
+            "padding-x": {
+              "compact": "8px",
+              "comfortable": "8px",
+              "spacious": "8px",
+              "dense": "8px"
+            },
+            "padding-y": {
+              "compact": "8px",
+              "comfortable": "8px",
+              "spacious": "8px",
+              "dense": "8px"
+            }
+          }
+        },
+        "group": {
+          "item": {
+            "size": {
+              "padding-left": {
+                "compact": "24px",
+                "comfortable": "24px",
+                "spacious": "24px",
+                "dense": "24px"
+              },
+              "padding-right": {
+                "compact": "12px",
+                "comfortable": "12px",
+                "spacious": "12px",
+                "dense": "12px"
+              }
+            }
           },
-          "font-size": {
-            "compact": "12px",
-            "comfortable": "12px",
-            "spacious": "12px",
-            "dense": "12px"
-          },
-          "font-weight": {
-            "compact": "400",
-            "comfortable": "400",
-            "spacious": "400",
-            "dense": "400"
-          },
-          "line-height": {
-            "compact": "12px",
-            "comfortable": "12px",
-            "spacious": "12px",
-            "dense": "12px"
-          },
-          "letter-spacing": {
-            "compact": "0em",
-            "comfortable": "0em",
-            "spacious": "0em",
-            "dense": "0em"
+          "title": {
+            "size": {
+              "padding-x": {
+                "compact": "12px",
+                "comfortable": "12px",
+                "spacious": "12px",
+                "dense": "12px"
+              },
+              "padding-y": {
+                "compact": "12px",
+                "comfortable": "12px",
+                "spacious": "12px",
+                "dense": "12px"
+              }
+            },
+            "typography": {
+              "font-family": {
+                "compact": "Montserrat",
+                "comfortable": "Montserrat",
+                "spacious": "Montserrat",
+                "dense": "Montserrat"
+              },
+              "font-size": {
+                "compact": "16px",
+                "comfortable": "16px",
+                "spacious": "16px",
+                "dense": "16px"
+              },
+              "font-weight": {
+                "compact": "600",
+                "comfortable": "600",
+                "spacious": "600",
+                "dense": "600"
+              },
+              "line-height": {
+                "compact": "16px",
+                "comfortable": "16px",
+                "spacious": "16px",
+                "dense": "16px"
+              },
+              "letter-spacing": {
+                "compact": "0em",
+                "comfortable": "0em",
+                "spacious": "0em",
+                "dense": "0em"
+              }
+            }
           }
         }
       },
@@ -18479,6 +18611,84 @@
             "comfortable": "4px",
             "spacious": "4px",
             "dense": "4px"
+          }
+        }
+      },
+      "fieldset": {
+        "size": {
+          "padding-x": {
+            "compact": "0px",
+            "comfortable": "0px",
+            "spacious": "0px",
+            "dense": "0px"
+          },
+          "padding-y": {
+            "compact": "0px",
+            "comfortable": "0px",
+            "spacious": "0px",
+            "dense": "0px"
+          },
+          "gap": {
+            "compact": "0px",
+            "comfortable": "0px",
+            "spacious": "0px",
+            "dense": "0px"
+          }
+        },
+        "legend": {
+          "typography": {
+            "font-family": {
+              "compact": "Montserrat",
+              "comfortable": "Montserrat",
+              "spacious": "Montserrat",
+              "dense": "Montserrat"
+            },
+            "font-size": {
+              "compact": "20px",
+              "comfortable": "24px",
+              "spacious": "28px",
+              "dense": "18px"
+            },
+            "font-weight": {
+              "compact": "600",
+              "comfortable": "600",
+              "spacious": "600",
+              "dense": "600"
+            },
+            "line-height": {
+              "compact": "32px",
+              "comfortable": "36px",
+              "spacious": "36px",
+              "dense": "24px"
+            },
+            "letter-spacing": {
+              "compact": "0em",
+              "comfortable": "0em",
+              "spacious": "0em",
+              "dense": "0em"
+            }
+          }
+        },
+        "row": {
+          "size": {
+            "padding-x": {
+              "compact": "0px",
+              "comfortable": "0px",
+              "spacious": "0px",
+              "dense": "0px"
+            },
+            "padding-y": {
+              "compact": "8px",
+              "comfortable": "16px",
+              "spacious": "16px",
+              "dense": "8px"
+            },
+            "gap": {
+              "compact": "24px",
+              "comfortable": "24px",
+              "spacious": "32px",
+              "dense": "16px"
+            }
           }
         }
       }
@@ -19282,6 +19492,22 @@
           "medium": "Montserrat",
           "large": "Montserrat",
           "xlarge": "Montserrat"
+        }
+      },
+      "iconset": {
+        "default": {
+          "font-size": {
+            "small": "12px",
+            "medium": "16px",
+            "large": "20px",
+            "xlarge": "24px"
+          },
+          "line-height": {
+            "small": "12px",
+            "medium": "16px",
+            "large": "20px",
+            "xlarge": "24px"
+          }
         }
       }
     }
