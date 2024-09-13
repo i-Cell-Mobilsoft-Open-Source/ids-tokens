@@ -18183,9 +18183,9 @@
                   },
                   "font-size": {
                     "compact": "16px",
-                    "comfortable": "18px",
-                    "spacious": "22px",
-                    "dense": "16px"
+                    "comfortable": "20px",
+                    "spacious": "24px",
+                    "dense": "14px"
                   },
                   "font-weight": {
                     "compact": "400",
@@ -18195,9 +18195,9 @@
                   },
                   "line-height": {
                     "compact": "20px",
-                    "comfortable": "20px",
-                    "spacious": "20px",
-                    "dense": "20px"
+                    "comfortable": "24px",
+                    "spacious": "28px",
+                    "dense": "18px"
                   },
                   "letter-spacing": {
                     "compact": "0em",
@@ -18215,9 +18215,9 @@
                   },
                   "font-size": {
                     "compact": "16px",
-                    "comfortable": "18px",
-                    "spacious": "22px",
-                    "dense": "16px"
+                    "comfortable": "20px",
+                    "spacious": "24px",
+                    "dense": "14px"
                   },
                   "font-weight": {
                     "compact": "400",
@@ -18226,10 +18226,10 @@
                     "dense": "400"
                   },
                   "line-height": {
-                    "compact": "16px",
-                    "comfortable": "16px",
-                    "spacious": "16px",
-                    "dense": "16px"
+                    "compact": "20px",
+                    "comfortable": "24px",
+                    "spacious": "28px",
+                    "dense": "18px"
                   },
                   "letter-spacing": {
                     "compact": "0em",
