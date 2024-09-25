@@ -4,9 +4,7 @@
   "private": false,
   "description": "Utility scripts, design token definitions and CSS variable collection for the i-Cell Design System",
   "scripts": {
-    "generate:css": "node scripts/tokens2css.mjs ./tokens/tokens.json ./css/tokens.css",
-    "generate:testData": "node scripts/tokens2testData.mjs ./tokens/tokens.json ./test/testData.json",
-    "generate": "npm run generate:css && npm run generate:testData",
+    "generate": "pnpm install && node scripts/tokenProcessor.mjs",
     "prepack": "npm run generate",
     "prepublish": "npm run generate"
   },
@@ -29,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/i-Cell-Mobilsoft-Open-Source/ids-tokens/issues"
   },
-  "homepage": "https://github.com/i-Cell-Mobilsoft-Open-Source/ids-tokens#readme"
+  "homepage": "https://github.com/i-Cell-Mobilsoft-Open-Source/ids-tokens#readme",
+  "devDependencies": {
+    "fs-extra": "^11.2.0",
+    "simple-git": "^3.27.0"
+  }
 }

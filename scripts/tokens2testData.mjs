@@ -52,7 +52,7 @@ function readTokens(inputObj, rawTokens, propPath = [], outputObj = {}) {
   return outputObj;
 }
 
-function generateTestData() {
+export function generateTestData() {
   if (process.argv.length !== 4) {
     throw new Error('Usage: node tokens2testData.mjs /path/to/tokens.json /path/to/testData.json');
   }
@@ -85,4 +85,4 @@ function generateTestData() {
   });
 }
 
-generateTestData();
+// generateTestData();

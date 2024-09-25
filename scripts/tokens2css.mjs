@@ -76,7 +76,7 @@ function fontFamilyValue(obj) {
   });
 }
 
-function convertTokens2css() {
+export function convertTokens2css() {
   if (process.argv.length !== 4) {
     throw new Error('Usage: node tokens2css.mjs /path/to/tokens.json /path/to/tokens.css');
   }
@@ -117,4 +117,4 @@ function convertTokens2css() {
   });
 }
 
-convertTokens2css();
+// convertTokens2css();
