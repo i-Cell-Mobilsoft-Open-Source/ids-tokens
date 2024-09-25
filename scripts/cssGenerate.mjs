@@ -73,7 +73,7 @@ function getTokenFileDataToWrite(tokensArray = [{}]) {
 }
 
 function writeCss(destination, tokensArray = [{}]) {
-  const path = nodePath.join('tokens', destination);
+  const path = nodePath.join('css', destination);
   const data = getTokenFileDataToWrite(tokensArray);
   writeFile(path, data, (error) => {
     if (error) {
