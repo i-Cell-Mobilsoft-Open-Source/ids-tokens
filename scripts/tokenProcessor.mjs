@@ -18,7 +18,7 @@ const repositories = {
 
 const TARGET_DIR = process.cwd();
 
-const branches = {
+export const branches = {
   foundation: ['foundation'],
   web: [
     'accordion',

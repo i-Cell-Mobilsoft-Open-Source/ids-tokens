@@ -1,6 +1,6 @@
 import { readFileSync, writeFile } from 'fs';
 import nodePath from 'path';
-import { brand } from './tokenProcessor.mjs';
+import { brand, branches } from './tokenProcessor.mjs';
 import { CSS_MAX_DECIMAL_PRECISION, roundDecimals } from '../utils/shared.mjs';
 import { compareAlphaNumericStrings } from '../utils/compare-alphanumeric-strings.mjs';
 
@@ -82,11 +82,15 @@ function writeCss(destination, tokensArray = [{}]) {
   });
 }
 
-function processNormal(readSource, destination, isBaseValue = false) {
+function getNormalTokenData(readSource, isBaseValue = false) {
   const tokenObject = getTokenObject(readSource);
   const tokens = {};
   flattenObject(tokenObject, tokens, [], isBaseValue);
-  const sortedTokensObject = getSortedTokens(tokens);
+  return getSortedTokens(tokens);
+}
+
+function processNormal(readSource, destination, isBaseValue = false) {
+  getNormalTokenData(readSource, isBaseValue);
   writeCss(destination, [{ selector: ':root', tokensObject: sortedTokensObject }]);
 }
 
@@ -104,7 +108,7 @@ function processThemes(basePath, destination) {
   writeCss(destination, themeData);
 }
 
-function processMulti(basePath, destination, fileNames) {
+function getMultiTokenData(basePath, fileNames) {
   const multiData = {};
   fileNames.forEach((fileName) => {
     const readSource = nodePath.join(basePath, `${fileName}.json`);
@@ -116,7 +120,11 @@ function processMulti(basePath, destination, fileNames) {
     Object.assign(multiData, tokens);
   });
 
-  const sortedMultiData = getSortedTokens(multiData);
+  return getSortedTokens(multiData);
+}
+
+function processMulti(basePath, destination, fileNames) {
+  getMultiTokenData(basePath, fileNames);
   writeCss(destination, [{ selector: ':root', tokensObject: sortedMultiData }]);
 }
 
@@ -127,12 +135,25 @@ function processFoundation(readBasePath) {
   processNormal(nodePath.join(readBasePath, 'smc-reference', 'smc-reference.json'), nodePath.join('smc', 'smc-reference.css'));
 }
 
-function processWeb(basePath) {
-  processNormal(basePath, 'comp-color', 'component');
-  processMulti(basePath, 'comp-size', ['dense', 'compact', 'comfortable', 'spacious']);
+function processComponent(readBasePath) {
+  const features = branches.web;
+  const componentTokens = {};
+  features.forEach((feature) => {
+    const componentColorTokens = getNormalTokenData(nodePath.join(readBasePath, feature, 'tokens', 'comp-color', 'component.json'));
+    const componentSizeTokens = getMultiTokenData(nodePath.join(readBasePath, feature, 'tokens', 'comp-size'), [
+      'dense',
+      'compact',
+      'comfortable',
+      'spacious',
+    ]);
+    Object.assign(componentTokens, componentColorTokens, componentSizeTokens);
+  });
+
+  const destination = nodePath.join('component', 'component.css');
+  writeCss(destination, [{ selector: ':root', tokensObject: componentTokens }]);
 }
 
 export function generateCSS(targetDir, repositories) {
   processFoundation(nodePath.join(targetDir, 'temp', repositories.foundation.name, 'foundation', 'tokens'));
-  // processWeb(nodePath.join(targetDir, 'temp', repositories.web.name, 'foundation', 'tokens'));
+  processComponent(nodePath.join(targetDir, 'temp', repositories.web.name));
 }
