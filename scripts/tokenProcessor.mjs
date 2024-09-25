@@ -78,6 +78,7 @@ async function cleanUpTempFiles() {
 }
 
 async function processTokens() {
+  console.time('Processing tokens');
   await fs.ensureDir(path.join(TARGET_DIR, 'temp'));
   await cloneRepository('foundation');
   await cloneRepository('web');
@@ -87,6 +88,7 @@ async function processTokens() {
   await cleanUpTempFiles();
 
   console.log('Script completed successfully!');
+  console.timeEnd('Processing tokens');
 }
 
 processTokens().catch((error) => console.error('Error:', error));
