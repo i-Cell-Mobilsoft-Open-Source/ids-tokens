@@ -104,6 +104,7 @@ function getThemeTokenData(basePath, themes) {
     const sortedTokensObject = getSortedTokens(tokens);
     themeData.push({ selector: `.${brand}-theme-${theme}`, tokensObject: sortedTokensObject });
   });
+  return themeData;
 }
 
 function processThemes(basePath, destination) {

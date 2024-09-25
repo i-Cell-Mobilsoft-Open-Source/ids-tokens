@@ -50,7 +50,7 @@ export const branches = {
 
 const git = simpleGit();
 
-async function processRepository(repository) {
+async function cloneRepository(repository) {
   for (let branch of branches[repository]) {
     const repoName = repositories[repository].name;
     const repoUrl = repositories[repository].url;
@@ -79,8 +79,8 @@ async function cleanUpTempFiles() {
 
 async function processTokens() {
   await fs.ensureDir(path.join(TARGET_DIR, 'temp'));
-  await processRepository('foundation');
-  await processRepository('web');
+  await cloneRepository('foundation');
+  await cloneRepository('web');
 
   generateCSS(TARGET_DIR, repositories);
   // generateTestData(TARGET_DIR, repositories);
