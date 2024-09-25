@@ -94,8 +94,7 @@ function processNormal(readSource, destination, isBaseValue = false) {
   writeCss(destination, [{ selector: ':root', tokensObject: normalTokens }]);
 }
 
-function processThemes(basePath, destination) {
-  const themes = ['dark', 'light'];
+function getThemeTokenData(basePath, themes) {
   const themeData = [];
   themes.forEach((theme) => {
     const readSource = nodePath.join(basePath, `${theme}.json`);
@@ -105,7 +104,12 @@ function processThemes(basePath, destination) {
     const sortedTokensObject = getSortedTokens(tokens);
     themeData.push({ selector: `.${brand}-theme-${theme}`, tokensObject: sortedTokensObject });
   });
-  writeCss(destination, themeData);
+}
+
+function processThemes(basePath, destination) {
+  const themes = ['dark', 'light'];
+  const themeTokens = getThemeTokenData(basePath, themes);
+  writeCss(destination, themeTokens);
 }
 
 function getMultiTokenData(basePath, fileNames) {
