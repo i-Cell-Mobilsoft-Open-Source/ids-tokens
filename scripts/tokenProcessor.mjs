@@ -78,13 +78,13 @@ async function cleanUpTempFiles() {
 }
 
 async function processTokens() {
-  // await fs.ensureDir(path.join(TARGET_DIR, 'temp'));
-  // await processRepository('foundation');
-  // await processRepository('web');
+  await fs.ensureDir(path.join(TARGET_DIR, 'temp'));
+  await processRepository('foundation');
+  await processRepository('web');
 
   generateCSS(TARGET_DIR, repositories);
   // generateTestData(TARGET_DIR, repositories);
-  // await cleanUpTempFiles(subDirectories);
+  await cleanUpTempFiles();
 
   console.log('Script completed successfully!');
 }
