@@ -90,8 +90,8 @@ function getNormalTokenData(readSource, isBaseValue = false) {
 }
 
 function processNormal(readSource, destination, isBaseValue = false) {
-  getNormalTokenData(readSource, isBaseValue);
-  writeCss(destination, [{ selector: ':root', tokensObject: sortedTokensObject }]);
+  const normalTokens = getNormalTokenData(readSource, isBaseValue);
+  writeCss(destination, [{ selector: ':root', tokensObject: normalTokens }]);
 }
 
 function processThemes(basePath, destination) {
@@ -124,8 +124,8 @@ function getMultiTokenData(basePath, fileNames) {
 }
 
 function processMulti(basePath, destination, fileNames) {
-  getMultiTokenData(basePath, fileNames);
-  writeCss(destination, [{ selector: ':root', tokensObject: sortedMultiData }]);
+  const multiTokenData = getMultiTokenData(basePath, fileNames);
+  writeCss(destination, [{ selector: ':root', tokensObject: multiTokenData }]);
 }
 
 function processFoundation(readBasePath) {
