@@ -63,7 +63,7 @@ function flattenObject(obj, path = []) {
 }
 
 function replaceCollectionNames(data) {
-  return data.map((item) => item.replaceAll('comp-size', 'comp').replaceAll('comp-color', 'comp'));
+  return data.map((item) => item.replaceAll('comp-color', 'comp'));
 }
 
 function fontFamilyValue(obj) {
