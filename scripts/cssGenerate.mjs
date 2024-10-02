@@ -34,6 +34,16 @@ function getBaseValue(value, type, propName) {
   return `${value}`;
 }
 
+function renameTokens(tokenObject, replaces) {
+  let renamedTokenObject = tokenObject;
+  replaces.forEach((item) => {
+    renamedTokenObject = Object.fromEntries(
+      Object.entries(renamedTokenObject).map(([key, value]) => [key.replace(item.searchValue, item.replaceValue), value]),
+    );
+  });
+  return renamedTokenObject;
+}
+
 function getReferenceValue(value) {
   const formattedValue = String(value).slice(1, -1).replaceAll('.', '-');
   return `var(--${brand}-${formattedValue})`;
@@ -142,7 +152,7 @@ function processFoundation(readBasePath) {
 
 function processComponent(readBasePath) {
   const features = branches.web;
-  const componentTokens = {};
+  let componentTokens = {};
   features.forEach((feature) => {
     const componentColorTokens = getNormalTokenData(nodePath.join(readBasePath, feature, 'tokens', 'comp-color', 'component.json'));
     const componentSizeTokens = getMultiTokenData(nodePath.join(readBasePath, feature, 'tokens', 'comp-size'), [
@@ -152,6 +162,12 @@ function processComponent(readBasePath) {
       'spacious',
     ]);
     Object.assign(componentTokens, componentColorTokens, componentSizeTokens);
+    componentTokens = getSortedTokens(
+      renameTokens(componentTokens, [
+        { searchValue: 'comp-color-', replaceValue: 'comp-' },
+        { searchValue: 'comp-size-', replaceValue: 'comp-' },
+      ]),
+    );
   });
 
   const destination = nodePath.join('component', 'component.css');
