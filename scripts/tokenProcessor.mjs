@@ -31,6 +31,7 @@ export const branches = {
     'dialog',
     'divider',
     'form-field',
+    'icon',
     'input',
     'menu-item',
     'message',
@@ -79,12 +80,16 @@ async function cleanUpTempFiles() {
 
 async function processTokens() {
   console.time('Processing tokens');
-  await fs.ensureDir(path.join(TARGET_DIR, 'temp'));
+
+  const tempDir = path.join(TARGET_DIR, 'temp');
+  await fs.ensureDir(tempDir);
+  await fs.emptyDir(tempDir);
+
   await cloneRepository('foundation');
   await cloneRepository('web');
 
   generateCSS(TARGET_DIR, repositories);
-  // generateTestData(TARGET_DIR, repositories);
+
   await cleanUpTempFiles();
 
   console.log('Script completed successfully!');
