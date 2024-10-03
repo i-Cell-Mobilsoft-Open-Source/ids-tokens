@@ -30,6 +30,7 @@ export const branches = {
     'chip',
     'dialog',
     'divider',
+    'fieldset',
     'form-field',
     'icon',
     'input',
