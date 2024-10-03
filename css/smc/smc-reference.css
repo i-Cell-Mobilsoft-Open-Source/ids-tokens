@@ -628,13 +628,13 @@
   --ids-smc-reference-container-effects-shadow-blur-xxl: var(--ids-base-dimension-250);
   --ids-smc-reference-container-effects-shadow-blur-xxs: var(--ids-base-dimension-20);
   --ids-smc-reference-container-effects-shadow-blur-xxxl: var(--ids-base-dimension-500);
-  --ids-smc-reference-container-effects-shadow-color-cool-darker: var(--ids-base-color-Opacity-Cool-250);
-  --ids-smc-reference-container-effects-shadow-color-cool-default: var(--ids-base-color-Opacity-Cool-100);
-  --ids-smc-reference-container-effects-shadow-color-cool-lighter: var(--ids-base-color-Opacity-Cool-50);
+  --ids-smc-reference-container-effects-shadow-color-cool-darker: var(--ids-base-color-opacity-cool-250);
+  --ids-smc-reference-container-effects-shadow-color-cool-default: var(--ids-base-color-opacity-cool-100);
+  --ids-smc-reference-container-effects-shadow-color-cool-lighter: var(--ids-base-color-opacity-cool-50);
   --ids-smc-reference-container-effects-shadow-color-cool-transparent: var(--ids-smc-reference-container-color-opacity-transparent);
-  --ids-smc-reference-container-effects-shadow-color-dark-default: var(--ids-base-color-Opacity-Dark-250);
-  --ids-smc-reference-container-effects-shadow-color-dark-light: var(--ids-base-color-Opacity-Dark-100);
-  --ids-smc-reference-container-effects-shadow-color-dark-lighter: var(--ids-base-color-Opacity-Dark-100);
+  --ids-smc-reference-container-effects-shadow-color-dark-default: var(--ids-base-color-opacity-dark-250);
+  --ids-smc-reference-container-effects-shadow-color-dark-light: var(--ids-base-color-opacity-dark-100);
+  --ids-smc-reference-container-effects-shadow-color-dark-lighter: var(--ids-base-color-opacity-dark-100);
   --ids-smc-reference-container-effects-shadow-color-dark-transparent: var(--ids-smc-reference-container-color-opacity-transparent);
   --ids-smc-reference-container-effects-shadow-horizontal-none: var(--ids-base-dimension-0);
   --ids-smc-reference-container-effects-shadow-spread-lg: var(--ids-base-dimension--30);
@@ -809,7 +809,7 @@
   --ids-smc-reference-page-color-fg-warning-darker-20: var(--ids-smc-colors-warning-darker-20);
   --ids-smc-reference-page-color-fg-warning-default: var(--ids-smc-colors-warning-default);
   --ids-smc-reference-page-color-fg-warning-lighter-100: var(--ids-smc-colors-surface-lighter-10);
-  --ids-smc-reference-typography-font-family-default: var(--ids-base-typography-font-family-Montserrat);
+  --ids-smc-reference-typography-font-family-default: var(--ids-base-typography-font-family-montserrat);
   --ids-smc-reference-typography-font-size-8: var(--ids-base-dimension-80);
   --ids-smc-reference-typography-font-size-10: var(--ids-base-dimension-100);
   --ids-smc-reference-typography-font-size-12: var(--ids-base-dimension-120);

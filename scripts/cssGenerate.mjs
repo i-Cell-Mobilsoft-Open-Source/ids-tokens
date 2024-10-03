@@ -46,7 +46,7 @@ function renameTokens(tokenObject, replaces) {
 
 function getReferenceValue(value) {
   const formattedValue = String(value).slice(1, -1).replaceAll('.', '-');
-  return `var(--${brand}-${formattedValue})`;
+  return `var(--${brand}-${formattedValue})`.toLowerCase();
 }
 
 function normalizeValue(value, unit, transformValue = (val) => val) {
