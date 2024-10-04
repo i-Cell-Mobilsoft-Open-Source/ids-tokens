@@ -38,7 +38,10 @@ function renameTokens(tokenObject, replaces) {
   let renamedTokenObject = tokenObject;
   replaces.forEach((item) => {
     renamedTokenObject = Object.fromEntries(
-      Object.entries(renamedTokenObject).map(([key, value]) => [key.replace(item.searchValue, item.replaceValue), value]),
+      Object.entries(renamedTokenObject).map(([key, value]) => [
+        key.replace(item.searchValue, item.replaceValue),
+        value.replace(item.searchValue, item.replaceValue),
+      ]),
     );
   });
   return renamedTokenObject;
