@@ -1,12 +1,10 @@
 {
   "name": "@i-cell/ids-tokens",
-  "version": "0.0.25-beta.7",
+  "version": "0.0.25-beta.8",
   "private": false,
   "description": "Utility scripts, design token definitions and CSS variable collection for the i-Cell Design System",
   "scripts": {
-    "generate": "pnpm install && node scripts/tokenProcessor.mjs",
-    "prepack": "npm run generate",
-    "prepublish": "npm run generate"
+    "generate": "pnpm install && node scripts/tokenProcessor.mjs"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
