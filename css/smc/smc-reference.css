@@ -5,7 +5,7 @@
   --ids-smc-reference-container-border-radius-full: var(--ids-base-dimension-10000);
   --ids-smc-reference-container-border-radius-lg: var(--ids-base-dimension-240);
   --ids-smc-reference-container-border-radius-md: var(--ids-base-dimension-160);
-  --ids-smc-reference-container-border-radius-none: var(--ids-);
+  --ids-smc-reference-container-border-radius-none: var(--ids-base-dimension-0);
   --ids-smc-reference-container-border-radius-sm: var(--ids-base-dimension-120);
   --ids-smc-reference-container-border-radius-xl: var(--ids-base-dimension-320);
   --ids-smc-reference-container-border-radius-xs: var(--ids-base-dimension-80);
