@@ -707,7 +707,7 @@
   --ids-smc-reference-container-size-height-112: var(--ids-base-dimension-1120);
   --ids-smc-reference-container-size-height-128: var(--ids-base-dimension-1280);
   --ids-smc-reference-container-size-height-256: var(--ids-base-dimension-2560);
-  --ids-smc-reference-container-size-height-none: var(--ids-);
+  --ids-smc-reference-container-size-height-none: var(--ids-base-dimension-0);
   --ids-smc-reference-container-size-width-1: var(--ids-base-dimension-10);
   --ids-smc-reference-container-size-width-2: var(--ids-base-dimension-20);
   --ids-smc-reference-container-size-width-4: var(--ids-base-dimension-40);
@@ -735,7 +735,7 @@
   --ids-smc-reference-container-size-width-400: var(--ids-base-dimension-4000);
   --ids-smc-reference-container-size-width-600: var(--ids-base-dimension-6000);
   --ids-smc-reference-container-size-width-800: var(--ids-base-dimension-8000);
-  --ids-smc-reference-container-size-width-none: var(--ids-);
+  --ids-smc-reference-container-size-width-none: var(--ids-base-dimension-0);
   --ids-smc-reference-container-spacing-0: var(--ids-base-dimension-0);
   --ids-smc-reference-container-spacing-4: var(--ids-base-dimension-40);
   --ids-smc-reference-container-spacing-6: var(--ids-base-dimension-60);
@@ -748,12 +748,15 @@
   --ids-smc-reference-container-spacing-32: var(--ids-base-dimension-320);
   --ids-smc-reference-container-spacing-72: var(--ids-base-dimension-720);
   --ids-smc-reference-icon-2xs: var(--ids-base-dimension-120);
+  --ids-smc-reference-icon-2xl: var(--ids-base-dimension-400);
   --ids-smc-reference-icon-3xs: var(--ids-base-dimension-60);
-  --ids-smc-reference-icon-lg: var(--ids-base-dimension-320);
+  --ids-smc-reference-icon-3xl: var(--ids-base-dimension-440);
+  --ids-smc-reference-icon-4xl: var(--ids-base-dimension-560);
+  --ids-smc-reference-icon-lg: var(--ids-base-dimension-280);
   --ids-smc-reference-icon-md: var(--ids-base-dimension-240);
   --ids-smc-reference-icon-none: var(--ids-base-dimension-0);
   --ids-smc-reference-icon-sm: var(--ids-base-dimension-200);
-  --ids-smc-reference-icon-xl: var(--ids-base-dimension-400);
+  --ids-smc-reference-icon-xl: var(--ids-base-dimension-320);
   --ids-smc-reference-icon-xs: var(--ids-base-dimension-160);
   --ids-smc-reference-page-color-bg-brand-default: var(--ids-smc-colors-brand-default);
   --ids-smc-reference-page-color-bg-light-darker-10: var(--ids-smc-colors-surface-darker-10);
@@ -821,6 +824,8 @@
   --ids-smc-reference-typography-font-size-24: var(--ids-base-dimension-240);
   --ids-smc-reference-typography-font-size-28: var(--ids-base-dimension-280);
   --ids-smc-reference-typography-font-size-32: var(--ids-base-dimension-320);
+  --ids-smc-reference-typography-font-size-36: var(--ids-base-dimension-360);
+  --ids-smc-reference-typography-font-size-40: var(--ids-base-dimension-400);
   --ids-smc-reference-typography-font-size-48: var(--ids-base-dimension-480);
   --ids-smc-reference-typography-font-size-72: var(--ids-base-dimension-720);
   --ids-smc-reference-typography-font-weight-black: var(--ids-base-typography-weight-900);
@@ -832,6 +837,8 @@
   --ids-smc-reference-typography-font-weight-regular: var(--ids-base-typography-weight-400);
   --ids-smc-reference-typography-font-weight-semibold: var(--ids-base-typography-weight-600);
   --ids-smc-reference-typography-font-weight-thin: var(--ids-base-typography-weight-100);
+  --ids-smc-reference-typography-iconset-custom: var(--ids-base-typography-font-family-materialicons);
+  --ids-smc-reference-typography-iconset-default: var(--ids-base-typography-font-family-idsfonticon);
   --ids-smc-reference-typography-letter-spacing-default: var(--ids-base-em-0);
   --ids-smc-reference-typography-letter-spacing-loose: var(--ids-base-em-015);
   --ids-smc-reference-typography-letter-spacing-looser: var(--ids-base-em-025);
@@ -850,6 +857,8 @@
   --ids-smc-reference-typography-line-height-28: var(--ids-base-dimension-280);
   --ids-smc-reference-typography-line-height-32: var(--ids-base-dimension-320);
   --ids-smc-reference-typography-line-height-36: var(--ids-base-dimension-360);
+  --ids-smc-reference-typography-line-height-40: var(--ids-base-dimension-400);
+  --ids-smc-reference-typography-line-height-44: var(--ids-base-dimension-440);
   --ids-smc-reference-typography-line-height-48: var(--ids-base-dimension-480);
   --ids-smc-reference-typography-line-height-72: var(--ids-base-dimension-720);
 }

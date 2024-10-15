@@ -363,6 +363,8 @@
   --ids-base-percentage--15: -1.5%;
   --ids-base-percentage--025: -0.25%;
   --ids-base-percentage--050: -0.5%;
+  --ids-base-typography-font-family-idsfonticon: I-DS-font-icon-default;
+  --ids-base-typography-font-family-materialicons: I-DS-font-icon-material;
   --ids-base-typography-font-family-montserrat: Montserrat;
   --ids-base-typography-weight-100: 100;
   --ids-base-typography-weight-200: 200;
