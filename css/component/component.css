@@ -1691,6 +1691,9 @@
   --ids-comp-chip-container-size-padding-y-compact: var(--ids-smc-reference-container-padding-6);
   --ids-comp-chip-container-size-padding-y-dense: var(--ids-smc-reference-container-padding-6);
   --ids-comp-chip-container-size-padding-y-spacious: var(--ids-smc-reference-container-padding-6);
+  --ids-comp-chip-filled-avatar-color-bg-default: var(--ids-smc-reference-container-color-bg-surface-default);
+  --ids-comp-chip-filled-avatar-color-border-default: var(--ids-smc-reference-container-color-border-transparent);
+  --ids-comp-chip-filled-avatar-color-fg-default: var(--ids-smc-reference-container-color-fg-surface-darker-50);
   --ids-comp-chip-filled-color-bg-dark-default: var(--ids-smc-reference-container-color-bg-dark-fixed-default);
   --ids-comp-chip-filled-color-bg-dark-disabled: var(--ids-smc-reference-container-color-bg-disabled-default);
   --ids-comp-chip-filled-color-bg-dark-dragged: var(--ids-smc-reference-container-color-bg-dark-fixed-default);
@@ -1873,6 +1876,9 @@
   --ids-comp-chip-label-typography-line-height-compact: var(--ids-smc-reference-typography-line-height-12);
   --ids-comp-chip-label-typography-line-height-dense: var(--ids-smc-reference-typography-line-height-12);
   --ids-comp-chip-label-typography-line-height-spacious: var(--ids-smc-reference-typography-line-height-18);
+  --ids-comp-chip-outlined-avatar-color-bg-default: var(--ids-smc-reference-container-color-bg-surface-default);
+  --ids-comp-chip-outlined-avatar-color-border-default: var(--ids-smc-reference-container-color-border-transparent);
+  --ids-comp-chip-outlined-avatar-color-fg-default: var(--ids-smc-reference-container-color-fg-surface-darker-50);
   --ids-comp-chip-outlined-color-bg-dark-default: var(--ids-smc-reference-container-color-bg-surface-transparent-0);
   --ids-comp-chip-outlined-color-bg-dark-disabled: var(--ids-smc-reference-container-color-bg-surface-transparent-0);
   --ids-comp-chip-outlined-color-bg-dark-dragged: var(--ids-smc-reference-container-color-bg-surface-transparent-0);
