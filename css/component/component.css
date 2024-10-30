@@ -1822,10 +1822,10 @@
   --ids-comp-chip-focused-outline-size-outline-compact: var(--ids-smc-reference-container-focused-outline-size-default);
   --ids-comp-chip-focused-outline-size-outline-dense: var(--ids-smc-reference-container-focused-outline-size-default);
   --ids-comp-chip-focused-outline-size-outline-spacious: var(--ids-smc-reference-container-focused-outline-size-default);
-  --ids-comp-chip-group-size-gap-comfortable: var(--ids-smc-reference-container-gap-12);
-  --ids-comp-chip-group-size-gap-compact: var(--ids-smc-reference-container-gap-8);
-  --ids-comp-chip-group-size-gap-dense: var(--ids-smc-reference-container-gap-4);
-  --ids-comp-chip-group-size-gap-spacious: var(--ids-smc-reference-container-gap-16);
+  --ids-comp-chip-group-size-column-gap-comfortable: var(--ids-smc-reference-container-gap-12);
+  --ids-comp-chip-group-size-column-gap-compact: var(--ids-smc-reference-container-gap-8);
+  --ids-comp-chip-group-size-column-gap-dense: var(--ids-smc-reference-container-gap-4);
+  --ids-comp-chip-group-size-column-gap-spacious: var(--ids-smc-reference-container-gap-16);
   --ids-comp-chip-group-size-padding-x-comfortable: var(--ids-smc-reference-container-padding-none);
   --ids-comp-chip-group-size-padding-x-compact: var(--ids-smc-reference-container-padding-none);
   --ids-comp-chip-group-size-padding-x-dense: var(--ids-smc-reference-container-padding-none);
@@ -1834,6 +1834,10 @@
   --ids-comp-chip-group-size-padding-y-compact: var(--ids-smc-reference-container-padding-none);
   --ids-comp-chip-group-size-padding-y-dense: var(--ids-smc-reference-container-padding-none);
   --ids-comp-chip-group-size-padding-y-spacious: var(--ids-smc-reference-container-padding-none);
+  --ids-comp-chip-group-size-row-gap-comfortable: var(--ids-smc-reference-container-gap-12);
+  --ids-comp-chip-group-size-row-gap-compact: var(--ids-smc-reference-container-gap-8);
+  --ids-comp-chip-group-size-row-gap-dense: var(--ids-smc-reference-container-gap-4);
+  --ids-comp-chip-group-size-row-gap-spacious: var(--ids-smc-reference-container-gap-16);
   --ids-comp-chip-icon-button-size-icon-button-comfortable: var(--ids-smc-reference-container-icon-nested-sm);
   --ids-comp-chip-icon-button-size-icon-button-compact: var(--ids-smc-reference-container-icon-nested-sm);
   --ids-comp-chip-icon-button-size-icon-button-dense: var(--ids-smc-reference-container-icon-nested-xs);
