@@ -36,6 +36,7 @@ export const branches = {
     'input',
     'menu-item',
     'message',
+    'notification',
     'paginator',
     'radio',
     'select',
