@@ -1,0 +1,59 @@
+name: Manual Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (e.g., v1.0.0)"
+        required: true
+      notes:
+        description: "Release notes"
+        required: false
+env:
+    GITHUB_TOKEN: ${{ secrets.NPM_TOKEN  }}
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Git for tag creation
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+      - name: Update package.json version
+        run: |
+          version=${{ github.event.inputs.version }}
+          version="${version#v}"  # Remove "v" prefix if provided
+          npm version "$version" --no-git-tag-version
+
+      - name: Commit version update
+        run: |
+          git add package.json
+          git commit -m "chore: bump version to ${{ github.event.inputs.version }}"
+          git push origin main          
+
+      - name: Create Tag
+        run: |
+          git tag -a ${{ github.event.inputs.version }} -m "${{ github.event.inputs.notes || 'Release' }}"
+          git push origin ${{ github.event.inputs.version }}
+         
+      - name: Publish to npm with npm
+        run: npm publish --access public
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1.14.0
+        with:
+          token: ${{ secrets.NPM_TOKEN  }}
+          tag: ${{ github.event.inputs.version }}
+          name: "v${{ github.event.inputs.version }}"
+          body: ${{ github.event.inputs.notes || 'Release' }}
+          draft: false
+          prerelease: false
+
