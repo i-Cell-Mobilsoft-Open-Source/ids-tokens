@@ -45,7 +45,7 @@ export const branches = {
     'snackbar',
     'switch',
     'tab',
-    'tag',
+    'tags',
     'textarea',
     'tooltip',
   ],
