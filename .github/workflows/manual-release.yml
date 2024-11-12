@@ -29,6 +29,11 @@ jobs:
           version="${version#v}"  # Remove "v" prefix if provided
           npm version "$version" --no-git-tag-version
 
+      - name: Publish to npm with npm
+        run: npm publish --access public
+        env: 
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
+
       - name: Commit & push version bump
         run: |
           git add package.json
@@ -46,11 +51,6 @@ jobs:
           git tag -a ${{ github.event.inputs.version }} -m "${{ github.event.inputs.notes || 'Release' }}"
           git push origin ${{ github.event.inputs.version }}
 
-      - name: Publish to npm with npm
-        run: npm publish --access public
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1.14.0
         with:
@@ -60,4 +60,3 @@ jobs:
           body: ${{ github.event.inputs.notes || 'Release' }}
           draft: false
           prerelease: false
-
