@@ -9,8 +9,6 @@ on:
       notes:
         description: "Release notes"
         required: false
-env:
-    GITHUB_TOKEN: ${{ secrets.NPM_TOKEN  }}
 
 jobs:
   create-release:
@@ -20,10 +18,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Git for tag creation
+      - name: Set up Git
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          git config --global user.name "icellmobilsoft-robot"
+          git config --global user.email "68945943+icellmobilsoft-robot@users.noreply.github.com"
 
       - name: Update package.json version
         run: |
@@ -31,17 +29,23 @@ jobs:
           version="${version#v}"  # Remove "v" prefix if provided
           npm version "$version" --no-git-tag-version
 
-      - name: Commit version update
+      - name: Commit & push version bump
         run: |
           git add package.json
           git commit -m "chore: bump version to ${{ github.event.inputs.version }}"
-          git push origin main          
+
+      - name: Push to main(protected) branch
+        uses: CasperWA/push-protected@v2
+        with:
+          token: ${{ secrets.ICELL_GIT_PAT }}
+          branch: main
+          unprotect_reviews: true
 
       - name: Create Tag
         run: |
           git tag -a ${{ github.event.inputs.version }} -m "${{ github.event.inputs.notes || 'Release' }}"
           git push origin ${{ github.event.inputs.version }}
-         
+
       - name: Publish to npm with npm
         run: npm publish --access public
         env:
@@ -50,7 +54,7 @@ jobs:
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1.14.0
         with:
-          token: ${{ secrets.NPM_TOKEN  }}
+          token: ${{ secrets.ICELL_GIT_PAT }}  
           tag: ${{ github.event.inputs.version }}
           name: "v${{ github.event.inputs.version }}"
           body: ${{ github.event.inputs.notes || 'Release' }}
