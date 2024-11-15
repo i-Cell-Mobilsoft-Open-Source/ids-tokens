@@ -10,6 +10,10 @@ function isProperty(object) {
   return propertyIdentifyKeys.every((key) => propertyKeys.includes(key));
 }
 
+function isReferenceValue(value) {
+  return RegExp(/^{([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\}$/).test(value);
+}
+
 function getTokenObject(readSource) {
   return JSON.parse(readFileSync(readSource, 'utf-8'));
 }
@@ -58,18 +62,19 @@ function normalizeValue(value, unit, transformValue = (val) => val) {
   return `${normalizedValue}${unit}`;
 }
 
-function flattenObject(object, tokens, path = [], isBaseValue = false, suffix = null) {
+function flattenObject(object, tokens, path = [], suffix = null) {
   if (!isProperty(object)) {
     for (const key in object) {
       const value = object[key];
-      flattenObject(value, tokens, [...path, key], isBaseValue, suffix);
+      flattenObject(value, tokens, [...path, key], suffix);
     }
     return;
   }
   const { value, type } = object;
   const tokenKey = (suffix ? [...path, suffix] : path).join('-').toLowerCase();
   const propName = path.at(-2);
-  tokens[tokenKey] = isBaseValue ? getBaseValue(value, type, propName) : getReferenceValue(value);
+  const isReference = isReferenceValue(value);
+  tokens[tokenKey] = isReference ? getReferenceValue(value) : getBaseValue(value, type, propName);
 }
 
 function getSortedTokens(tokens) {
@@ -95,15 +100,15 @@ function writeCss(destination, tokensArray = [{}]) {
   });
 }
 
-function getNormalTokenData(readSource, isBaseValue = false) {
+function getNormalTokenData(readSource) {
   const tokenObject = getTokenObject(readSource);
   const tokens = {};
-  flattenObject(tokenObject, tokens, [], isBaseValue);
+  flattenObject(tokenObject, tokens, []);
   return getSortedTokens(tokens);
 }
 
-function processNormal(readSource, destination, isBaseValue = false) {
-  const normalTokens = getNormalTokenData(readSource, isBaseValue);
+function processNormal(readSource, destination) {
+  const normalTokens = getNormalTokenData(readSource);
   writeCss(destination, [{ selector: ':root', tokensObject: normalTokens }]);
 }
 
@@ -133,7 +138,7 @@ function getMultiTokenData(basePath, fileNames) {
     const tokenObject = getTokenObject(readSource);
     const tokens = {};
     const suffix = fileName; // E.g. small, medium, large (without file extension!)
-    flattenObject(tokenObject, tokens, [], false, suffix);
+    flattenObject(tokenObject, tokens, [], suffix);
 
     Object.assign(multiData, tokens);
   });
@@ -147,7 +152,7 @@ function processMulti(basePath, destination, fileNames) {
 }
 
 function processFoundation(readBasePath) {
-  processNormal(nodePath.join(readBasePath, 'base', 'base.json'), nodePath.join('base', 'base.css'), true);
+  processNormal(nodePath.join(readBasePath, 'base', 'base.json'), nodePath.join('base', 'base.css'));
   processThemes(nodePath.join(readBasePath, 'smc-colors'), nodePath.join('smc', 'smc-colors.css'));
   processMulti(nodePath.join(readBasePath, 'smc-layout'), nodePath.join('smc', 'smc-layout.css'), ['small', 'medium', 'large', 'xlarge']);
   processNormal(nodePath.join(readBasePath, 'smc-reference', 'smc-reference.json'), nodePath.join('smc', 'smc-reference.css'));
