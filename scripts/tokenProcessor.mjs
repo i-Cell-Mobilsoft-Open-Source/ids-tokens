@@ -28,6 +28,7 @@ export const branches = {
     'card',
     'checkbox',
     'chip',
+    'data-table',
     'dialog',
     'divider',
     'fieldset',

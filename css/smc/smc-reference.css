@@ -696,6 +696,7 @@
   --ids-smc-reference-container-size-height-25: var(--ids-base-dimension-200);
   --ids-smc-reference-container-size-height-28: var(--ids-base-dimension-280);
   --ids-smc-reference-container-size-height-32: var(--ids-base-dimension-320);
+  --ids-smc-reference-container-size-height-36: var(--ids-base-dimension-360);
   --ids-smc-reference-container-size-height-40: var(--ids-base-dimension-400);
   --ids-smc-reference-container-size-height-44: var(--ids-base-dimension-440);
   --ids-smc-reference-container-size-height-48: var(--ids-base-dimension-480);
@@ -720,6 +721,7 @@
   --ids-smc-reference-container-size-width-25: var(--ids-base-dimension-200);
   --ids-smc-reference-container-size-width-28: var(--ids-base-dimension-280);
   --ids-smc-reference-container-size-width-32: var(--ids-base-dimension-320);
+  --ids-smc-reference-container-size-width-36: var(--ids-base-dimension-360);
   --ids-smc-reference-container-size-width-40: var(--ids-base-dimension-400);
   --ids-smc-reference-container-size-width-44: var(--ids-base-dimension-440);
   --ids-smc-reference-container-size-width-48: var(--ids-base-dimension-480);
