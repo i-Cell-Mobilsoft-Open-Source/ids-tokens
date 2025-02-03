@@ -18,7 +18,7 @@ if (!REPO_URL) {
     await fs.remove(TARGET_DIR);
     process.exit(1);
 }
-console.log("✅ Processing repo:", REPO_URL);
+console.info("✅ Processing repo:", REPO_URL);
 
 async function getBranches() {
     try {
@@ -35,7 +35,7 @@ async function getBranches() {
 }
 
 async function setupRepository() {
-    console.log(`🤖 Cloning repository from ${REPO_URL}...`);
+    console.info(`🤖 Cloning repository from ${REPO_URL}...`);
     await git.clone(REPO_URL, TEMP_REPO_DIR);
     await git.fetch(['--all']);
 }
@@ -47,10 +47,10 @@ async function generateTempFiles(branches, destinationDir ) {
   try {
     for (const branch of branches) {  
       if (localBranches.includes(branch)) {      
-        console.log(`Branch '${branch}' already exists locally. Checking out...`); 
+        console.info(`Branch '${branch}' already exists locally. Checking out...`); 
         await git.checkout(branch);
       } else {
-        console.log(`Creating and checking out local branch '${branch}' from origin/${branch}...`);
+        console.info(`Creating and checking out local branch '${branch}' from origin/${branch}...`);
         await git.checkout(['-b', branch, '--track', `origin/${branch}`]);
       }
       
@@ -82,9 +82,9 @@ async function processBranches() {
   await generateTempFiles(branches.foundation, path.join(TARGET_DIR, 'foundation'));
   await generateTempFiles(branches.components, path.join(TARGET_DIR, 'components'));
   generateCSS();
-  console.log('✅ All branches processed successfully!');   
+  console.info('✅ All branches processed successfully!');   
   await fs.remove(TARGET_DIR);
-  console.log('✅ Cleanup completed!');
+  console.info('✅ Cleanup completed!');
   console.timeEnd('Processing tokens');
 }
 
