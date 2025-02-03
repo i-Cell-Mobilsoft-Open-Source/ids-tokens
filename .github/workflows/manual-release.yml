@@ -29,10 +29,23 @@ jobs:
           version="${version#v}"  # Remove "v" prefix if provided
           npm version "$version" --no-git-tag-version
 
-      - name: Publish to npm with npm
-        run: npm publish --access public
-        env: 
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
+      - name: Set up NPM authentication
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+          echo "@i-cell:registry=https://registry.npmjs.org/" >> ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Verify NPM authentication
+        run: cat ~/.npmrc
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Publish to npm with pnpm
+        run: pnpm publish --access public
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Commit & push version bump
         run: |
