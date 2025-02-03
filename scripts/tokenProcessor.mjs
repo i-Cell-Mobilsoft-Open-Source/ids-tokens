@@ -4,97 +4,88 @@ import path from 'path';
 import { generateCSS } from './cssGenerate.mjs';
 
 export const brand = 'ids';
+export const branches = { components: [], foundation: [] };
 
-const repositories = {
-  foundation: {
-    name: 'ids-core-foundation',
-    url: 'https://github.com/i-Cell-Mobilsoft-Open-Source/ids-core-foundation.git',
-  },
-  web: {
-    name: 'ids-core-web',
-    url: 'https://github.com/i-Cell-Mobilsoft-Open-Source/ids-core-web.git',
-  },
-};
+const TARGET_DIR = path.resolve('./temp'); 
+const TEMP_REPO_DIR = path.resolve('./temp/temp-repo');
+const REPO_URL = process.argv.slice(2)[0];
+fs.ensureDir(TARGET_DIR);
+fs.ensureDir(TEMP_REPO_DIR);
+const git = simpleGit(TEMP_REPO_DIR);
 
-const TARGET_DIR = process.cwd();
+if (!REPO_URL) {
+    console.error("❌ Missing repository URL! Usage: node tokenProcessor.mjs -> ex. pnpm run generate -- https://github.com/group/repo.git");
+    await fs.remove(TARGET_DIR);
+    process.exit(1);
+}
+console.log("✅ Processing repo:", REPO_URL);
 
-export const branches = {
-  foundation: ['foundation'],
-  web: [
-    'accordion',
-    'action-menu',
-    'avatar',
-    'buttons',
-    'card',
-    'checkbox',
-    'chip',
-    'data-table',
-    'dialog',
-    'divider',
-    'fieldset',
-    'form-field',
-    'icon',
-    'menu-item',
-    'message',
-    'notification',
-    'option',
-    'paginator',
-    'radio',
-    'segmented-control',
-    'segmented-control-toggle',
-    'snackbar',
-    'switch',
-    'tab',
-    'tags',
-    'tooltip',
-  ],
-};
-
-const git = simpleGit();
-
-async function cloneRepository(repository) {
-  for (let branch of branches[repository]) {
-    const repoName = repositories[repository].name;
-    const repoUrl = repositories[repository].url;
-    const branchTempDir = path.join(TARGET_DIR, 'temp', repoName, branch.replace(/\//g, '-'));
-
-    console.log(`Cloning ${repoName} with branch ${branch}...`);
-
+async function getBranches() {
     try {
-      await git.clone(repoUrl, branchTempDir, ['--branch', branch]);
+        const bran = await git.listRemote(['--heads', REPO_URL]);
+        const branchList = bran
+            .split('\n')
+            .map(line => line.split('\t')[1]?.replace(/^refs\/heads\//, '').trim()).filter(branch => branch);
+            branchList.map(branch => branch === 'main' ? branches.foundation.push('main') : branches.components.push(branch));
     } catch (error) {
-      console.error(`Failed to clone ${branch}:`, error);
-      process.exit(1);
+        console.error('❌ Error fetching branches:', error);
+        await fs.remove(TARGET_DIR);
+        process.exit(1);
+    }
+}
+
+async function setupRepository() {
+    console.log(`🤖 Cloning repository from ${REPO_URL}...`);
+    await git.clone(REPO_URL, TEMP_REPO_DIR);
+    await git.fetch(['--all']);
+}
+
+async function generateTempFiles(branches, destinationDir ) {
+  const branchDir = path.join(TEMP_REPO_DIR);
+  const files = await fs.readdir(branchDir);
+  const localBranches = (await git.branch()).all;
+  try {
+    for (const branch of branches) {  
+      if (localBranches.includes(branch)) {      
+        console.log(`Branch '${branch}' already exists locally. Checking out...`); 
+        await git.checkout(branch);
+      } else {
+        console.log(`Creating and checking out local branch '${branch}' from origin/${branch}...`);
+        await git.checkout(['-b', branch, '--track', `origin/${branch}`]);
+      }
+      
+      for (const file of files) {
+        const sourceFile = path.join(branchDir, file);
+        const destFile = path.join(destinationDir, branch, file);
+        if (file === 'tokens') {
+          const stat = await fs.lstat(sourceFile);
+          if (stat.isDirectory()) {
+            await fs.copy(sourceFile, destFile);
+          } else {
+            await fs.copyFile(sourceFile, destFile);
+          }
+        }
+      }
     }
   }
-}
-
-async function cleanUpTempFiles() {
-  console.log('Cleaning up temporary files...');
-
-  const subDirectories = Object.values(repositories).map((repo) => repo.name);
-
-  for (let subDirectory of subDirectories) {
-    await fs.remove(path.join(TARGET_DIR, 'temp', subDirectory));
+  catch (error) {
+    console.error('❌ Error checkouting branches:', error);
+    await fs.remove(TARGET_DIR);
+    process.exit(1);
   }
 }
 
-async function processTokens() {
+async function processBranches() {
   console.time('Processing tokens');
-
-  const tempDir = path.join(TARGET_DIR, 'temp');
-  await fs.ensureDir(tempDir);
-  await fs.emptyDir(tempDir);
-
-  await cloneRepository('foundation');
-  await cloneRepository('web');
-
-  generateCSS(TARGET_DIR, repositories);
-
-  await cleanUpTempFiles();
-
-  console.log('Script completed successfully!');
+  await getBranches();
+  await setupRepository();
+  await generateTempFiles(branches.foundation, path.join(TARGET_DIR, 'foundation'));
+  await generateTempFiles(branches.components, path.join(TARGET_DIR, 'components'));
+  generateCSS();
+  console.log('✅ All branches processed successfully!');   
+  await fs.remove(TARGET_DIR);
+  console.log('✅ Cleanup completed!');
   console.timeEnd('Processing tokens');
 }
 
-processTokens().catch((error) => console.error('Error:', error));
+processBranches().catch((error) => console.error('Error:', error));

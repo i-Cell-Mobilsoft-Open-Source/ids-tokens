@@ -159,7 +159,7 @@ function processFoundation(readBasePath) {
 }
 
 function processComponent(readBasePath) {
-  const features = branches.web;
+  const features = branches.components;
   let componentTokens = {};
   features.forEach((feature) => {
     const componentColorTokens = getNormalTokenData(nodePath.join(readBasePath, feature, 'tokens', 'comp-color', 'component.json'));
@@ -182,7 +182,7 @@ function processComponent(readBasePath) {
   writeCss(destination, [{ selector: ':root', tokensObject: componentTokens }]);
 }
 
-export function generateCSS(targetDir, repositories) {
-  processFoundation(nodePath.join(targetDir, 'temp', repositories.foundation.name, 'foundation', 'tokens'));
-  processComponent(nodePath.join(targetDir, 'temp', repositories.web.name));
+export function generateCSS() {
+  processFoundation(nodePath.join(process.cwd(), 'temp', 'foundation', 'main', 'tokens'));
+  processComponent(nodePath.join(process.cwd(), 'temp', 'components'));
 }
