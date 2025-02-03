@@ -36,9 +36,6 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Verify NPM authentication
-        run: cat ~/.npmrc
-
       - name: Install dependencies
         run: pnpm install
 
