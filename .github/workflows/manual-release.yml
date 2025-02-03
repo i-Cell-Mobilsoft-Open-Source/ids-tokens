@@ -36,6 +36,9 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: pnpm-setup
+        uses: pnpm/action-setup@v2
+
       - name: Install dependencies
         run: pnpm install
 
