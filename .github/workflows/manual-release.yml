@@ -28,24 +28,17 @@ jobs:
           version=${{ github.event.inputs.version }}
           version="${version#v}"  # Remove "v" prefix if provided
           npm version "$version" --no-git-tag-version
-
-      - name: Set up NPM authentication
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-          echo "@i-cell:registry=https://registry.npmjs.org/" >> ~/.npmrc
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: pnpm-setup
-        uses: pnpm/action-setup@v2
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Publish to npm with pnpm
-        run: pnpm publish --access public
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          
+      - name: Publish to npm with npm
+        uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          access: "public"
+      
+     # - name: Publish to npm with pnpm
+       # run: pnpm publish --access public
+        #env:
+         # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Commit & push version bump
         run: |
