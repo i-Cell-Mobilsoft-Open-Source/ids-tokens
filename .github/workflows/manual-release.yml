@@ -32,6 +32,10 @@ jobs:
       - name: Check npm config
         run: |
          npm config ls -l
+
+      - name: Who am I
+        run: |
+          npm whoami
          
       - name: Publish to npm with npm
         uses: JS-DevTools/npm-publish@v3
