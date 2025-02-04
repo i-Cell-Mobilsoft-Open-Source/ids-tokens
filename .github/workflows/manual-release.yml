@@ -28,7 +28,11 @@ jobs:
           version=${{ github.event.inputs.version }}
           version="${version#v}"  # Remove "v" prefix if provided
           npm version "$version" --no-git-tag-version
-          
+      
+      - name: Check npm config
+        run: |
+         npm config ls -l
+         
       - name: Publish to npm with npm
         uses: JS-DevTools/npm-publish@v3
         with:
