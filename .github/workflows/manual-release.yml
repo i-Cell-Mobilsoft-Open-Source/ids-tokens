@@ -36,6 +36,8 @@ jobs:
       - name: Who am I
         run: |
           npm whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
          
       - name: Publish to npm with npm
         uses: JS-DevTools/npm-publish@v3
