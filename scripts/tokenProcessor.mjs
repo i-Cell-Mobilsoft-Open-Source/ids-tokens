@@ -9,8 +9,16 @@ export const branches = { components: [], foundation: [] };
 const TARGET_DIR = path.resolve(process.cwd(),'temp'); 
 const TEMP_REPO_DIR = path.resolve(process.cwd(), 'temp/temp-repo');
 const REPO_URL = process.argv.slice(2)[0];
-fs.ensureDir(TARGET_DIR);
-fs.ensureDir(TEMP_REPO_DIR);
+// fs.ensureDir(TARGET_DIR);
+// fs.ensureDir(TEMP_REPO_DIR);
+
+if (!fs.existsSync(TARGET_DIR)) {
+  fs.mkdirSync(TARGET_DIR);
+}
+if (!fs.existsSync(TEMP_REPO_DIR)) {
+  fs.mkdirSync(TEMP_REPO_DIR);
+}
+
 const git = simpleGit(TEMP_REPO_DIR);
 
 if (!REPO_URL) {
