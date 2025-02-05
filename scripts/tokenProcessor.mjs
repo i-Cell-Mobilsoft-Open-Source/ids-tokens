@@ -10,27 +10,15 @@ export const branches = { components: [], foundation: [] };
 const TARGET_DIR = path.resolve(process.cwd(),'temp'); 
 const TEMP_REPO_DIR = path.resolve(process.cwd(), 'temp\/temp-repo');
 const REPO_URL = process.argv.slice(2)[0];
-// fs.ensureDir(TARGET_DIR);
-// fs.ensureDir(TEMP_REPO_DIR);
 
 if (!fs.existsSync(TARGET_DIR)) {
-  console.info("📂 TARGET_DIR directory will create:", TARGET_DIR);
   fs.mkdirSync(TARGET_DIR);
-} else {
-  console.info("📂 TARGET_DIR directory already exists:", TARGET_DIR);
-  console.info("TARGET_DIR directory process.cwd -> ",process.cwd());
-}
+} 
 
 if (!fs.existsSync(TEMP_REPO_DIR)) {
-  console.info("📂 TEMP_REPO_DIR directory will create:", TEMP_REPO_DIR);
   fs.mkdirSync(TEMP_REPO_DIR);
-} else {
-  console.info("📂 TEMP_REPO_DIR directory already exists:", TEMP_REPO_DIR);
-  console.info("TEMP_REPO_DIR directory process.cwd -> ",process.cwd());
-}
+} 
 
-console.info("TARGET_DIR -> ", TARGET_DIR);
-console.info("TEMP_REPO_DIR -> ", TEMP_REPO_DIR);
 
 const git = simpleGit(TEMP_REPO_DIR);
 
@@ -50,6 +38,7 @@ async function getBranches() {
             .split('\n')
             .map(line => line.split('\t')[1]?.replace(/^refs\/heads\//, '').trim()).filter(branch => branch);
             branchList.map(branch => branch === 'main' ? branches.foundation.push('main') : branches.components.push(branch));
+            console.info(`✅ Found ${branchList.length} branches:`, branchList);
     } catch (error) {
         console.error('❌ Error fetching branches:', error);
         await fs.remove(TARGET_DIR);
@@ -58,25 +47,8 @@ async function getBranches() {
 }
 
 async function cloneRepository() {
-    
-
-    if (!fs.existsSync(TEMP_REPO_DIR)) {
-      console.info("📂 CLONE PART TEMP_REPO_DIR directory will create:", TEMP_REPO_DIR);
-    } else {
-      console.info("📂 CLONE PART TEMP_REPO_DIR directory already exists:", TEMP_REPO_DIR);
-    }
-    console.info("clone process.cwd -> ",process.cwd());
     console.info(`🤖 Cloning repository from ${REPO_URL}...`);
-    // await git.clone(REPO_URL, TEMP_REPO_DIR);
-    console.info("clone process.cwd -> ",process.cwd());
-
-    try {
-      const output = execSync(`git clone ${REPO_URL} ${TEMP_REPO_DIR}`, { encoding: 'utf8' });
-      console.log(output);
-    } catch (error) {
-      console.error(`Error: ${error.message}`);
-    }
-
+    execSync(`git clone ${REPO_URL} ${TEMP_REPO_DIR}`, { encoding: 'utf8' });
     await git.fetch(['--all']);
 }
 
@@ -100,9 +72,9 @@ async function generateTempFiles(branches, destinationDir ) {
         if (file === 'tokens') {
           const stat = await fs.lstat(sourceFile);
           if (stat.isDirectory()) {
-            await fs.copy(sourceFile, destFile);
+            fs.copySync(sourceFile, destFile);
           } else {
-            await fs.copyFile(sourceFile, destFile);
+            fs.copyFileSync(sourceFile, destFile);
           }
         }
       }
