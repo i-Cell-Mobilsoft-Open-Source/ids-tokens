@@ -2,22 +2,35 @@ import simpleGit from 'simple-git';
 import fs from 'fs-extra';
 import path from 'path';
 import { generateCSS } from './cssGenerate.mjs';
+import { execSync } from 'node:child_process';
 
 export const brand = 'ids';
 export const branches = { components: [], foundation: [] };
 
 const TARGET_DIR = path.resolve(process.cwd(),'temp'); 
-const TEMP_REPO_DIR = path.resolve(process.cwd(), 'temp/temp-repo');
+const TEMP_REPO_DIR = path.resolve(process.cwd(), 'temp\/temp-repo');
 const REPO_URL = process.argv.slice(2)[0];
 // fs.ensureDir(TARGET_DIR);
 // fs.ensureDir(TEMP_REPO_DIR);
 
 if (!fs.existsSync(TARGET_DIR)) {
+  console.info("📂 TARGET_DIR directory will create:", TARGET_DIR);
   fs.mkdirSync(TARGET_DIR);
+} else {
+  console.info("📂 TARGET_DIR directory already exists:", TARGET_DIR);
+  console.info("TARGET_DIR directory process.cwd -> ",process.cwd());
 }
+
 if (!fs.existsSync(TEMP_REPO_DIR)) {
+  console.info("📂 TEMP_REPO_DIR directory will create:", TEMP_REPO_DIR);
   fs.mkdirSync(TEMP_REPO_DIR);
+} else {
+  console.info("📂 TEMP_REPO_DIR directory already exists:", TEMP_REPO_DIR);
+  console.info("TEMP_REPO_DIR directory process.cwd -> ",process.cwd());
 }
+
+console.info("TARGET_DIR -> ", TARGET_DIR);
+console.info("TEMP_REPO_DIR -> ", TEMP_REPO_DIR);
 
 const git = simpleGit(TEMP_REPO_DIR);
 
@@ -44,9 +57,26 @@ async function getBranches() {
     }
 }
 
-async function setupRepository() {
+async function cloneRepository() {
+    
+
+    if (!fs.existsSync(TEMP_REPO_DIR)) {
+      console.info("📂 CLONE PART TEMP_REPO_DIR directory will create:", TEMP_REPO_DIR);
+    } else {
+      console.info("📂 CLONE PART TEMP_REPO_DIR directory already exists:", TEMP_REPO_DIR);
+    }
+    console.info("clone process.cwd -> ",process.cwd());
     console.info(`🤖 Cloning repository from ${REPO_URL}...`);
-    await git.clone(REPO_URL, TEMP_REPO_DIR);
+    // await git.clone(REPO_URL, TEMP_REPO_DIR);
+    console.info("clone process.cwd -> ",process.cwd());
+
+    try {
+      const output = execSync(`git clone ${REPO_URL} ${TEMP_REPO_DIR}`, { encoding: 'utf8' });
+      console.log(output);
+    } catch (error) {
+      console.error(`Error: ${error.message}`);
+    }
+
     await git.fetch(['--all']);
 }
 
@@ -88,7 +118,7 @@ async function generateTempFiles(branches, destinationDir ) {
 async function processBranches() {
   console.time('Processing tokens');
   await getBranches();
-  await setupRepository();
+  await cloneRepository();
   await generateTempFiles(branches.foundation, path.join(TARGET_DIR, 'foundation'));
   await generateTempFiles(branches.components, path.join(TARGET_DIR, 'components'));
   generateCSS();
