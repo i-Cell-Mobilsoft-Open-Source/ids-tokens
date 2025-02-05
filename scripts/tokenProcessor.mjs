@@ -20,6 +20,8 @@ if (!REPO_URL) {
 }
 console.info("✅ Processing repo:", REPO_URL);
 
+console.info("process.cwd -> ",process.cwd());
+
 async function getBranches() {
     try {
         const bran = await git.listRemote(['--heads', REPO_URL]);
