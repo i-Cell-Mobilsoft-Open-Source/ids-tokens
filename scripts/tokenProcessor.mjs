@@ -6,8 +6,8 @@ import { generateCSS } from './cssGenerate.mjs';
 export const brand = 'ids';
 export const branches = { components: [], foundation: [] };
 
-const TARGET_DIR = path.resolve('./temp'); 
-const TEMP_REPO_DIR = path.resolve('./temp/temp-repo');
+const TARGET_DIR = path.resolve(__dirname,'temp'); 
+const TEMP_REPO_DIR = path.resolve(__dirname, 'temp/temp-repo');
 const REPO_URL = process.argv.slice(2)[0];
 fs.ensureDir(TARGET_DIR);
 fs.ensureDir(TEMP_REPO_DIR);
