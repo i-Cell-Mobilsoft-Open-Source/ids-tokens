@@ -2,7 +2,7 @@ import simpleGit from 'simple-git';
 import fs from 'fs-extra';
 import path from 'path';
 import { generateCSS } from './cssGenerate.mjs';
-import { execSync } from 'node:child_process';
+// import { execSync } from 'node:child_process';
 
 export const brand = 'ids';
 export const branches = { components: [], foundation: [] };
@@ -50,7 +50,8 @@ async function getBranches() {
 
 async function cloneRepository() {
     console.info(`🤖 Cloning repository from ${REPO_URL}...`);
-    execSync(`git clone ${REPO_URL} ${TEMP_REPO_DIR}`, { encoding: 'utf8' });
+    // execSync(`git clone ${REPO_URL} ${TEMP_REPO_DIR}`, { encoding: 'utf8' });
+    await git.clone(REPO_URL, TEMP_REPO_DIR);
     await git.fetch(['--all']);
 }
 
