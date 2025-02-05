@@ -9,7 +9,10 @@ export const branches = { components: [], foundation: [] };
 
 const TARGET_DIR = path.resolve(process.cwd(),'temp'); 
 const TEMP_REPO_DIR = path.resolve(process.cwd(), 'temp\/temp-repo');
-const REPO_URL = process.argv.slice(2)[0];
+const REPO_URL = process.env.CORE_WEB_REPO; //slice(2)[0];
+//$env:CORE_WEB_REPO='https://github.com/i-Cell-Mobilsoft-Open-Source/ids-core-web
+console.error('process.argv-> ', process.argv);
+console.error('REPO_URL-> ', REPO_URL);
 
 if (!fs.existsSync(TARGET_DIR)) {
   fs.mkdirSync(TARGET_DIR);
@@ -18,7 +21,6 @@ if (!fs.existsSync(TARGET_DIR)) {
 if (!fs.existsSync(TEMP_REPO_DIR)) {
   fs.mkdirSync(TEMP_REPO_DIR);
 } 
-
 
 const git = simpleGit(TEMP_REPO_DIR);
 
@@ -38,7 +40,7 @@ async function getBranches() {
             .split('\n')
             .map(line => line.split('\t')[1]?.replace(/^refs\/heads\//, '').trim()).filter(branch => branch);
             branchList.map(branch => branch === 'main' ? branches.foundation.push('main') : branches.components.push(branch));
-            console.info(`✅ Found ${branchList.length} branches:`, branchList);
+            console.info(`✅ Found ${branches.length} branches:`, branches);
     } catch (error) {
         console.error('❌ Error fetching branches:', error);
         await fs.remove(TARGET_DIR);
