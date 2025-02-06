@@ -7,17 +7,16 @@ export const brand = 'ids';
 export const branches = { components: [], foundation: [] };
 
 const TARGET_DIR = path.resolve(process.cwd(),'temp'); 
-const TEMP_REPO_DIR = path.resolve(process.cwd(), 'temp/temp-repo');
-const REPO_URL = process.argv.slice(2)[0];
-// fs.ensureDir(TARGET_DIR);
-// fs.ensureDir(TEMP_REPO_DIR);
+const TEMP_REPO_DIR = path.resolve(process.cwd(), 'temp\/temp-repo');
+const REPO_URL = process.argv.slice(2)[0] || process.env.CORE_WEB_REPO;
 
 if (!fs.existsSync(TARGET_DIR)) {
   fs.mkdirSync(TARGET_DIR);
-}
+} 
+
 if (!fs.existsSync(TEMP_REPO_DIR)) {
   fs.mkdirSync(TEMP_REPO_DIR);
-}
+} 
 
 const git = simpleGit(TEMP_REPO_DIR);
 
@@ -27,8 +26,6 @@ if (!REPO_URL) {
     process.exit(1);
 }
 console.info("✅ Processing repo:", REPO_URL);
-
-console.info("process.cwd -> ",process.cwd());
 
 async function getBranches() {
     try {
@@ -44,10 +41,16 @@ async function getBranches() {
     }
 }
 
-async function setupRepository() {
-    console.info(`🤖 Cloning repository from ${REPO_URL}...`);
-    await git.clone(REPO_URL, TEMP_REPO_DIR);
-    await git.fetch(['--all']);
+async function cloneRepository() {
+    console.info(`🤖 Cloning repository from ${REPO_URL}`);
+    try {
+      await git.clone(REPO_URL, TEMP_REPO_DIR);
+      await git.fetch(['--all']);
+    } catch (error) {
+        console.error('❌ Error cloning repository:', error);
+        await fs.remove(TARGET_DIR);
+        process.exit(1);
+    }
 }
 
 async function generateTempFiles(branches, destinationDir ) {
@@ -70,9 +73,9 @@ async function generateTempFiles(branches, destinationDir ) {
         if (file === 'tokens') {
           const stat = await fs.lstat(sourceFile);
           if (stat.isDirectory()) {
-            await fs.copy(sourceFile, destFile);
+            fs.copySync(sourceFile, destFile);
           } else {
-            await fs.copyFile(sourceFile, destFile);
+            fs.copyFileSync(sourceFile, destFile);
           }
         }
       }
@@ -88,7 +91,7 @@ async function generateTempFiles(branches, destinationDir ) {
 async function processBranches() {
   console.time('Processing tokens');
   await getBranches();
-  await setupRepository();
+  await cloneRepository();
   await generateTempFiles(branches.foundation, path.join(TARGET_DIR, 'foundation'));
   await generateTempFiles(branches.components, path.join(TARGET_DIR, 'components'));
   generateCSS();
