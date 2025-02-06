@@ -2,17 +2,13 @@ import simpleGit from 'simple-git';
 import fs from 'fs-extra';
 import path from 'path';
 import { generateCSS } from './cssGenerate.mjs';
-// import { execSync } from 'node:child_process';
 
 export const brand = 'ids';
 export const branches = { components: [], foundation: [] };
 
 const TARGET_DIR = path.resolve(process.cwd(),'temp'); 
 const TEMP_REPO_DIR = path.resolve(process.cwd(), 'temp\/temp-repo');
-const REPO_URL = process.env.CORE_WEB_REPO; //slice(2)[0];
-//$env:CORE_WEB_REPO='https://github.com/i-Cell-Mobilsoft-Open-Source/ids-core-web
-console.error('process.argv-> ', process.argv);
-console.error('REPO_URL-> ', REPO_URL);
+const REPO_URL = process.argv.slice(2)[0] || process.env.CORE_WEB_REPO;
 
 if (!fs.existsSync(TARGET_DIR)) {
   fs.mkdirSync(TARGET_DIR);
@@ -31,8 +27,6 @@ if (!REPO_URL) {
 }
 console.info("✅ Processing repo:", REPO_URL);
 
-console.info("process.cwd -> ",process.cwd());
-
 async function getBranches() {
     try {
         const bran = await git.listRemote(['--heads', REPO_URL]);
@@ -40,7 +34,6 @@ async function getBranches() {
             .split('\n')
             .map(line => line.split('\t')[1]?.replace(/^refs\/heads\//, '').trim()).filter(branch => branch);
             branchList.map(branch => branch === 'main' ? branches.foundation.push('main') : branches.components.push(branch));
-            console.info(`✅ Found ${branches.length} branches:`, branches);
     } catch (error) {
         console.error('❌ Error fetching branches:', error);
         await fs.remove(TARGET_DIR);
@@ -49,10 +42,15 @@ async function getBranches() {
 }
 
 async function cloneRepository() {
-    console.info(`🤖 Cloning repository from ${REPO_URL}...`);
-    // execSync(`git clone ${REPO_URL} ${TEMP_REPO_DIR}`, { encoding: 'utf8' });
-    await git.clone(REPO_URL, TEMP_REPO_DIR);
-    await git.fetch(['--all']);
+    console.info(`🤖 Cloning repository from ${REPO_URL}`);
+    try {
+      await git.clone(REPO_URL, TEMP_REPO_DIR);
+      await git.fetch(['--all']);
+    } catch (error) {
+        console.error('❌ Error cloning repository:', error);
+        await fs.remove(TARGET_DIR);
+        process.exit(1);
+    }
 }
 
 async function generateTempFiles(branches, destinationDir ) {
