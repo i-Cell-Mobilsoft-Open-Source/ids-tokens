@@ -36,12 +36,10 @@ async function getBranches() {
             branchList.forEach((branch) => {
               switch (branch) {
                 case 'main':
-                  branches.foundation.push('main');
-                  break;
                 case 'master':
-                  branches.foundation.push('master');
                   break;
                 case 'dev':
+                  branches.foundation.push(branch);
                 break;
                 default:
                   branches.components.push(branch);
