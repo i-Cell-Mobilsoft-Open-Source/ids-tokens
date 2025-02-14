@@ -33,7 +33,7 @@ async function getBranches() {
         const branchList = bran
             .split('\n')
             .map(line => line.split('\t')[1]?.replace(/^refs\/heads\//, '').trim()).filter(branch => branch);
-            branchList.map((branch) => {
+            branchList.forEach((branch) => {
               switch (branch) {
                 case 'main':
                   branches.foundation.push('main');
