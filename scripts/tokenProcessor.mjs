@@ -33,7 +33,20 @@ async function getBranches() {
         const branchList = bran
             .split('\n')
             .map(line => line.split('\t')[1]?.replace(/^refs\/heads\//, '').trim()).filter(branch => branch);
-            branchList.map(branch => branch === 'main' ? branches.foundation.push('main') : branches.components.push(branch));
+            branchList.map((branch) => {
+              switch (branch) {
+                case 'main':
+                  branches.foundation.push('main');
+                  break;
+                case 'master':
+                  branches.foundation.push('master');
+                  break;
+                case 'dev':
+                break;
+                default:
+                  branches.components.push(branch);
+              }
+            });         
     } catch (error) {
         console.error('❌ Error fetching branches:', error);
         await fs.remove(TARGET_DIR);
