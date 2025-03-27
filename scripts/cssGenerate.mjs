@@ -182,7 +182,7 @@ function processComponent(readBasePath) {
   writeCss(destination, [{ selector: ':root', tokensObject: componentTokens }]);
 }
 
-export function generateCSS() {
-  processFoundation(nodePath.join(process.cwd(), 'temp', 'foundation', 'main', 'tokens'));
+export function generateCSS() {  
+  processFoundation(nodePath.join(process.cwd(), 'temp', 'foundation', branches.foundation[0], 'tokens'));
   processComponent(nodePath.join(process.cwd(), 'temp', 'components'));
 }
