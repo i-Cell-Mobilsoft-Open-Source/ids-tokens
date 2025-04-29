@@ -4,7 +4,7 @@
   "private": false,
   "description": "Utility scripts, design token definitions and CSS variable collection for the i-Cell Design System",
   "scripts": {
-    "generate": "pnpm install && node scripts/tokenProcessor.mjs"
+    "generate": "pnpm install && node scripts/tokenProcessor.mjs && node scripts/tokenToTailwindParser.mjs"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
@@ -19,6 +19,7 @@
     "Bátori László",
     "Nagy Gábor",
     "Onofer Dávid",
+    "Süveges Sándor",
     "Váradi András"
   ],
   "license": "MIT",
@@ -28,6 +29,8 @@
   "homepage": "https://github.com/i-Cell-Mobilsoft-Open-Source/ids-tokens#readme",
   "devDependencies": {
     "fs-extra": "^11.2.0",
+    "postcss": "^8.5.1",
+    "postcss-safe-parser": "^7.0.1",
     "simple-git": "^3.27.0"
   },
   "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
