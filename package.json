@@ -4,7 +4,8 @@
   "private": false,
   "description": "Utility scripts, design token definitions and CSS variable collection for the i-Cell Design System",
   "scripts": {
-    "generate": "pnpm install && node scripts/tokenProcessor.mjs && node scripts/tokenToTailwindParser.mjs"
+    "generate": "pnpm install && node scripts/tokenProcessor.mjs",
+    "postgenerate": "node scripts/tokenToTailwindParser.mjs"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
