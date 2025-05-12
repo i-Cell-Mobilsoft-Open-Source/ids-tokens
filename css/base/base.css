@@ -148,6 +148,19 @@
   --ids-base-color-opacity-dark-800: #000000cc;
   --ids-base-color-opacity-dark-900: #000000e6;
   --ids-base-color-opacity-dark-950: #000000f2;
+  --ids-base-color-opacity-darkcool-50: #0206170d;
+  --ids-base-color-opacity-darkcool-100: #0206171a;
+  --ids-base-color-opacity-darkcool-150: #02061726;
+  --ids-base-color-opacity-darkcool-200: #02061733;
+  --ids-base-color-opacity-darkcool-250: #02061740;
+  --ids-base-color-opacity-darkcool-300: #0206174d;
+  --ids-base-color-opacity-darkcool-400: #02061766;
+  --ids-base-color-opacity-darkcool-500: #02061780;
+  --ids-base-color-opacity-darkcool-600: #02061799;
+  --ids-base-color-opacity-darkcool-700: #020617b3;
+  --ids-base-color-opacity-darkcool-800: #020617cc;
+  --ids-base-color-opacity-darkcool-900: #020617e6;
+  --ids-base-color-opacity-darkcool-950: #020617f2;
   --ids-base-color-opacity-light-50: #ffffff0d;
   --ids-base-color-opacity-light-100: #ffffff1a;
   --ids-base-color-opacity-light-150: #ffffff26;
@@ -319,6 +332,7 @@
   --ids-base-dimension-2560: 256px;
   --ids-base-dimension-3200: 320px;
   --ids-base-dimension-4000: 400px;
+  --ids-base-dimension-5120: 512px;
   --ids-base-dimension-6000: 600px;
   --ids-base-dimension-8000: 800px;
   --ids-base-dimension-10000: 1000px;
