@@ -657,7 +657,7 @@
   --ids-smc-reference-container-color-fg-warning-lighter-40: var(--ids-smc-colors-warning-lighter-40);
   --ids-smc-reference-container-color-fg-warning-lighter-50: var(--ids-smc-colors-warning-lighter-50);
   --ids-smc-reference-container-color-fg-warning-lighter-100: var(--ids-smc-colors-surface-lighter-10);
-  --ids-smc-reference-container-color-opacity-backdrop: var(--ids-base-percentage-250);
+  --ids-smc-reference-container-color-opacity-backdrop: var(--ids-base-percentage-1000);
   --ids-smc-reference-container-color-opacity-cool-50: var(--ids-smc-colors-opacity-cool-50);
   --ids-smc-reference-container-color-opacity-cool-100: var(--ids-smc-colors-opacity-cool-100);
   --ids-smc-reference-container-color-opacity-cool-150: var(--ids-smc-colors-opacity-cool-150);
@@ -778,6 +778,7 @@
   --ids-smc-reference-container-size-height-112: var(--ids-base-dimension-1120);
   --ids-smc-reference-container-size-height-128: var(--ids-base-dimension-1280);
   --ids-smc-reference-container-size-height-256: var(--ids-base-dimension-2560);
+  --ids-smc-reference-container-size-height-512: var(--ids-base-dimension-5120);
   --ids-smc-reference-container-size-height-none: var(--ids-base-dimension-0);
   --ids-smc-reference-container-size-width-1: var(--ids-base-dimension-10);
   --ids-smc-reference-container-size-width-2: var(--ids-base-dimension-20);
