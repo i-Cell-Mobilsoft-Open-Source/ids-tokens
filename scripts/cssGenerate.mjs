@@ -125,9 +125,26 @@ function getThemeTokenData(basePath, themes) {
   return themeData;
 }
 
+function getLightDarkThemeTokenData(basePath, themes) {
+  const themeData = [];
+  const tokenData = themes.map((theme) => {
+    const readSource = nodePath.join(basePath, `${theme}.json`);
+    const tokenObject = getTokenObject(readSource);
+    const tokens = {};
+    flattenObject(tokenObject, tokens, []);
+    return getSortedTokens(tokens);
+  });
+  const tokensObject = {};
+  Object.keys(tokenData[0]).forEach((key) => {
+    tokensObject[key] = `light-dark(${tokenData[0][key]}, ${tokenData[1][key]})`;
+  })
+  themeData.push({ selector: `.${brand}-theme`, tokensObject });
+  return themeData;
+}
+
 function processThemes(basePath, destination) {
-  const themes = ['dark', 'light'];
-  const themeTokens = getThemeTokenData(basePath, themes);
+  const themes = ['light', 'dark'];
+  const themeTokens = getLightDarkThemeTokenData(basePath, themes);
   writeCss(destination, themeTokens);
 }
 
