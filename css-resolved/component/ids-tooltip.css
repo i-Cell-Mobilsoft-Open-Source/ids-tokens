@@ -1,0 +1,53 @@
+:root {
+    --ids-comp-tooltip-color-bg-dark-default: light-dark(#000000, #ffffff);
+    --ids-comp-tooltip-color-bg-light-default: light-dark(#ffffff, #ffffff);
+    --ids-comp-tooltip-color-fg-dark-default: light-dark(#f8fafc, #020617);
+    --ids-comp-tooltip-color-fg-dark-disabled: light-dark(#94a3b8, #475569);
+    --ids-comp-tooltip-color-fg-light-default: light-dark(#1e293b, #1e293b);
+    --ids-comp-tooltip-color-fg-light-disabled: light-dark(#94a3b8, #475569);
+    --ids-comp-tooltip-label-typography-font-family-comfortable: Montserrat;
+    --ids-comp-tooltip-label-typography-font-family-compact: Montserrat;
+    --ids-comp-tooltip-label-typography-font-family-dense: Montserrat;
+    --ids-comp-tooltip-label-typography-font-family-spacious: Montserrat;
+    --ids-comp-tooltip-label-typography-font-size-comfortable: 12px;
+    --ids-comp-tooltip-label-typography-font-size-compact: 12px;
+    --ids-comp-tooltip-label-typography-font-size-dense: 12px;
+    --ids-comp-tooltip-label-typography-font-size-spacious: 12px;
+    --ids-comp-tooltip-label-typography-font-weight-comfortable: 500;
+    --ids-comp-tooltip-label-typography-font-weight-compact: 500;
+    --ids-comp-tooltip-label-typography-font-weight-dense: 500;
+    --ids-comp-tooltip-label-typography-font-weight-spacious: 500;
+    --ids-comp-tooltip-label-typography-letter-spacing-comfortable: 0em;
+    --ids-comp-tooltip-label-typography-letter-spacing-compact: 0em;
+    --ids-comp-tooltip-label-typography-letter-spacing-dense: 0em;
+    --ids-comp-tooltip-label-typography-letter-spacing-spacious: 0em;
+    --ids-comp-tooltip-label-typography-line-height-comfortable: 16px;
+    --ids-comp-tooltip-label-typography-line-height-compact: 16px;
+    --ids-comp-tooltip-label-typography-line-height-dense: 16px;
+    --ids-comp-tooltip-label-typography-line-height-spacious: 16px;
+    --ids-comp-tooltip-size-border-radius-comfortable: 4px;
+    --ids-comp-tooltip-size-border-radius-compact: 4px;
+    --ids-comp-tooltip-size-border-radius-dense: 4px;
+    --ids-comp-tooltip-size-border-radius-spacious: 4px;
+    --ids-comp-tooltip-size-border-width-comfortable: 1px;
+    --ids-comp-tooltip-size-border-width-compact: 1px;
+    --ids-comp-tooltip-size-border-width-dense: 1px;
+    --ids-comp-tooltip-size-border-width-spacious: 1px;
+    --ids-comp-tooltip-size-caret-size-comfortable: 8px;
+    --ids-comp-tooltip-size-caret-size-compact: 8px;
+    --ids-comp-tooltip-size-caret-size-dense: 8px;
+    --ids-comp-tooltip-size-caret-size-spacious: 8px;
+    --ids-comp-tooltip-size-max-width-comfortable: 128px;
+    --ids-comp-tooltip-size-max-width-compact: 128px;
+    --ids-comp-tooltip-size-max-width-dense: 128px;
+    --ids-comp-tooltip-size-max-width-spacious: 128px;
+    --ids-comp-tooltip-size-padding-x-comfortable: 8px;
+    --ids-comp-tooltip-size-padding-x-compact: 8px;
+    --ids-comp-tooltip-size-padding-x-dense: 8px;
+    --ids-comp-tooltip-size-padding-x-spacious: 8px;
+    --ids-comp-tooltip-size-padding-y-comfortable: 6px;
+    --ids-comp-tooltip-size-padding-y-compact: 6px;
+    --ids-comp-tooltip-size-padding-y-dense: 6px;
+    --ids-comp-tooltip-size-padding-y-spacious: 6px
+
+}

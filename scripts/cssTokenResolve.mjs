@@ -16,7 +16,7 @@ const files = [
   {
     name: 'smcColors',
     path: 'css/smc/smc-colors.css',
-    selector: '.ids-theme',
+    selector: ':root',
   },
   {
     name: 'smcLayout',

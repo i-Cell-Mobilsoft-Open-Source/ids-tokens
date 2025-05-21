@@ -1,4 +1,4 @@
-.ids-theme {
+:root {
   --ids-smc-colors-brand-darker-10: light-dark(var(--ids-base-color-custom-600), var(--ids-base-color-custom-300));
   --ids-smc-colors-brand-darker-20: light-dark(var(--ids-base-color-custom-700), var(--ids-base-color-custom-200));
   --ids-smc-colors-brand-darker-30: light-dark(var(--ids-base-color-custom-800), var(--ids-base-color-custom-100));

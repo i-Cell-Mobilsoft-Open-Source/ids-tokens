@@ -1,0 +1,48 @@
+:root {
+    --ids-comp-overlay-panel-elevated-color-bg-light-default: light-dark(#ffffff, #000000);
+    --ids-comp-overlay-panel-elevated-color-bg-surface-default: light-dark(#f8fafc, #020617);
+    --ids-comp-overlay-panel-elevated-color-border-light-default: #ffffff00;
+    --ids-comp-overlay-panel-elevated-color-border-surface-default: #ffffff00;
+    --ids-comp-overlay-panel-elevated-color-fg-light-on: light-dark(#475569, #94a3b8);
+    --ids-comp-overlay-panel-elevated-color-fg-light-on-disable: light-dark(#94a3b8, #475569);
+    --ids-comp-overlay-panel-elevated-color-fg-surface-on: light-dark(#475569, #94a3b8);
+    --ids-comp-overlay-panel-elevated-color-fg-surface-on-disable: light-dark(#94a3b8, #475569);
+    --ids-comp-overlay-panel-filled-color-bg-light-default: light-dark(#ffffff, #000000);
+    --ids-comp-overlay-panel-filled-color-bg-surface-default: light-dark(#f8fafc, #020617);
+    --ids-comp-overlay-panel-filled-color-border-light-default: #ffffff00;
+    --ids-comp-overlay-panel-filled-color-border-surface-default: #ffffff00;
+    --ids-comp-overlay-panel-filled-color-fg-light-on: light-dark(#475569, #94a3b8);
+    --ids-comp-overlay-panel-filled-color-fg-light-on-disable: light-dark(#94a3b8, #475569);
+    --ids-comp-overlay-panel-filled-color-fg-surface-on: light-dark(#475569, #94a3b8);
+    --ids-comp-overlay-panel-filled-color-fg-surface-on-disable: light-dark(#94a3b8, #475569);
+    --ids-comp-overlay-panel-outlined-color-bg-light-default: light-dark(#ffffff, #000000);
+    --ids-comp-overlay-panel-outlined-color-bg-surface-default: light-dark(#f8fafc, #020617);
+    --ids-comp-overlay-panel-outlined-color-border-light-default: light-dark(#cbd5e1, #334155);
+    --ids-comp-overlay-panel-outlined-color-border-surface-default: light-dark(#cbd5e1, #334155);
+    --ids-comp-overlay-panel-outlined-color-fg-light-default: light-dark(#ffffff, #000000);
+    --ids-comp-overlay-panel-outlined-color-fg-surface-default: light-dark(#ffffff, #000000);
+    --ids-comp-overlay-panel-size-border-comfortable: 2px;
+    --ids-comp-overlay-panel-size-border-compact: 2px;
+    --ids-comp-overlay-panel-size-border-dense: 2px;
+    --ids-comp-overlay-panel-size-border-radius-comfortable: 24px;
+    --ids-comp-overlay-panel-size-border-radius-compact: 16px;
+    --ids-comp-overlay-panel-size-border-radius-dense: 32px;
+    --ids-comp-overlay-panel-size-border-radius-spacious: 32px;
+    --ids-comp-overlay-panel-size-border-spacious: 2px;
+    --ids-comp-overlay-panel-size-gap-comfortable: 12px;
+    --ids-comp-overlay-panel-size-gap-compact: 8px;
+    --ids-comp-overlay-panel-size-gap-dense: 16px;
+    --ids-comp-overlay-panel-size-gap-spacious: 16px;
+    --ids-comp-overlay-panel-size-max-width-comfortable: 320px;
+    --ids-comp-overlay-panel-size-max-width-compact: 320px;
+    --ids-comp-overlay-panel-size-max-width-dense: 320px;
+    --ids-comp-overlay-panel-size-max-width-spacious: 400px;
+    --ids-comp-overlay-panel-size-padding-x-comfortable: 10px;
+    --ids-comp-overlay-panel-size-padding-x-compact: 8px;
+    --ids-comp-overlay-panel-size-padding-x-dense: 16px;
+    --ids-comp-overlay-panel-size-padding-x-spacious: 16px;
+    --ids-comp-overlay-panel-size-padding-y-comfortable: 10px;
+    --ids-comp-overlay-panel-size-padding-y-compact: 8px;
+    --ids-comp-overlay-panel-size-padding-y-dense: 16px;
+    --ids-comp-overlay-panel-size-padding-y-spacious: 16px
+}

@@ -1,0 +1,23 @@
+:root {
+    --ids-comp-divider-color-bg-brand-default: light-dark(#003cff, #4775ff);
+    --ids-comp-divider-color-bg-dark-default: light-dark(#020617, #f8fafc);
+    --ids-comp-divider-color-bg-error-default: light-dark(#dc2626, #fca5a5);
+    --ids-comp-divider-color-bg-light-default: light-dark(#ffffff, #000000);
+    --ids-comp-divider-color-bg-primary-default: light-dark(#003cff, #4775ff);
+    --ids-comp-divider-color-bg-secondary-default: light-dark(#64748b, #94a3b8);
+    --ids-comp-divider-color-bg-success-default: light-dark(#22c55e, #4ade80);
+    --ids-comp-divider-color-bg-surface-default: light-dark(#cbd5e1, #334155);
+    --ids-comp-divider-color-bg-warning-default: light-dark(#f97316, #fb923c);
+    --ids-comp-divider-size-border-radius-comfortable: 0px;
+    --ids-comp-divider-size-border-radius-compact: 0px;
+    --ids-comp-divider-size-border-radius-dense: 0px;
+    --ids-comp-divider-size-border-radius-spacious: 0px;
+    --ids-comp-divider-size-height-comfortable: 2px;
+    --ids-comp-divider-size-height-compact: 1px;
+    --ids-comp-divider-size-height-dense: 4px;
+    --ids-comp-divider-size-height-spacious: 4px;
+    --ids-comp-divider-size-width-comfortable: 2px;
+    --ids-comp-divider-size-width-compact: 1px;
+    --ids-comp-divider-size-width-dense: 4px;
+    --ids-comp-divider-size-width-spacious: 4px
+}
