@@ -1,3 +1,4 @@
+import fse from 'fs-extra';
 import { loadAndParseCSS, exportToCss } from './cssParser.mjs';
 
 // metadata of files to be processed
@@ -48,6 +49,19 @@ export async function cssTokenResolve(path) {
     const processedFile = replaceVariables(parsedFile, dictionary);
     await exportToCss(processedFile, file.selector, getResolvedFilePath(file.path));
   }
+
+  // export all the above in a `tokens.css` file
+  await fse.outputFile(
+    `${resolvedFilesPath}/tokens.css`,
+    `
+    @import url('base/base.css');
+    @import url('smc/smc-colors.css');
+    @import url('smc/smc-layout.css');
+    @import url('smc/smc-reference.css');
+    @import url('component/component.css');    
+    `,
+    'utf-8'
+  );
 }
 
 // utility function for replacing CSS variables with their values
