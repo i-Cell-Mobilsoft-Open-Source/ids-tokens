@@ -1,0 +1,42 @@
+:root {
+    --ids-comp-spinner-active-indicator-bg-brand-default: light-dark(#003cff, #4775ff);
+    --ids-comp-spinner-active-indicator-bg-error-default: light-dark(#dc2626, #fca5a5);
+    --ids-comp-spinner-active-indicator-bg-light-default: light-dark(#ffffff, #000000);
+    --ids-comp-spinner-active-indicator-bg-primary-default: light-dark(#003cff, #4775ff);
+    --ids-comp-spinner-active-indicator-bg-secondary-default: light-dark(#64748b, #94a3b8);
+    --ids-comp-spinner-active-indicator-bg-success-default: light-dark(#22c55e, #4ade80);
+    --ids-comp-spinner-active-indicator-bg-surface-default: light-dark(#64748b, #64748b);
+    --ids-comp-spinner-active-indicator-bg-warning-default: light-dark(#f97316, #fb923c);
+    --ids-comp-spinner-active-indicator-bigcollection-size-border-radius-comfortable: 1000px;
+    --ids-comp-spinner-active-indicator-bigcollection-size-border-radius-compact: 1000px;
+    --ids-comp-spinner-active-indicator-bigcollection-size-border-radius-dense: 1000px;
+    --ids-comp-spinner-active-indicator-bigcollection-size-border-radius-spacious: 1000px;
+    --ids-comp-spinner-active-indicator-smallcollection-size-border-radius-comfortable: 1000px;
+    --ids-comp-spinner-active-indicator-smallcollection-size-border-radius-compact: 1000px;
+    --ids-comp-spinner-active-indicator-smallcollection-size-border-radius-dense: 1000px;
+    --ids-comp-spinner-active-indicator-smallcollection-size-border-radius-spacious: 1000px;
+    --ids-comp-spinner-bigcollection-size-height-comfortable: 56px;
+    --ids-comp-spinner-bigcollection-size-height-compact: 48px;
+    --ids-comp-spinner-bigcollection-size-height-dense: 40px;
+    --ids-comp-spinner-bigcollection-size-height-spacious: 72px;
+    --ids-comp-spinner-bigcollection-size-width-comfortable: 56px;
+    --ids-comp-spinner-bigcollection-size-width-compact: 48px;
+    --ids-comp-spinner-bigcollection-size-width-dense: 40px;
+    --ids-comp-spinner-bigcollection-size-width-spacious: 72px;
+    --ids-comp-spinner-smallcollection-size-height-comfortable: 24px;
+    --ids-comp-spinner-smallcollection-size-height-compact: 20px;
+    --ids-comp-spinner-smallcollection-size-height-dense: 16px;
+    --ids-comp-spinner-smallcollection-size-height-spacious: 32px;
+    --ids-comp-spinner-smallcollection-size-width-comfortable: 24px;
+    --ids-comp-spinner-smallcollection-size-width-compact: 20px;
+    --ids-comp-spinner-smallcollection-size-width-dense: 16px;
+    --ids-comp-spinner-smallcollection-size-width-spacious: 32px;
+    --ids-comp-spinner-track-bg-brand-default: light-dark(#e2e8f0, #1e293b);
+    --ids-comp-spinner-track-bg-error-default: light-dark(#e2e8f0, #1e293b);
+    --ids-comp-spinner-track-bg-light-default: light-dark(#ffffff33, #ffffff33);
+    --ids-comp-spinner-track-bg-primary-default: light-dark(#e2e8f0, #1e293b);
+    --ids-comp-spinner-track-bg-secondary-default: light-dark(#e2e8f0, #1e293b);
+    --ids-comp-spinner-track-bg-success-default: light-dark(#e2e8f0, #1e293b);
+    --ids-comp-spinner-track-bg-surface-default: light-dark(#e2e8f0, #1e293b);
+    --ids-comp-spinner-track-bg-warning-default: light-dark(#e2e8f0, #1e293b)
+}
