@@ -6,53 +6,49 @@ const files = [
   {
     name: 'base',
     path: 'css/base/base.css',
-    selector: ':root',
   },
   {
     name: 'components',
     path: 'css/component/component.css',
-    selector: ':root',
   },
   {
     name: 'smcColors',
     path: 'css/smc/smc-colors.css',
-    selector: ':root',
+    transformLightDark: true,
   },
   {
     name: 'smcLayout',
     path: 'css/smc/smc-layout.css',
-    selector: ':root',
   },
   {
     name: 'smcReference',
     path: 'css/smc/smc-reference.css',
-    selector: ':root',
   },
 ];
 
-let resolvedFilesPath = 'css-resolved';
-
 export async function cssTokenResolve(path) {
-  if (path) {
-    resolvedFilesPath = path;
+  if (!path) {
+    console.error('❌ No path provided for resolved files!');
+    return;
   }
 
-  const dictionary = files.reduce((list, dict) => {
+  const parsedFiles = files.map((file) => {
     return {
-      ...list,
-      ...loadAndParseCSS(dict.path, dict.selector),
+      ...file,
+      content: file.transformLightDark ? transformLightDark(file.path) : loadAndParseCSS(file.path, ':root'),
     };
-  }, {});
+  });
 
-  for (const file of files) {
-    const parsedFile = loadAndParseCSS(file.path, file.selector);
-    const processedFile = replaceVariables(parsedFile, dictionary);
-    await exportToCss(processedFile, file.selector, getResolvedFilePath(file.path));
+  const dictionary = parsedFiles.reduce((list, dict) => ({ ...list, ...dict.content }), {});
+
+  for (const file of parsedFiles) {
+    const processedFile = replaceVariables(file.content, dictionary);
+    await exportToCss(processedFile, ':root', file.path.replace('css', path));
   }
 
-  // export all the above in a `tokens.css` file
+  // export all the above in a barrel file (`tokens.css`)
   await fse.outputFile(
-    `${resolvedFilesPath}/tokens.css`,
+    `${path}/tokens.css`,
     `
     @import url('base/base.css');
     @import url('smc/smc-colors.css');
@@ -66,12 +62,12 @@ export async function cssTokenResolve(path) {
 
 // utility function for replacing CSS variables with their values
 function replaceVariables(variables, dictionary) {
-  const replaced = {};
-  Object.entries(variables).forEach(([key, value]) => {
-    let resolvedValue = resolve(value, dictionary);
-    replaced[key] = resolvedValue;
-  });
-  return replaced;
+  return Object.entries(variables).reduce((collection, [key, value]) => {
+    return {
+      ...collection,
+      [key]: resolve(value, dictionary),
+    };
+  }, {});
 }
 
 // recursive function for resolving CSS variables: replaces the `var(--var-name)` with the value of the `var(--var-name)` from the dictionary
@@ -89,6 +85,18 @@ function resolve(value, dictionary) {
     });
   }
   return resolvedValue;
+}
+
+// utility function for generating light-dark tokens based on separate light and dark theme classes
+function transformLightDark(path) {
+  const light = loadAndParseCSS(path, '.ids-theme-light');
+  const dark = loadAndParseCSS(path, '.ids-theme-dark');
+  return Object.keys(light).reduce((collection, key) => {
+    return {
+      ...collection,
+      [key]: `light-dark(${light[key]}, ${dark[key]})`,
+    };
+  }, {});
 }
 
 // utility function for generating path for the the resolved file
