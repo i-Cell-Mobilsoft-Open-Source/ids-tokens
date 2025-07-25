@@ -1,18 +1,18 @@
 :root {
-    --ids-comp-sidesheet-backdrop-background-default: undefined;
+    --ids-comp-sidesheet-backdrop-background-default: light-dark(#02061740, #020617b3);
     --ids-comp-sidesheet-backdrop-background-transparent: #ffffff00;
-    --ids-comp-sidesheet-backdrop-orientation-left-size-opacity-comfortable: undefined;
-    --ids-comp-sidesheet-backdrop-orientation-left-size-opacity-compact: undefined;
-    --ids-comp-sidesheet-backdrop-orientation-left-size-opacity-dense: undefined;
-    --ids-comp-sidesheet-backdrop-orientation-left-size-opacity-spacious: undefined;
+    --ids-comp-sidesheet-backdrop-orientation-left-size-opacity-comfortable: 100%;
+    --ids-comp-sidesheet-backdrop-orientation-left-size-opacity-compact: 100%;
+    --ids-comp-sidesheet-backdrop-orientation-left-size-opacity-dense: 100%;
+    --ids-comp-sidesheet-backdrop-orientation-left-size-opacity-spacious: 100%;
     --ids-comp-sidesheet-backdrop-orientation-left-size-padding-right-comfortable: 24px;
     --ids-comp-sidesheet-backdrop-orientation-left-size-padding-right-compact: 24px;
     --ids-comp-sidesheet-backdrop-orientation-left-size-padding-right-dense: 24px;
     --ids-comp-sidesheet-backdrop-orientation-left-size-padding-right-spacious: 24px;
-    --ids-comp-sidesheet-backdrop-orientation-right-size-opacity-comfortable: undefined;
-    --ids-comp-sidesheet-backdrop-orientation-right-size-opacity-compact: undefined;
-    --ids-comp-sidesheet-backdrop-orientation-right-size-opacity-dense: undefined;
-    --ids-comp-sidesheet-backdrop-orientation-right-size-opacity-spacious: undefined;
+    --ids-comp-sidesheet-backdrop-orientation-right-size-opacity-comfortable: 100%;
+    --ids-comp-sidesheet-backdrop-orientation-right-size-opacity-compact: 100%;
+    --ids-comp-sidesheet-backdrop-orientation-right-size-opacity-dense: 100%;
+    --ids-comp-sidesheet-backdrop-orientation-right-size-opacity-spacious: 100%;
     --ids-comp-sidesheet-backdrop-orientation-right-size-padding-left-comfortable: 24px;
     --ids-comp-sidesheet-backdrop-orientation-right-size-padding-left-compact: 24px;
     --ids-comp-sidesheet-backdrop-orientation-right-size-padding-left-dense: 24px;
