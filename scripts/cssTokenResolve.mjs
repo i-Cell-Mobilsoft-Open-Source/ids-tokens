@@ -78,6 +78,9 @@ function resolve(value, dictionary) {
 
   if (match.length) {
     match.forEach((m) => {
+      if (!(m[1] in dictionary)) {
+        console.warn(`⚠️ Missing token: ${m[1]}`);
+      }
       resolvedValue = resolvedValue.replace(m[0], dictionary[m[1]]);
       if (regex.test(resolvedValue)) {
         resolvedValue = resolve(resolvedValue, dictionary);
