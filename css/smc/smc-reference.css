@@ -221,7 +221,9 @@
   --ids-smc-reference-container-color-bg-surface-darker-10: var(--ids-smc-colors-surface-darker-10);
   --ids-smc-reference-container-color-bg-surface-darker-20: var(--ids-smc-colors-surface-darker-20);
   --ids-smc-reference-container-color-bg-surface-darker-30: var(--ids-smc-colors-surface-darker-30);
+  --ids-smc-reference-container-color-bg-surface-darker-40: var(--ids-smc-colors-surface-darker-40);
   --ids-smc-reference-container-color-bg-surface-darker-50: var(--ids-smc-colors-surface-darker-50);
+  --ids-smc-reference-container-color-bg-surface-darker-60: var(--ids-smc-colors-surface-darker-60);
   --ids-smc-reference-container-color-bg-surface-darker-70: var(--ids-smc-colors-surface-darker-70);
   --ids-smc-reference-container-color-bg-surface-darker-80: var(--ids-smc-colors-surface-darker-80);
   --ids-smc-reference-container-color-bg-surface-darker-90: var(--ids-smc-colors-surface-darker-90);
@@ -238,6 +240,7 @@
   --ids-smc-reference-container-color-bg-surface-fixed-darker-80: var(--ids-smc-colors-surface-fixed-darker-80);
   --ids-smc-reference-container-color-bg-surface-fixed-darker-90: var(--ids-smc-colors-surface-fixed-darker-90);
   --ids-smc-reference-container-color-bg-surface-fixed-darker-95: var(--ids-smc-colors-surface-fixed-darker-95);
+  --ids-smc-reference-container-color-bg-surface-fixed-darker-100: var(--ids-smc-colors-surface-fixed-darker-100);
   --ids-smc-reference-container-color-bg-surface-fixed-default: var(--ids-smc-colors-surface-fixed-default);
   --ids-smc-reference-container-color-bg-surface-fixed-lighter-10: var(--ids-smc-colors-surface-fixed-lighter-10);
   --ids-smc-reference-container-color-bg-surface-lighter-10: var(--ids-smc-colors-surface-lighter-10);
@@ -475,7 +478,11 @@
   --ids-smc-reference-container-color-border-surface-darker-30: var(--ids-smc-colors-surface-darker-30);
   --ids-smc-reference-container-color-border-surface-darker-40: var(--ids-smc-colors-surface-darker-40);
   --ids-smc-reference-container-color-border-surface-darker-50: var(--ids-smc-colors-surface-darker-50);
+  --ids-smc-reference-container-color-border-surface-darker-60: var(--ids-smc-colors-surface-darker-60);
   --ids-smc-reference-container-color-border-surface-darker-70: var(--ids-smc-colors-surface-darker-70);
+  --ids-smc-reference-container-color-border-surface-darker-80: var(--ids-smc-colors-surface-darker-80);
+  --ids-smc-reference-container-color-border-surface-darker-90: var(--ids-smc-colors-surface-darker-90);
+  --ids-smc-reference-container-color-border-surface-darker-95: var(--ids-smc-colors-surface-darker-95);
   --ids-smc-reference-container-color-border-surface-darker-100: var(--ids-smc-colors-surface-darker-100);
   --ids-smc-reference-container-color-border-surface-default: var(--ids-smc-colors-surface-default);
   --ids-smc-reference-container-color-border-surface-fixed-darker-10: var(--ids-smc-colors-surface-fixed-darker-10);
@@ -488,6 +495,7 @@
   --ids-smc-reference-container-color-border-surface-fixed-darker-80: var(--ids-smc-colors-surface-fixed-darker-80);
   --ids-smc-reference-container-color-border-surface-fixed-darker-90: var(--ids-smc-colors-surface-fixed-darker-90);
   --ids-smc-reference-container-color-border-surface-fixed-darker-95: var(--ids-smc-colors-surface-fixed-darker-95);
+  --ids-smc-reference-container-color-border-surface-fixed-darker-100: var(--ids-smc-colors-surface-fixed-darker-100);
   --ids-smc-reference-container-color-border-surface-fixed-default: var(--ids-smc-colors-surface-fixed-default);
   --ids-smc-reference-container-color-border-surface-fixed-lighter-10: var(--ids-smc-colors-surface-fixed-lighter-10);
   --ids-smc-reference-container-color-border-surface-lighter-10: var(--ids-smc-colors-surface-lighter-10);
@@ -736,11 +744,16 @@
   --ids-smc-reference-container-color-fg-success-lighter-50: var(--ids-smc-colors-success-lighter-50);
   --ids-smc-reference-container-color-fg-success-lighter-100: var(--ids-smc-colors-surface-lighter-10);
   --ids-smc-reference-container-color-fg-surface-darker-10: var(--ids-smc-colors-surface-darker-10);
+  --ids-smc-reference-container-color-fg-surface-darker-20: var(--ids-smc-colors-surface-darker-20);
+  --ids-smc-reference-container-color-fg-surface-darker-30: var(--ids-smc-colors-surface-darker-30);
   --ids-smc-reference-container-color-fg-surface-darker-40: var(--ids-smc-colors-surface-darker-40);
   --ids-smc-reference-container-color-fg-surface-darker-50: var(--ids-smc-colors-surface-darker-50);
   --ids-smc-reference-container-color-fg-surface-darker-60: var(--ids-smc-colors-surface-darker-60);
   --ids-smc-reference-container-color-fg-surface-darker-70: var(--ids-smc-colors-surface-darker-70);
+  --ids-smc-reference-container-color-fg-surface-darker-80: var(--ids-smc-colors-surface-darker-80);
+  --ids-smc-reference-container-color-fg-surface-darker-90: var(--ids-smc-colors-surface-darker-90);
   --ids-smc-reference-container-color-fg-surface-darker-95: var(--ids-smc-colors-surface-darker-95);
+  --ids-smc-reference-container-color-fg-surface-darker-100: var(--ids-smc-colors-surface-darker-100);
   --ids-smc-reference-container-color-fg-surface-default: var(--ids-smc-colors-surface-default);
   --ids-smc-reference-container-color-fg-surface-fixed-darker-10: var(--ids-smc-colors-surface-fixed-darker-10);
   --ids-smc-reference-container-color-fg-surface-fixed-darker-20: var(--ids-smc-colors-surface-fixed-darker-20);
@@ -752,6 +765,7 @@
   --ids-smc-reference-container-color-fg-surface-fixed-darker-80: var(--ids-smc-colors-surface-fixed-darker-80);
   --ids-smc-reference-container-color-fg-surface-fixed-darker-90: var(--ids-smc-colors-surface-fixed-darker-90);
   --ids-smc-reference-container-color-fg-surface-fixed-darker-95: var(--ids-smc-colors-surface-fixed-darker-95);
+  --ids-smc-reference-container-color-fg-surface-fixed-darker-100: var(--ids-smc-colors-surface-fixed-darker-100);
   --ids-smc-reference-container-color-fg-surface-fixed-default: var(--ids-smc-colors-surface-fixed-default);
   --ids-smc-reference-container-color-fg-surface-fixed-lighter-10: var(--ids-smc-colors-surface-fixed-lighter-10);
   --ids-smc-reference-container-color-fg-surface-lighter-10: var(--ids-smc-colors-surface-lighter-10);
@@ -1178,6 +1192,9 @@
   --ids-smc-reference-page-color-bg-surface-darker-10: var(--ids-smc-colors-surface-darker-10);
   --ids-smc-reference-page-color-bg-surface-darker-20: var(--ids-smc-colors-surface-darker-20);
   --ids-smc-reference-page-color-bg-surface-darker-30: var(--ids-smc-colors-surface-darker-30);
+  --ids-smc-reference-page-color-bg-surface-darker-40: var(--ids-smc-colors-surface-darker-40);
+  --ids-smc-reference-page-color-bg-surface-darker-50: var(--ids-smc-colors-surface-darker-50);
+  --ids-smc-reference-page-color-bg-surface-darker-60: var(--ids-smc-colors-surface-darker-60);
   --ids-smc-reference-page-color-bg-surface-darker-70: var(--ids-smc-colors-surface-darker-70);
   --ids-smc-reference-page-color-bg-surface-darker-80: var(--ids-smc-colors-surface-darker-80);
   --ids-smc-reference-page-color-bg-surface-darker-90: var(--ids-smc-colors-surface-darker-90);
