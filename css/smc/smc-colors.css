@@ -253,6 +253,7 @@
   --ids-smc-colors-surface-fixed-darker-80: var(--ids-base-color-slate-800);
   --ids-smc-colors-surface-fixed-darker-90: var(--ids-base-color-slate-900);
   --ids-smc-colors-surface-fixed-darker-95: var(--ids-base-color-slate-950);
+  --ids-smc-colors-surface-fixed-darker-100: var(--ids-base-color-dark);
   --ids-smc-colors-surface-fixed-default: var(--ids-base-color-slate-50);
   --ids-smc-colors-surface-fixed-lighter-10: var(--ids-base-color-light);
   --ids-smc-colors-surface-lighter-10: var(--ids-base-color-dark);
@@ -537,6 +538,7 @@
   --ids-smc-colors-surface-fixed-darker-80: var(--ids-base-color-slate-800);
   --ids-smc-colors-surface-fixed-darker-90: var(--ids-base-color-slate-900);
   --ids-smc-colors-surface-fixed-darker-95: var(--ids-base-color-slate-950);
+  --ids-smc-colors-surface-fixed-darker-100: var(--ids-base-color-dark);
   --ids-smc-colors-surface-fixed-default: var(--ids-base-color-slate-50);
   --ids-smc-colors-surface-fixed-lighter-10: var(--ids-base-color-light);
   --ids-smc-colors-surface-lighter-10: var(--ids-base-color-light);

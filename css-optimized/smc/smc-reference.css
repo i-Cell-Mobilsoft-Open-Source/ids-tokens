@@ -221,7 +221,9 @@
     --ids-smc-reference-container-color-bg-surface-darker-10: light-dark(#f1f5f9, #0f172a);
     --ids-smc-reference-container-color-bg-surface-darker-20: light-dark(#e2e8f0, #1e293b);
     --ids-smc-reference-container-color-bg-surface-darker-30: light-dark(#cbd5e1, #334155);
+    --ids-smc-reference-container-color-bg-surface-darker-40: light-dark(#94a3b8, #475569);
     --ids-smc-reference-container-color-bg-surface-darker-50: light-dark(#64748b, #64748b);
+    --ids-smc-reference-container-color-bg-surface-darker-60: light-dark(#475569, #94a3b8);
     --ids-smc-reference-container-color-bg-surface-darker-70: light-dark(#334155, #cbd5e1);
     --ids-smc-reference-container-color-bg-surface-darker-80: light-dark(#1e293b, #e2e8f0);
     --ids-smc-reference-container-color-bg-surface-darker-90: light-dark(#0f172a, #f1f5f9);
@@ -238,6 +240,7 @@
     --ids-smc-reference-container-color-bg-surface-fixed-darker-80: light-dark(#1e293b, #1e293b);
     --ids-smc-reference-container-color-bg-surface-fixed-darker-90: light-dark(#0f172a, #0f172a);
     --ids-smc-reference-container-color-bg-surface-fixed-darker-95: light-dark(#020617, #020617);
+    --ids-smc-reference-container-color-bg-surface-fixed-darker-100: light-dark(#000000, #000000);
     --ids-smc-reference-container-color-bg-surface-fixed-default: light-dark(#f8fafc, #f8fafc);
     --ids-smc-reference-container-color-bg-surface-fixed-lighter-10: light-dark(#ffffff, #ffffff);
     --ids-smc-reference-container-color-bg-surface-lighter-10: light-dark(#ffffff, #000000);
@@ -475,7 +478,11 @@
     --ids-smc-reference-container-color-border-surface-darker-30: light-dark(#cbd5e1, #334155);
     --ids-smc-reference-container-color-border-surface-darker-40: light-dark(#94a3b8, #475569);
     --ids-smc-reference-container-color-border-surface-darker-50: light-dark(#64748b, #64748b);
+    --ids-smc-reference-container-color-border-surface-darker-60: light-dark(#475569, #94a3b8);
     --ids-smc-reference-container-color-border-surface-darker-70: light-dark(#334155, #cbd5e1);
+    --ids-smc-reference-container-color-border-surface-darker-80: light-dark(#1e293b, #e2e8f0);
+    --ids-smc-reference-container-color-border-surface-darker-90: light-dark(#0f172a, #f1f5f9);
+    --ids-smc-reference-container-color-border-surface-darker-95: light-dark(#020617, #f8fafc);
     --ids-smc-reference-container-color-border-surface-darker-100: light-dark(#000000, #ffffff);
     --ids-smc-reference-container-color-border-surface-default: light-dark(#f8fafc, #020617);
     --ids-smc-reference-container-color-border-surface-fixed-darker-10: light-dark(#f1f5f9, #f1f5f9);
@@ -488,6 +495,7 @@
     --ids-smc-reference-container-color-border-surface-fixed-darker-80: light-dark(#1e293b, #1e293b);
     --ids-smc-reference-container-color-border-surface-fixed-darker-90: light-dark(#0f172a, #0f172a);
     --ids-smc-reference-container-color-border-surface-fixed-darker-95: light-dark(#020617, #020617);
+    --ids-smc-reference-container-color-border-surface-fixed-darker-100: light-dark(#000000, #000000);
     --ids-smc-reference-container-color-border-surface-fixed-default: light-dark(#f8fafc, #f8fafc);
     --ids-smc-reference-container-color-border-surface-fixed-lighter-10: light-dark(#ffffff, #ffffff);
     --ids-smc-reference-container-color-border-surface-lighter-10: light-dark(#ffffff, #000000);
@@ -736,11 +744,16 @@
     --ids-smc-reference-container-color-fg-success-lighter-50: light-dark(#f0fdf4, #052e16);
     --ids-smc-reference-container-color-fg-success-lighter-100: light-dark(#ffffff, #000000);
     --ids-smc-reference-container-color-fg-surface-darker-10: light-dark(#f1f5f9, #0f172a);
+    --ids-smc-reference-container-color-fg-surface-darker-20: light-dark(#e2e8f0, #1e293b);
+    --ids-smc-reference-container-color-fg-surface-darker-30: light-dark(#cbd5e1, #334155);
     --ids-smc-reference-container-color-fg-surface-darker-40: light-dark(#94a3b8, #475569);
     --ids-smc-reference-container-color-fg-surface-darker-50: light-dark(#64748b, #64748b);
     --ids-smc-reference-container-color-fg-surface-darker-60: light-dark(#475569, #94a3b8);
     --ids-smc-reference-container-color-fg-surface-darker-70: light-dark(#334155, #cbd5e1);
+    --ids-smc-reference-container-color-fg-surface-darker-80: light-dark(#1e293b, #e2e8f0);
+    --ids-smc-reference-container-color-fg-surface-darker-90: light-dark(#0f172a, #f1f5f9);
     --ids-smc-reference-container-color-fg-surface-darker-95: light-dark(#020617, #f8fafc);
+    --ids-smc-reference-container-color-fg-surface-darker-100: light-dark(#000000, #ffffff);
     --ids-smc-reference-container-color-fg-surface-default: light-dark(#f8fafc, #020617);
     --ids-smc-reference-container-color-fg-surface-fixed-darker-10: light-dark(#f1f5f9, #f1f5f9);
     --ids-smc-reference-container-color-fg-surface-fixed-darker-20: light-dark(#e2e8f0, #e2e8f0);
@@ -752,6 +765,7 @@
     --ids-smc-reference-container-color-fg-surface-fixed-darker-80: light-dark(#1e293b, #1e293b);
     --ids-smc-reference-container-color-fg-surface-fixed-darker-90: light-dark(#0f172a, #0f172a);
     --ids-smc-reference-container-color-fg-surface-fixed-darker-95: light-dark(#020617, #020617);
+    --ids-smc-reference-container-color-fg-surface-fixed-darker-100: light-dark(#000000, #000000);
     --ids-smc-reference-container-color-fg-surface-fixed-default: light-dark(#f8fafc, #f8fafc);
     --ids-smc-reference-container-color-fg-surface-fixed-lighter-10: light-dark(#ffffff, #ffffff);
     --ids-smc-reference-container-color-fg-surface-lighter-10: light-dark(#ffffff, #000000);
@@ -1178,6 +1192,9 @@
     --ids-smc-reference-page-color-bg-surface-darker-10: light-dark(#f1f5f9, #0f172a);
     --ids-smc-reference-page-color-bg-surface-darker-20: light-dark(#e2e8f0, #1e293b);
     --ids-smc-reference-page-color-bg-surface-darker-30: light-dark(#cbd5e1, #334155);
+    --ids-smc-reference-page-color-bg-surface-darker-40: light-dark(#94a3b8, #475569);
+    --ids-smc-reference-page-color-bg-surface-darker-50: light-dark(#64748b, #64748b);
+    --ids-smc-reference-page-color-bg-surface-darker-60: light-dark(#475569, #94a3b8);
     --ids-smc-reference-page-color-bg-surface-darker-70: light-dark(#334155, #cbd5e1);
     --ids-smc-reference-page-color-bg-surface-darker-80: light-dark(#1e293b, #e2e8f0);
     --ids-smc-reference-page-color-bg-surface-darker-90: light-dark(#0f172a, #f1f5f9);

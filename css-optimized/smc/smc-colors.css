@@ -253,6 +253,7 @@
     --ids-smc-colors-surface-fixed-darker-80: light-dark(#1e293b, #1e293b);
     --ids-smc-colors-surface-fixed-darker-90: light-dark(#0f172a, #0f172a);
     --ids-smc-colors-surface-fixed-darker-95: light-dark(#020617, #020617);
+    --ids-smc-colors-surface-fixed-darker-100: light-dark(#000000, #000000);
     --ids-smc-colors-surface-fixed-default: light-dark(#f8fafc, #f8fafc);
     --ids-smc-colors-surface-fixed-lighter-10: light-dark(#ffffff, #ffffff);
     --ids-smc-colors-surface-lighter-10: light-dark(#ffffff, #000000);
