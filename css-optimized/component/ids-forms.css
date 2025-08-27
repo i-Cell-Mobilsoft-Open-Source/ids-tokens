@@ -463,6 +463,10 @@
     --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-gap-compact: 4px;
     --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-gap-dense: 4px;
     --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-gap-spacious: 4px;
+    --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-max-height-comfortable: 256px;
+    --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-max-height-compact: 256px;
+    --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-max-height-dense: 256px;
+    --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-max-height-spacious: 256px;
     --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-padding-x-comfortable: 8px;
     --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-padding-x-compact: 8px;
     --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-padding-x-dense: 8px;
