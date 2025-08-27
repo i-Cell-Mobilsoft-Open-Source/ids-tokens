@@ -3333,6 +3333,10 @@
   --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-gap-compact: var(--ids-smc-reference-container-gap-4);
   --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-gap-dense: var(--ids-smc-reference-container-gap-4);
   --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-gap-spacious: var(--ids-smc-reference-container-gap-4);
+  --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-max-height-comfortable: var(--ids-smc-reference-container-size-height-256);
+  --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-max-height-compact: var(--ids-smc-reference-container-size-height-256);
+  --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-max-height-dense: var(--ids-smc-reference-container-size-height-256);
+  --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-max-height-spacious: var(--ids-smc-reference-container-size-height-256);
   --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-padding-x-comfortable: var(--ids-smc-reference-container-padding-8);
   --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-padding-x-compact: var(--ids-smc-reference-container-padding-8);
   --ids-comp-forms-form-field-standard-field-wrapper-select-panel-size-padding-x-dense: var(--ids-smc-reference-container-padding-8);
