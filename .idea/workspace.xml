@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bc4924-bdf1-43e4-b900-71917e0a750f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-optimized/base/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/base/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-optimized/component/component.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-sidesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-sidesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-optimized/smc/smc-colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/smc/smc-colors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-optimized/smc/smc-reference.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/smc/smc-reference.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/component/component.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/component/component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/smc/smc-colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/smc/smc-colors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/smc/smc-reference.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/smc/smc-reference.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/cssTokenResolve.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/cssTokenResolve.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind/smc-reference.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind/smc-reference.mjs" afterDir="false" />
-    </list>
+    <list default="true" id="63bc4924-bdf1-43e4-b900-71917e0a750f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
