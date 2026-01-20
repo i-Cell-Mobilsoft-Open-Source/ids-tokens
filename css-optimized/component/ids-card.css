@@ -145,7 +145,7 @@
     --ids-comp-card-elevated-color-border-surface-dragged: light-dark(#cbd5e1, #cbd5e1);
     --ids-comp-card-elevated-color-border-surface-focused: light-dark(#000000, #ffffff);
     --ids-comp-card-elevated-color-border-surface-hovered: light-dark(#cbd5e1, #cbd5e1);
-    --ids-comp-card-elevated-color-border-surface-pressed: light-dark(#64748b, #64748b);
+    --ids-comp-card-elevated-color-border-surface-pressed: light-dark(#64748b, #94a3b8);
     --ids-comp-card-elevated-color-border-warning-default: light-dark(#fed7aa, #9a3412);
     --ids-comp-card-elevated-color-border-warning-dragged: light-dark(#fdba74, #c2410c);
     --ids-comp-card-elevated-color-border-warning-focused: light-dark(#000000, #ffffff);
@@ -257,7 +257,7 @@
     --ids-comp-card-filled-color-border-surface-dragged: light-dark(#cbd5e1, #cbd5e1);
     --ids-comp-card-filled-color-border-surface-focused: light-dark(#e2e8f0, #1e293b);
     --ids-comp-card-filled-color-border-surface-hovered: light-dark(#cbd5e1, #cbd5e1);
-    --ids-comp-card-filled-color-border-surface-pressed: light-dark(#64748b, #64748b);
+    --ids-comp-card-filled-color-border-surface-pressed: light-dark(#64748b, #94a3b8);
     --ids-comp-card-filled-color-border-warning-default: light-dark(#fed7aa, #9a3412);
     --ids-comp-card-filled-color-border-warning-dragged: light-dark(#fdba74, #c2410c);
     --ids-comp-card-filled-color-border-warning-focused: light-dark(#fed7aa, #9a3412);

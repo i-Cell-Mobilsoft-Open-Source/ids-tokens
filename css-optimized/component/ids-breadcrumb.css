@@ -4,7 +4,7 @@
     --ids-comp-breadcrumb-current-page-bg-surface-default: #ffffff00;
     --ids-comp-breadcrumb-current-page-fg-light-default: light-dark(#fffffff2, #fffffff2);
     --ids-comp-breadcrumb-current-page-fg-primary-default: light-dark(#003cff, #4775ff);
-    --ids-comp-breadcrumb-current-page-fg-surface-default: light-dark(#334155, #cbd5e1);
+    --ids-comp-breadcrumb-current-page-fg-surface-default: light-dark(#334155, #e2e8f0);
     --ids-comp-breadcrumb-current-page-size-max-width-comfortable: 128px;
     --ids-comp-breadcrumb-current-page-size-max-width-compact: 112px;
     --ids-comp-breadcrumb-current-page-size-max-width-dense: 96px;
@@ -39,7 +39,7 @@
     --ids-comp-breadcrumb-current-page-typography-line-height-spacious: 24px;
     --ids-comp-breadcrumb-divider-foreslash-fg-light-default: light-dark(#fffffff2, #fffffff2);
     --ids-comp-breadcrumb-divider-foreslash-fg-primary-default: light-dark(#003cff, #4775ff);
-    --ids-comp-breadcrumb-divider-foreslash-fg-surface-default: light-dark(#64748b, #64748b);
+    --ids-comp-breadcrumb-divider-foreslash-fg-surface-default: light-dark(#64748b, #94a3b8);
     --ids-comp-breadcrumb-divider-foreslash-typography-font-family-comfortable: Montserrat;
     --ids-comp-breadcrumb-divider-foreslash-typography-font-family-compact: Montserrat;
     --ids-comp-breadcrumb-divider-foreslash-typography-font-family-dense: Montserrat;
@@ -107,7 +107,7 @@
     --ids-comp-breadcrumb-navigation-link-fg-primary-focused: light-dark(#002fbd, #a3baff);
     --ids-comp-breadcrumb-navigation-link-fg-primary-hovered: light-dark(#002fbd, #a3baff);
     --ids-comp-breadcrumb-navigation-link-fg-primary-pressed: light-dark(#00248f, #d1ddff);
-    --ids-comp-breadcrumb-navigation-link-fg-surface-default: light-dark(#64748b, #64748b);
+    --ids-comp-breadcrumb-navigation-link-fg-surface-default: light-dark(#64748b, #94a3b8);
     --ids-comp-breadcrumb-navigation-link-fg-surface-disabled: light-dark(#648cb440, #ffffff40);
     --ids-comp-breadcrumb-navigation-link-fg-surface-focused: light-dark(#020617, #f8fafc);
     --ids-comp-breadcrumb-navigation-link-fg-surface-hovered: light-dark(#020617, #f8fafc);

@@ -355,8 +355,12 @@
   --ids-base-dimension-1280: 128px;
   --ids-base-dimension-2560: 256px;
   --ids-base-dimension-3200: 320px;
+  --ids-base-dimension-3600: 360px;
   --ids-base-dimension-4000: 400px;
+  --ids-base-dimension-4400: 440px;
+  --ids-base-dimension-4800: 480px;
   --ids-base-dimension-5120: 512px;
+  --ids-base-dimension-5600: 560px;
   --ids-base-dimension-6000: 600px;
   --ids-base-dimension-8000: 800px;
   --ids-base-dimension-10000: 1000px;
@@ -401,9 +405,11 @@
   --ids-base-percentage--15: -1.5%;
   --ids-base-percentage--025: -0.25%;
   --ids-base-percentage--050: -0.5%;
+  --ids-base-typography-font-family-heroicons: I-DS-font-icon-hero;
   --ids-base-typography-font-family-idsfonticon: I-DS-font-icon-default;
   --ids-base-typography-font-family-materialicons: I-DS-font-icon-material;
   --ids-base-typography-font-family-montserrat: Montserrat;
+  --ids-base-typography-font-family-remixicons: I-DS-font-icon-remix;
   --ids-base-typography-weight-100: 100;
   --ids-base-typography-weight-200: 200;
   --ids-base-typography-weight-300: 300;

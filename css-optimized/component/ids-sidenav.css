@@ -56,10 +56,10 @@
     --ids-comp-sidenav-navitem-expandable-summary-focused-outline-size-outline-compact: 3px;
     --ids-comp-sidenav-navitem-expandable-summary-focused-outline-size-outline-dense: 3px;
     --ids-comp-sidenav-navitem-expandable-summary-focused-outline-size-outline-spacious: 3px;
-    --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-family-comfortable: I-DS-font-icon-default;
-    --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-family-compact: I-DS-font-icon-default;
-    --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-family-dense: I-DS-font-icon-default;
-    --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-family-spacious: I-DS-font-icon-default;
+    --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-family-comfortable: I-DS-font-icon-material;
+    --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-family-compact: I-DS-font-icon-material;
+    --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-family-dense: I-DS-font-icon-material;
+    --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-family-spacious: I-DS-font-icon-material;
     --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-size-comfortable: 18px;
     --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-size-compact: 16px;
     --ids-comp-sidenav-navitem-expandable-summary-icon-typography-font-size-dense: 14px;
@@ -151,7 +151,7 @@
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-icon-light-hovered: light-dark(#ffffff, #ffffff);
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-icon-light-pressed: light-dark(#ffffff, #ffffff);
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-icon-surface-active: light-dark(#003cff, #4775ff);
-    --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-icon-surface-default: light-dark(#475569, #94a3b8);
+    --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-icon-surface-default: light-dark(#475569, #cbd5e1);
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-icon-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-icon-surface-focused: light-dark(#003cff, #4775ff);
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-icon-surface-hovered: light-dark(#003cff, #4775ff);
@@ -163,7 +163,7 @@
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-label-light-hovered: light-dark(#ffffff, #ffffff);
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-label-light-pressed: light-dark(#ffffff, #ffffff);
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-label-surface-active: light-dark(#003cff, #4775ff);
-    --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-label-surface-default: light-dark(#475569, #94a3b8);
+    --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-label-surface-default: light-dark(#475569, #cbd5e1);
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-label-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-label-surface-focused: light-dark(#003cff, #4775ff);
     --ids-comp-sidenav-navitem-expandable-summary-standard-color-fg-label-surface-hovered: light-dark(#003cff, #4775ff);
@@ -188,10 +188,10 @@
     --ids-comp-sidenav-navitem-single-focused-outline-size-outline-compact: 3px;
     --ids-comp-sidenav-navitem-single-focused-outline-size-outline-dense: 3px;
     --ids-comp-sidenav-navitem-single-focused-outline-size-outline-spacious: 3px;
-    --ids-comp-sidenav-navitem-single-icon-typography-font-family-comfortable: I-DS-font-icon-default;
-    --ids-comp-sidenav-navitem-single-icon-typography-font-family-compact: I-DS-font-icon-default;
-    --ids-comp-sidenav-navitem-single-icon-typography-font-family-dense: I-DS-font-icon-default;
-    --ids-comp-sidenav-navitem-single-icon-typography-font-family-spacious: I-DS-font-icon-default;
+    --ids-comp-sidenav-navitem-single-icon-typography-font-family-comfortable: I-DS-font-icon-material;
+    --ids-comp-sidenav-navitem-single-icon-typography-font-family-compact: I-DS-font-icon-material;
+    --ids-comp-sidenav-navitem-single-icon-typography-font-family-dense: I-DS-font-icon-material;
+    --ids-comp-sidenav-navitem-single-icon-typography-font-family-spacious: I-DS-font-icon-material;
     --ids-comp-sidenav-navitem-single-icon-typography-font-size-comfortable: 18px;
     --ids-comp-sidenav-navitem-single-icon-typography-font-size-compact: 16px;
     --ids-comp-sidenav-navitem-single-icon-typography-font-size-dense: 14px;
@@ -283,7 +283,7 @@
     --ids-comp-sidenav-navitem-single-standard-color-fg-icon-light-hovered: light-dark(#ffffff, #ffffff);
     --ids-comp-sidenav-navitem-single-standard-color-fg-icon-light-pressed: light-dark(#ffffff, #ffffff);
     --ids-comp-sidenav-navitem-single-standard-color-fg-icon-surface-active: light-dark(#003cff, #4775ff);
-    --ids-comp-sidenav-navitem-single-standard-color-fg-icon-surface-default: light-dark(#475569, #94a3b8);
+    --ids-comp-sidenav-navitem-single-standard-color-fg-icon-surface-default: light-dark(#475569, #cbd5e1);
     --ids-comp-sidenav-navitem-single-standard-color-fg-icon-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-sidenav-navitem-single-standard-color-fg-icon-surface-focused: light-dark(#003cff, #4775ff);
     --ids-comp-sidenav-navitem-single-standard-color-fg-icon-surface-hovered: light-dark(#003cff, #4775ff);
@@ -295,7 +295,7 @@
     --ids-comp-sidenav-navitem-single-standard-color-fg-label-light-hovered: light-dark(#ffffff, #ffffff);
     --ids-comp-sidenav-navitem-single-standard-color-fg-label-light-pressed: light-dark(#ffffff, #ffffff);
     --ids-comp-sidenav-navitem-single-standard-color-fg-label-surface-active: light-dark(#003cff, #4775ff);
-    --ids-comp-sidenav-navitem-single-standard-color-fg-label-surface-default: light-dark(#475569, #94a3b8);
+    --ids-comp-sidenav-navitem-single-standard-color-fg-label-surface-default: light-dark(#475569, #cbd5e1);
     --ids-comp-sidenav-navitem-single-standard-color-fg-label-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-sidenav-navitem-single-standard-color-fg-label-surface-focused: light-dark(#003cff, #4775ff);
     --ids-comp-sidenav-navitem-single-standard-color-fg-label-surface-hovered: light-dark(#003cff, #4775ff);

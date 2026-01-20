@@ -1,0 +1,18 @@
+:root {
+    --ids-comp-scrollbar-size-border-radius-comfortable: 8px;
+    --ids-comp-scrollbar-size-border-radius-compact: 8px;
+    --ids-comp-scrollbar-size-border-radius-dense: 8px;
+    --ids-comp-scrollbar-size-border-radius-spacious: 8px;
+    --ids-comp-scrollbar-size-height-comfortable: 64px;
+    --ids-comp-scrollbar-size-height-compact: 64px;
+    --ids-comp-scrollbar-size-height-dense: 64px;
+    --ids-comp-scrollbar-size-height-spacious: 64px;
+    --ids-comp-scrollbar-size-padding-comfortable: 6px;
+    --ids-comp-scrollbar-size-padding-compact: 4px;
+    --ids-comp-scrollbar-size-padding-dense: 4px;
+    --ids-comp-scrollbar-size-padding-spacious: 6px;
+    --ids-comp-scrollbar-size-width-comfortable: 16px;
+    --ids-comp-scrollbar-size-width-compact: 8px;
+    --ids-comp-scrollbar-size-width-dense: 8px;
+    --ids-comp-scrollbar-size-width-spacious: 16px
+}

@@ -40,7 +40,7 @@
     --ids-comp-menu-item-filled-color-fg-icon-light-fixed-hovered: light-dark(#003cff, #4775ff);
     --ids-comp-menu-item-filled-color-fg-icon-light-fixed-pressed: light-dark(#003cff, #4775ff);
     --ids-comp-menu-item-filled-color-fg-icon-surface-active: light-dark(#003cff, #4775ff);
-    --ids-comp-menu-item-filled-color-fg-icon-surface-default: light-dark(#334155, #cbd5e1);
+    --ids-comp-menu-item-filled-color-fg-icon-surface-default: light-dark(#334155, #e2e8f0);
     --ids-comp-menu-item-filled-color-fg-icon-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-menu-item-filled-color-fg-icon-surface-focused: light-dark(#003cff, #4775ff);
     --ids-comp-menu-item-filled-color-fg-icon-surface-hovered: light-dark(#003cff, #4775ff);
@@ -52,7 +52,7 @@
     --ids-comp-menu-item-filled-color-fg-label-light-fixed-hovered: light-dark(#003cff, #4775ff);
     --ids-comp-menu-item-filled-color-fg-label-light-fixed-pressed: light-dark(#003cff, #4775ff);
     --ids-comp-menu-item-filled-color-fg-label-surface-active: light-dark(#003cff, #4775ff);
-    --ids-comp-menu-item-filled-color-fg-label-surface-default: light-dark(#334155, #cbd5e1);
+    --ids-comp-menu-item-filled-color-fg-label-surface-default: light-dark(#334155, #e2e8f0);
     --ids-comp-menu-item-filled-color-fg-label-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-menu-item-filled-color-fg-label-surface-focused: light-dark(#003cff, #4775ff);
     --ids-comp-menu-item-filled-color-fg-label-surface-hovered: light-dark(#003cff, #4775ff);
@@ -63,10 +63,10 @@
     --ids-comp-menu-item-focused-outline-size-outline-compact: 3px;
     --ids-comp-menu-item-focused-outline-size-outline-dense: 3px;
     --ids-comp-menu-item-focused-outline-size-outline-spacious: 3px;
-    --ids-comp-menu-item-icon-typography-font-family-comfortable: I-DS-font-icon-default;
-    --ids-comp-menu-item-icon-typography-font-family-compact: I-DS-font-icon-default;
-    --ids-comp-menu-item-icon-typography-font-family-dense: I-DS-font-icon-default;
-    --ids-comp-menu-item-icon-typography-font-family-spacious: I-DS-font-icon-default;
+    --ids-comp-menu-item-icon-typography-font-family-comfortable: I-DS-font-icon-material;
+    --ids-comp-menu-item-icon-typography-font-family-compact: I-DS-font-icon-material;
+    --ids-comp-menu-item-icon-typography-font-family-dense: I-DS-font-icon-material;
+    --ids-comp-menu-item-icon-typography-font-family-spacious: I-DS-font-icon-material;
     --ids-comp-menu-item-icon-typography-font-size-comfortable: 24px;
     --ids-comp-menu-item-icon-typography-font-size-compact: 20px;
     --ids-comp-menu-item-icon-typography-font-size-dense: 16px;
@@ -158,7 +158,7 @@
     --ids-comp-menu-item-text-color-fg-icon-light-hovered: light-dark(#4775ff, #003beb);
     --ids-comp-menu-item-text-color-fg-icon-light-pressed: light-dark(#4775ff, #003beb);
     --ids-comp-menu-item-text-color-fg-icon-surface-active: light-dark(#003cff, #4775ff);
-    --ids-comp-menu-item-text-color-fg-icon-surface-default: light-dark(#475569, #94a3b8);
+    --ids-comp-menu-item-text-color-fg-icon-surface-default: light-dark(#475569, #cbd5e1);
     --ids-comp-menu-item-text-color-fg-icon-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-menu-item-text-color-fg-icon-surface-focused: light-dark(#003cff, #4775ff);
     --ids-comp-menu-item-text-color-fg-icon-surface-hovered: light-dark(#003cff, #4775ff);
@@ -170,7 +170,7 @@
     --ids-comp-menu-item-text-color-fg-label-light-hovered: light-dark(#4775ff, #003beb);
     --ids-comp-menu-item-text-color-fg-label-light-pressed: light-dark(#4775ff, #003beb);
     --ids-comp-menu-item-text-color-fg-label-surface-active: light-dark(#003cff, #4775ff);
-    --ids-comp-menu-item-text-color-fg-label-surface-default: light-dark(#475569, #94a3b8);
+    --ids-comp-menu-item-text-color-fg-label-surface-default: light-dark(#475569, #cbd5e1);
     --ids-comp-menu-item-text-color-fg-label-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-menu-item-text-color-fg-label-surface-focused: light-dark(#003cff, #4775ff);
     --ids-comp-menu-item-text-color-fg-label-surface-hovered: light-dark(#003cff, #4775ff);

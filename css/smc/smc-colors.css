@@ -235,10 +235,10 @@
   --ids-smc-colors-surface-darker-20: var(--ids-base-color-slate-800);
   --ids-smc-colors-surface-darker-30: var(--ids-base-color-slate-700);
   --ids-smc-colors-surface-darker-40: var(--ids-base-color-slate-600);
-  --ids-smc-colors-surface-darker-50: var(--ids-base-color-slate-500);
-  --ids-smc-colors-surface-darker-60: var(--ids-base-color-slate-400);
-  --ids-smc-colors-surface-darker-70: var(--ids-base-color-slate-300);
-  --ids-smc-colors-surface-darker-80: var(--ids-base-color-slate-200);
+  --ids-smc-colors-surface-darker-50: var(--ids-base-color-slate-400);
+  --ids-smc-colors-surface-darker-60: var(--ids-base-color-slate-300);
+  --ids-smc-colors-surface-darker-70: var(--ids-base-color-slate-200);
+  --ids-smc-colors-surface-darker-80: var(--ids-base-color-slate-100);
   --ids-smc-colors-surface-darker-90: var(--ids-base-color-slate-100);
   --ids-smc-colors-surface-darker-95: var(--ids-base-color-slate-50);
   --ids-smc-colors-surface-darker-100: var(--ids-base-color-light);
@@ -257,8 +257,10 @@
   --ids-smc-colors-surface-fixed-default: var(--ids-base-color-slate-50);
   --ids-smc-colors-surface-fixed-lighter-10: var(--ids-base-color-light);
   --ids-smc-colors-surface-lighter-10: var(--ids-base-color-dark);
+  --ids-smc-colors-surface-variant-darker-10: var(--ids-base-color-slate-800);
   --ids-smc-colors-surface-variant-default: var(--ids-base-color-slate-600);
   --ids-smc-colors-surface-variant-lighter-30: var(--ids-base-color-slate-500);
+  --ids-smc-colors-surface-variant-lighter-40: var(--ids-base-color-slate-800);
   --ids-smc-colors-warning-darker-10: var(--ids-base-color-orange-300);
   --ids-smc-colors-warning-darker-20: var(--ids-base-color-orange-200);
   --ids-smc-colors-warning-darker-30: var(--ids-base-color-orange-100);
@@ -542,8 +544,10 @@
   --ids-smc-colors-surface-fixed-default: var(--ids-base-color-slate-50);
   --ids-smc-colors-surface-fixed-lighter-10: var(--ids-base-color-light);
   --ids-smc-colors-surface-lighter-10: var(--ids-base-color-light);
+  --ids-smc-colors-surface-variant-darker-10: var(--ids-base-color-slate-50);
   --ids-smc-colors-surface-variant-default: var(--ids-base-color-slate-50);
   --ids-smc-colors-surface-variant-lighter-30: var(--ids-base-color-light);
+  --ids-smc-colors-surface-variant-lighter-40: var(--ids-base-color-light);
   --ids-smc-colors-warning-darker-10: var(--ids-base-color-orange-600);
   --ids-smc-colors-warning-darker-20: var(--ids-base-color-orange-700);
   --ids-smc-colors-warning-darker-30: var(--ids-base-color-orange-800);

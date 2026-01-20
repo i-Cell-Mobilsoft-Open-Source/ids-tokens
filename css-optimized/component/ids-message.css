@@ -7,7 +7,7 @@
     --ids-comp-message-color-fg-icon-light-disabled: light-dark(#ffffff80, #ffffff80);
     --ids-comp-message-color-fg-icon-light-error-default: light-dark(#f87171, #dc2626);
     --ids-comp-message-color-fg-icon-light-success-default: light-dark(#22c55e, #4ade80);
-    --ids-comp-message-color-fg-icon-surface-default: light-dark(#64748b, #64748b);
+    --ids-comp-message-color-fg-icon-surface-default: light-dark(#64748b, #94a3b8);
     --ids-comp-message-color-fg-icon-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-message-color-fg-icon-surface-error-default: light-dark(#dc2626, #fca5a5);
     --ids-comp-message-color-fg-icon-surface-success-default: light-dark(#15803d, #bbf7d0);
@@ -19,14 +19,14 @@
     --ids-comp-message-color-fg-text-light-disabled: light-dark(#ffffff80, #ffffff80);
     --ids-comp-message-color-fg-text-light-error-default: light-dark(#f87171, #dc2626);
     --ids-comp-message-color-fg-text-light-success-default: light-dark(#22c55e, #4ade80);
-    --ids-comp-message-color-fg-text-surface-default: light-dark(#64748b, #64748b);
+    --ids-comp-message-color-fg-text-surface-default: light-dark(#64748b, #94a3b8);
     --ids-comp-message-color-fg-text-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-message-color-fg-text-surface-error-default: light-dark(#dc2626, #fca5a5);
     --ids-comp-message-color-fg-text-surface-success-default: light-dark(#15803d, #bbf7d0);
-    --ids-comp-message-icon-typography-font-family-comfortable: I-DS-font-icon-default;
-    --ids-comp-message-icon-typography-font-family-compact: I-DS-font-icon-default;
-    --ids-comp-message-icon-typography-font-family-dense: I-DS-font-icon-default;
-    --ids-comp-message-icon-typography-font-family-spacious: I-DS-font-icon-default;
+    --ids-comp-message-icon-typography-font-family-comfortable: I-DS-font-icon-material;
+    --ids-comp-message-icon-typography-font-family-compact: I-DS-font-icon-material;
+    --ids-comp-message-icon-typography-font-family-dense: I-DS-font-icon-material;
+    --ids-comp-message-icon-typography-font-family-spacious: I-DS-font-icon-material;
     --ids-comp-message-icon-typography-font-size-comfortable: 12px;
     --ids-comp-message-icon-typography-font-size-compact: 12px;
     --ids-comp-message-icon-typography-font-size-dense: 12px;

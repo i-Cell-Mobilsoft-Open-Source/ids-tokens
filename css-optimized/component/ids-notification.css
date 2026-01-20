@@ -106,10 +106,10 @@
     --ids-comp-notification-icon-size-padding-right-compact: 8px;
     --ids-comp-notification-icon-size-padding-right-dense: 8px;
     --ids-comp-notification-icon-size-padding-right-spacious: 8px;
-    --ids-comp-notification-icon-typography-font-family-comfortable: I-DS-font-icon-default;
-    --ids-comp-notification-icon-typography-font-family-compact: I-DS-font-icon-default;
-    --ids-comp-notification-icon-typography-font-family-dense: I-DS-font-icon-default;
-    --ids-comp-notification-icon-typography-font-family-spacious: I-DS-font-icon-default;
+    --ids-comp-notification-icon-typography-font-family-comfortable: I-DS-font-icon-material;
+    --ids-comp-notification-icon-typography-font-family-compact: I-DS-font-icon-material;
+    --ids-comp-notification-icon-typography-font-family-dense: I-DS-font-icon-material;
+    --ids-comp-notification-icon-typography-font-family-spacious: I-DS-font-icon-material;
     --ids-comp-notification-icon-typography-font-size-comfortable: 24px;
     --ids-comp-notification-icon-typography-font-size-compact: 24px;
     --ids-comp-notification-icon-typography-font-size-dense: 24px;
@@ -182,7 +182,7 @@
     --ids-comp-notification-outlined-color-border-info-default: light-dark(#3b82f6, #60a5fa);
     --ids-comp-notification-outlined-color-border-light-default: light-dark(#ffffff, #ffffff);
     --ids-comp-notification-outlined-color-border-success-default: light-dark(#22c55e, #4ade80);
-    --ids-comp-notification-outlined-color-border-surface-default: light-dark(#64748b, #64748b);
+    --ids-comp-notification-outlined-color-border-surface-default: light-dark(#64748b, #94a3b8);
     --ids-comp-notification-outlined-color-border-warning-default: light-dark(#f97316, #fb923c);
     --ids-comp-notification-outlined-color-fg-icon-dark-default: light-dark(#020617, #f8fafc);
     --ids-comp-notification-outlined-color-fg-icon-error-default: light-dark(#ef4444, #f87171);
