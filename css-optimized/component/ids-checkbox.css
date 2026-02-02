@@ -93,10 +93,10 @@
     --ids-comp-checkbox-group-vertical-list-size-padding-y-compact: 0px;
     --ids-comp-checkbox-group-vertical-list-size-padding-y-dense: 0px;
     --ids-comp-checkbox-group-vertical-list-size-padding-y-spacious: 0px;
-    --ids-comp-checkbox-input-icon-typography-font-family-comfortable: I-DS-font-icon-material;
-    --ids-comp-checkbox-input-icon-typography-font-family-compact: I-DS-font-icon-material;
-    --ids-comp-checkbox-input-icon-typography-font-family-dense: I-DS-font-icon-material;
-    --ids-comp-checkbox-input-icon-typography-font-family-spacious: I-DS-font-icon-material;
+    --ids-comp-checkbox-input-icon-typography-font-family-comfortable: "Material Icons";
+    --ids-comp-checkbox-input-icon-typography-font-family-compact: "Material Icons";
+    --ids-comp-checkbox-input-icon-typography-font-family-dense: "Material Icons";
+    --ids-comp-checkbox-input-icon-typography-font-family-spacious: "Material Icons";
     --ids-comp-checkbox-input-icon-typography-font-size-comfortable: 24px;
     --ids-comp-checkbox-input-icon-typography-font-size-compact: 20px;
     --ids-comp-checkbox-input-icon-typography-font-size-dense: 12px;

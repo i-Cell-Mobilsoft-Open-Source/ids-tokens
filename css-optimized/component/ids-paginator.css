@@ -53,10 +53,10 @@
     --ids-comp-paginator-page-links-focused-outline-size-outline-compact: 3px;
     --ids-comp-paginator-page-links-focused-outline-size-outline-dense: 3px;
     --ids-comp-paginator-page-links-focused-outline-size-outline-spacious: 3px;
-    --ids-comp-paginator-page-links-icon-typography-font-family-comfortable: I-DS-font-icon-material;
-    --ids-comp-paginator-page-links-icon-typography-font-family-compact: I-DS-font-icon-material;
-    --ids-comp-paginator-page-links-icon-typography-font-family-dense: I-DS-font-icon-material;
-    --ids-comp-paginator-page-links-icon-typography-font-family-spacious: I-DS-font-icon-material;
+    --ids-comp-paginator-page-links-icon-typography-font-family-comfortable: "Material Icons";
+    --ids-comp-paginator-page-links-icon-typography-font-family-compact: "Material Icons";
+    --ids-comp-paginator-page-links-icon-typography-font-family-dense: "Material Icons";
+    --ids-comp-paginator-page-links-icon-typography-font-family-spacious: "Material Icons";
     --ids-comp-paginator-page-links-icon-typography-font-size-comfortable: 24px;
     --ids-comp-paginator-page-links-icon-typography-font-size-compact: 20px;
     --ids-comp-paginator-page-links-icon-typography-font-size-dense: 20px;

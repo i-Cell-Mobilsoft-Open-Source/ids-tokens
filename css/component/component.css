@@ -4279,6 +4279,14 @@
   --ids-comp-icon-typography-font-family-font-family-default-compact: var(--ids-smc-reference-typography-iconset-default);
   --ids-comp-icon-typography-font-family-font-family-default-dense: var(--ids-smc-reference-typography-iconset-default);
   --ids-comp-icon-typography-font-family-font-family-default-spacious: var(--ids-smc-reference-typography-iconset-default);
+  --ids-comp-icon-typography-font-family-font-family-idsbase-comfortable: var(--ids-smc-reference-typography-iconset-idsbase);
+  --ids-comp-icon-typography-font-family-font-family-idsbase-compact: var(--ids-smc-reference-typography-iconset-idsbase);
+  --ids-comp-icon-typography-font-family-font-family-idsbase-dense: var(--ids-smc-reference-typography-iconset-idsbase);
+  --ids-comp-icon-typography-font-family-font-family-idsbase-spacious: var(--ids-smc-reference-typography-iconset-idsbase);
+  --ids-comp-icon-typography-font-family-font-family-unique-comfortable: var(--ids-smc-reference-typography-iconset-unique);
+  --ids-comp-icon-typography-font-family-font-family-unique-compact: var(--ids-smc-reference-typography-iconset-unique);
+  --ids-comp-icon-typography-font-family-font-family-unique-dense: var(--ids-smc-reference-typography-iconset-unique);
+  --ids-comp-icon-typography-font-family-font-family-unique-spacious: var(--ids-smc-reference-typography-iconset-unique);
   --ids-comp-icon-typography-smallcollection-font-size-comfortable: var(--ids-smc-reference-typography-font-size-20);
   --ids-comp-icon-typography-smallcollection-font-size-compact: var(--ids-smc-reference-typography-font-size-16);
   --ids-comp-icon-typography-smallcollection-font-size-dense: var(--ids-smc-reference-typography-font-size-12);

@@ -106,10 +106,10 @@
     --ids-comp-notification-icon-size-padding-right-compact: 8px;
     --ids-comp-notification-icon-size-padding-right-dense: 8px;
     --ids-comp-notification-icon-size-padding-right-spacious: 8px;
-    --ids-comp-notification-icon-typography-font-family-comfortable: I-DS-font-icon-material;
-    --ids-comp-notification-icon-typography-font-family-compact: I-DS-font-icon-material;
-    --ids-comp-notification-icon-typography-font-family-dense: I-DS-font-icon-material;
-    --ids-comp-notification-icon-typography-font-family-spacious: I-DS-font-icon-material;
+    --ids-comp-notification-icon-typography-font-family-comfortable: "Material Icons";
+    --ids-comp-notification-icon-typography-font-family-compact: "Material Icons";
+    --ids-comp-notification-icon-typography-font-family-dense: "Material Icons";
+    --ids-comp-notification-icon-typography-font-family-spacious: "Material Icons";
     --ids-comp-notification-icon-typography-font-size-comfortable: 24px;
     --ids-comp-notification-icon-typography-font-size-compact: 24px;
     --ids-comp-notification-icon-typography-font-size-dense: 24px;

@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bc4924-bdf1-43e4-b900-71917e0a750f" name="Changes" comment="" />
+    <list default="true" id="63bc4924-bdf1-43e4-b900-71917e0a750f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/base/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/base/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/component.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-avatar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-badge.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-badge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-checkbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-checkbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-chip.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-chip.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-fab.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-fab.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-forms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-icon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-message.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-message.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-notification.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-notification.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-paginator.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-paginator.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-progressbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-segmented.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-segmented.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-sidenav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-sidenav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-snackbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-snackbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-switch.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-switch.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-tab.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-tab.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-tag.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-tag.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/component/ids-user.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/component/ids-user.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-optimized/smc/smc-reference.css" beforeDir="false" afterPath="$PROJECT_DIR$/css-optimized/smc/smc-reference.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/component/component.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/component/component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/smc/smc-reference.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/smc/smc-reference.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

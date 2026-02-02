@@ -39,10 +39,10 @@
     --ids-comp-badge-filled-color-fg-label-success-default: light-dark(#ffffff, #000000);
     --ids-comp-badge-filled-color-fg-label-surface-default: light-dark(#64748b, #94a3b8);
     --ids-comp-badge-filled-color-fg-label-warning-default: light-dark(#ffffff, #000000);
-    --ids-comp-badge-icon-typography-font-family-comfortable: I-DS-font-icon-material;
-    --ids-comp-badge-icon-typography-font-family-compact: I-DS-font-icon-material;
-    --ids-comp-badge-icon-typography-font-family-dense: I-DS-font-icon-material;
-    --ids-comp-badge-icon-typography-font-family-spacious: I-DS-font-icon-material;
+    --ids-comp-badge-icon-typography-font-family-comfortable: "Material Icons";
+    --ids-comp-badge-icon-typography-font-family-compact: "Material Icons";
+    --ids-comp-badge-icon-typography-font-family-dense: "Material Icons";
+    --ids-comp-badge-icon-typography-font-family-spacious: "Material Icons";
     --ids-comp-badge-icon-typography-font-size-comfortable: 12px;
     --ids-comp-badge-icon-typography-font-size-compact: 12px;
     --ids-comp-badge-icon-typography-font-size-dense: 12px;

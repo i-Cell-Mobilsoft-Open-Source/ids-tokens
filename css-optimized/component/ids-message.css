@@ -23,10 +23,10 @@
     --ids-comp-message-color-fg-text-surface-disabled: light-dark(#94a3b8, #475569);
     --ids-comp-message-color-fg-text-surface-error-default: light-dark(#dc2626, #fca5a5);
     --ids-comp-message-color-fg-text-surface-success-default: light-dark(#15803d, #bbf7d0);
-    --ids-comp-message-icon-typography-font-family-comfortable: I-DS-font-icon-material;
-    --ids-comp-message-icon-typography-font-family-compact: I-DS-font-icon-material;
-    --ids-comp-message-icon-typography-font-family-dense: I-DS-font-icon-material;
-    --ids-comp-message-icon-typography-font-family-spacious: I-DS-font-icon-material;
+    --ids-comp-message-icon-typography-font-family-comfortable: "Material Icons";
+    --ids-comp-message-icon-typography-font-family-compact: "Material Icons";
+    --ids-comp-message-icon-typography-font-family-dense: "Material Icons";
+    --ids-comp-message-icon-typography-font-family-spacious: "Material Icons";
     --ids-comp-message-icon-typography-font-size-comfortable: 12px;
     --ids-comp-message-icon-typography-font-size-compact: 12px;
     --ids-comp-message-icon-typography-font-size-dense: 12px;

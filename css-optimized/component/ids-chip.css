@@ -184,10 +184,10 @@
     --ids-comp-chip-icon-size-padding-right-compact: 0px;
     --ids-comp-chip-icon-size-padding-right-dense: 0px;
     --ids-comp-chip-icon-size-padding-right-spacious: 0px;
-    --ids-comp-chip-icon-typography-font-family-comfortable: I-DS-font-icon-material;
-    --ids-comp-chip-icon-typography-font-family-compact: I-DS-font-icon-material;
-    --ids-comp-chip-icon-typography-font-family-dense: I-DS-font-icon-material;
-    --ids-comp-chip-icon-typography-font-family-spacious: I-DS-font-icon-material;
+    --ids-comp-chip-icon-typography-font-family-comfortable: "Material Icons";
+    --ids-comp-chip-icon-typography-font-family-compact: "Material Icons";
+    --ids-comp-chip-icon-typography-font-family-dense: "Material Icons";
+    --ids-comp-chip-icon-typography-font-family-spacious: "Material Icons";
     --ids-comp-chip-icon-typography-font-size-comfortable: 20px;
     --ids-comp-chip-icon-typography-font-size-compact: 20px;
     --ids-comp-chip-icon-typography-font-size-dense: 16px;

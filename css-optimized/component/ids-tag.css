@@ -165,10 +165,10 @@
     --ids-comp-tag-group-size-row-gap-compact: 8px;
     --ids-comp-tag-group-size-row-gap-dense: 8px;
     --ids-comp-tag-group-size-row-gap-spacious: 16px;
-    --ids-comp-tag-icon-typography-font-family-comfortable: I-DS-font-icon-material;
-    --ids-comp-tag-icon-typography-font-family-compact: I-DS-font-icon-material;
-    --ids-comp-tag-icon-typography-font-family-dense: I-DS-font-icon-material;
-    --ids-comp-tag-icon-typography-font-family-spacious: I-DS-font-icon-material;
+    --ids-comp-tag-icon-typography-font-family-comfortable: "Material Icons";
+    --ids-comp-tag-icon-typography-font-family-compact: "Material Icons";
+    --ids-comp-tag-icon-typography-font-family-dense: "Material Icons";
+    --ids-comp-tag-icon-typography-font-family-spacious: "Material Icons";
     --ids-comp-tag-icon-typography-font-size-comfortable: 24px;
     --ids-comp-tag-icon-typography-font-size-compact: 20px;
     --ids-comp-tag-icon-typography-font-size-dense: 16px;

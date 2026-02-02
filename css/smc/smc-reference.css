@@ -1269,8 +1269,9 @@
   --ids-smc-reference-typography-font-weight-regular: var(--ids-base-typography-weight-400);
   --ids-smc-reference-typography-font-weight-semibold: var(--ids-base-typography-weight-600);
   --ids-smc-reference-typography-font-weight-thin: var(--ids-base-typography-weight-100);
-  --ids-smc-reference-typography-iconset-custom: var(--ids-base-typography-font-family-materialicons);
   --ids-smc-reference-typography-iconset-default: var(--ids-base-typography-font-family-materialicons);
+  --ids-smc-reference-typography-iconset-idsbase: var(--ids-base-typography-font-family-idsmaterialicons);
+  --ids-smc-reference-typography-iconset-unique: var(--ids-base-typography-font-family-idsmateriaiiconsunique);
   --ids-smc-reference-typography-letter-spacing-default: var(--ids-base-em-0);
   --ids-smc-reference-typography-letter-spacing-loose: var(--ids-base-em-015);
   --ids-smc-reference-typography-letter-spacing-looser: var(--ids-base-em-025);

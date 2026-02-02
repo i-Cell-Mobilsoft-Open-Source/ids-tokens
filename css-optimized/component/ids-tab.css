@@ -36,10 +36,10 @@
     --ids-comp-tab-item-icon-size-width-compact: 16px;
     --ids-comp-tab-item-icon-size-width-dense: 12px;
     --ids-comp-tab-item-icon-size-width-spacious: 24px;
-    --ids-comp-tab-item-icon-typography-font-family-comfortable: I-DS-font-icon-material;
-    --ids-comp-tab-item-icon-typography-font-family-compact: I-DS-font-icon-material;
-    --ids-comp-tab-item-icon-typography-font-family-dense: I-DS-font-icon-material;
-    --ids-comp-tab-item-icon-typography-font-family-spacious: I-DS-font-icon-material;
+    --ids-comp-tab-item-icon-typography-font-family-comfortable: "Material Icons";
+    --ids-comp-tab-item-icon-typography-font-family-compact: "Material Icons";
+    --ids-comp-tab-item-icon-typography-font-family-dense: "Material Icons";
+    --ids-comp-tab-item-icon-typography-font-family-spacious: "Material Icons";
     --ids-comp-tab-item-icon-typography-font-size-comfortable: 20px;
     --ids-comp-tab-item-icon-typography-font-size-compact: 16px;
     --ids-comp-tab-item-icon-typography-font-size-dense: 12px;

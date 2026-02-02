@@ -53,10 +53,10 @@
     --ids-comp-progressbar-label-typography-line-height-compact: 12px;
     --ids-comp-progressbar-label-typography-line-height-dense: 12px;
     --ids-comp-progressbar-label-typography-line-height-spacious: 16px;
-    --ids-comp-progressbar-message-icon-typoghrapy-font-family-comfortable: I-DS-font-icon-material;
-    --ids-comp-progressbar-message-icon-typoghrapy-font-family-compact: I-DS-font-icon-material;
-    --ids-comp-progressbar-message-icon-typoghrapy-font-family-dense: I-DS-font-icon-material;
-    --ids-comp-progressbar-message-icon-typoghrapy-font-family-spacious: I-DS-font-icon-material;
+    --ids-comp-progressbar-message-icon-typoghrapy-font-family-comfortable: "Material Icons";
+    --ids-comp-progressbar-message-icon-typoghrapy-font-family-compact: "Material Icons";
+    --ids-comp-progressbar-message-icon-typoghrapy-font-family-dense: "Material Icons";
+    --ids-comp-progressbar-message-icon-typoghrapy-font-family-spacious: "Material Icons";
     --ids-comp-progressbar-message-icon-typoghrapy-font-size-comfortable: 12px;
     --ids-comp-progressbar-message-icon-typoghrapy-font-size-compact: 10px;
     --ids-comp-progressbar-message-icon-typoghrapy-font-size-dense: 10px;

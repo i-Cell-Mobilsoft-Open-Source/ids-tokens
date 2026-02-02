@@ -1269,8 +1269,9 @@
     --ids-smc-reference-typography-font-weight-regular: 400;
     --ids-smc-reference-typography-font-weight-semibold: 600;
     --ids-smc-reference-typography-font-weight-thin: 100;
-    --ids-smc-reference-typography-iconset-custom: I-DS-font-icon-material;
-    --ids-smc-reference-typography-iconset-default: I-DS-font-icon-material;
+    --ids-smc-reference-typography-iconset-default: "Material Icons";
+    --ids-smc-reference-typography-iconset-idsbase: I-DS-font-icon-material;
+    --ids-smc-reference-typography-iconset-unique: I-DS-font-icon-material-unique;
     --ids-smc-reference-typography-letter-spacing-default: 0em;
     --ids-smc-reference-typography-letter-spacing-loose: 0.0015em;
     --ids-smc-reference-typography-letter-spacing-looser: 0.0025em;
