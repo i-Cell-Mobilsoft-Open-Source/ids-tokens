@@ -1,7 +1,7 @@
 :root {
     --ids-comp-divider-color-bg-brand-default: light-dark(#003cff, #4775ff);
-    --ids-comp-divider-color-bg-dark-default: light-dark(#020617, #f8fafc);
-    --ids-comp-divider-color-bg-error-default: light-dark(#dc2626, #fca5a5);
+    --ids-comp-divider-color-bg-dark-default: light-dark(#0f172a, #f8fafc);
+    --ids-comp-divider-color-bg-error-default: light-dark(#ef4444, #f87171);
     --ids-comp-divider-color-bg-light-default: light-dark(#ffffff, #000000);
     --ids-comp-divider-color-bg-primary-default: light-dark(#003cff, #4775ff);
     --ids-comp-divider-color-bg-secondary-default: light-dark(#64748b, #94a3b8);

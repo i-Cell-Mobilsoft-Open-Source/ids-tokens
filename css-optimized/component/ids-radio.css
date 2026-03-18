@@ -120,7 +120,7 @@
     --ids-comp-radio-input-selected-color-bg-surface-focused: light-dark(#648cb40d, #ffffff0d);
     --ids-comp-radio-input-selected-color-bg-surface-hovered: light-dark(#648cb40d, #ffffff0d);
     --ids-comp-radio-input-selected-color-bg-surface-pressed: light-dark(#648cb40d, #ffffff0d);
-    --ids-comp-radio-input-selected-color-border-dark-default: light-dark(#020617, #f8fafc);
+    --ids-comp-radio-input-selected-color-border-dark-default: light-dark(#0f172a, #f8fafc);
     --ids-comp-radio-input-selected-color-border-dark-disabled: light-dark(#648cb440, #ffffff40);
     --ids-comp-radio-input-selected-color-border-dark-error-default: light-dark(#ef4444, #f87171);
     --ids-comp-radio-input-selected-color-border-dark-error-focused: light-dark(#ef4444, #f87171);
@@ -150,7 +150,7 @@
     --ids-comp-radio-input-selected-color-focused-outline-dark-focused: light-dark(#003cff, #4775ff);
     --ids-comp-radio-input-selected-color-focused-outline-light-focused: light-dark(#ffffff, #000000);
     --ids-comp-radio-input-selected-color-focused-outline-surface-focused: light-dark(#003cff, #4775ff);
-    --ids-comp-radio-input-selected-inner-circle-color-bg-dark-default: light-dark(#020617, #f8fafc);
+    --ids-comp-radio-input-selected-inner-circle-color-bg-dark-default: light-dark(#0f172a, #f8fafc);
     --ids-comp-radio-input-selected-inner-circle-color-bg-dark-disabled: light-dark(#648cb433, #ffffff33);
     --ids-comp-radio-input-selected-inner-circle-color-bg-dark-error-default: light-dark(#ef4444, #f87171);
     --ids-comp-radio-input-selected-inner-circle-color-bg-dark-error-focused: light-dark(#ef4444, #f87171);
@@ -219,7 +219,7 @@
     --ids-comp-radio-input-unselected-color-bg-surface-focused: light-dark(#648cb40d, #ffffff0d);
     --ids-comp-radio-input-unselected-color-bg-surface-hovered: light-dark(#648cb40d, #ffffff0d);
     --ids-comp-radio-input-unselected-color-bg-surface-pressed: light-dark(#648cb40d, #ffffff0d);
-    --ids-comp-radio-input-unselected-color-border-dark-default: light-dark(#020617, #f8fafc);
+    --ids-comp-radio-input-unselected-color-border-dark-default: light-dark(#0f172a, #f8fafc);
     --ids-comp-radio-input-unselected-color-border-dark-disabled: light-dark(#648cb440, #ffffff40);
     --ids-comp-radio-input-unselected-color-border-dark-error-default: light-dark(#ef4444, #f87171);
     --ids-comp-radio-input-unselected-color-border-dark-error-focused: light-dark(#ef4444, #f87171);
@@ -249,11 +249,11 @@
     --ids-comp-radio-input-unselected-color-focused-outline-dark-focused: light-dark(#003cff, #4775ff);
     --ids-comp-radio-input-unselected-color-focused-outline-light-focused: light-dark(#ffffff, #000000);
     --ids-comp-radio-input-unselected-color-focused-outline-surface-focused: light-dark(#003cff, #4775ff);
-    --ids-comp-radio-label-color-fg-dark-default: light-dark(#020617, #f8fafc);
+    --ids-comp-radio-label-color-fg-dark-default: light-dark(#0f172a, #f8fafc);
     --ids-comp-radio-label-color-fg-dark-disabled: light-dark(#94a3b8, #475569);
-    --ids-comp-radio-label-color-fg-dark-focused: light-dark(#020617, #f8fafc);
-    --ids-comp-radio-label-color-fg-dark-hovered: light-dark(#020617, #f8fafc);
-    --ids-comp-radio-label-color-fg-dark-pressed: light-dark(#020617, #f8fafc);
+    --ids-comp-radio-label-color-fg-dark-focused: light-dark(#0f172a, #f8fafc);
+    --ids-comp-radio-label-color-fg-dark-hovered: light-dark(#0f172a, #f8fafc);
+    --ids-comp-radio-label-color-fg-dark-pressed: light-dark(#0f172a, #f8fafc);
     --ids-comp-radio-label-color-fg-light-default: light-dark(#f8fafc, #f8fafc);
     --ids-comp-radio-label-color-fg-light-disabled: light-dark(#ffffff80, #ffffff80);
     --ids-comp-radio-label-color-fg-light-focused: light-dark(#ffffff, #ffffff);

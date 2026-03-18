@@ -109,9 +109,9 @@
     --ids-comp-breadcrumb-navigation-link-fg-primary-pressed: light-dark(#00248f, #d1ddff);
     --ids-comp-breadcrumb-navigation-link-fg-surface-default: light-dark(#64748b, #94a3b8);
     --ids-comp-breadcrumb-navigation-link-fg-surface-disabled: light-dark(#648cb440, #ffffff40);
-    --ids-comp-breadcrumb-navigation-link-fg-surface-focused: light-dark(#020617, #f8fafc);
-    --ids-comp-breadcrumb-navigation-link-fg-surface-hovered: light-dark(#020617, #f8fafc);
-    --ids-comp-breadcrumb-navigation-link-fg-surface-pressed: light-dark(#020617, #f8fafc);
+    --ids-comp-breadcrumb-navigation-link-fg-surface-focused: light-dark(#0f172a, #f8fafc);
+    --ids-comp-breadcrumb-navigation-link-fg-surface-hovered: light-dark(#0f172a, #f8fafc);
+    --ids-comp-breadcrumb-navigation-link-fg-surface-pressed: light-dark(#0f172a, #f8fafc);
     --ids-comp-breadcrumb-navigation-link-size-border-radius-comfortable: 4px;
     --ids-comp-breadcrumb-navigation-link-size-border-radius-compact: 4px;
     --ids-comp-breadcrumb-navigation-link-size-border-radius-dense: 4px;

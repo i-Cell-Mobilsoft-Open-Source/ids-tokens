@@ -4,9 +4,9 @@
     --ids-comp-fab-filled-color-bg-brand-focused: light-dark(#003cff, #4775ff);
     --ids-comp-fab-filled-color-bg-brand-hovered: light-dark(#002fbd, #a3baff);
     --ids-comp-fab-filled-color-bg-brand-pressed: light-dark(#00248f, #d1ddff);
-    --ids-comp-fab-filled-color-bg-dark-default: light-dark(#020617, #020617);
+    --ids-comp-fab-filled-color-bg-dark-default: light-dark(#020617, #0f172a);
     --ids-comp-fab-filled-color-bg-dark-disabled: light-dark(#e2e8f0, #1e293b);
-    --ids-comp-fab-filled-color-bg-dark-focused: light-dark(#020617, #020617);
+    --ids-comp-fab-filled-color-bg-dark-focused: light-dark(#020617, #0f172a);
     --ids-comp-fab-filled-color-bg-dark-hovered: light-dark(#1e293b, #1e293b);
     --ids-comp-fab-filled-color-bg-dark-pressed: light-dark(#334155, #334155);
     --ids-comp-fab-filled-color-bg-light-default: light-dark(#ffffff, #000000);
@@ -29,9 +29,9 @@
     --ids-comp-fab-filled-color-bg-secondary-focused: light-dark(#64748b, #94a3b8);
     --ids-comp-fab-filled-color-bg-secondary-hovered: light-dark(#334155, #e2e8f0);
     --ids-comp-fab-filled-color-bg-secondary-pressed: light-dark(#1e293b, #f1f5f9);
-    --ids-comp-fab-filled-color-bg-surface-default: light-dark(#f1f5f9, #0f172a);
+    --ids-comp-fab-filled-color-bg-surface-default: light-dark(#f1f5f9, #192335);
     --ids-comp-fab-filled-color-bg-surface-disabled: light-dark(#e2e8f0, #1e293b);
-    --ids-comp-fab-filled-color-bg-surface-focused: light-dark(#f1f5f9, #0f172a);
+    --ids-comp-fab-filled-color-bg-surface-focused: light-dark(#f1f5f9, #192335);
     --ids-comp-fab-filled-color-bg-surface-hovered: light-dark(#e2e8f0, #1e293b);
     --ids-comp-fab-filled-color-bg-surface-pressed: light-dark(#cbd5e1, #334155);
     --ids-comp-fab-filled-color-border-brand-default: #ffffff00;
@@ -162,10 +162,10 @@
     --ids-comp-fab-group-size-row-gap-compact: 8px;
     --ids-comp-fab-group-size-row-gap-dense: 8px;
     --ids-comp-fab-group-size-row-gap-spacious: 16px;
-    --ids-comp-fab-icon-typography-font-family-comfortable: "Material Icons";
-    --ids-comp-fab-icon-typography-font-family-compact: "Material Icons";
-    --ids-comp-fab-icon-typography-font-family-dense: "Material Icons";
-    --ids-comp-fab-icon-typography-font-family-spacious: "Material Icons";
+    --ids-comp-fab-icon-typography-font-family-comfortable: I-DS-font-icon-material;
+    --ids-comp-fab-icon-typography-font-family-compact: I-DS-font-icon-material;
+    --ids-comp-fab-icon-typography-font-family-dense: I-DS-font-icon-material;
+    --ids-comp-fab-icon-typography-font-family-spacious: I-DS-font-icon-material;
     --ids-comp-fab-icon-typography-font-size-comfortable: 24px;
     --ids-comp-fab-icon-typography-font-size-compact: 20px;
     --ids-comp-fab-icon-typography-font-size-dense: 16px;

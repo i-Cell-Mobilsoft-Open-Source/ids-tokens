@@ -9,7 +9,7 @@
     --ids-comp-progressbar-active-indicator-bg-light-warning: light-dark(#fb923c, #ea580c);
     --ids-comp-progressbar-active-indicator-bg-primary-default: light-dark(#003cff, #4775ff);
     --ids-comp-progressbar-active-indicator-bg-surface-default: light-dark(#64748b, #94a3b8);
-    --ids-comp-progressbar-active-indicator-bg-surface-error: light-dark(#dc2626, #fca5a5);
+    --ids-comp-progressbar-active-indicator-bg-surface-error: light-dark(#ef4444, #f87171);
     --ids-comp-progressbar-active-indicator-bg-surface-success: light-dark(#22c55e, #4ade80);
     --ids-comp-progressbar-active-indicator-bg-surface-warning: light-dark(#f97316, #fb923c);
     --ids-comp-progressbar-active-indicator-size-border-radius-comfortable: 1000px;
@@ -30,7 +30,7 @@
     --ids-comp-progressbar-icon-bg-light-warning: light-dark(#fb923c, #ea580c);
     --ids-comp-progressbar-icon-bg-primary-default: light-dark(#003cff, #4775ff);
     --ids-comp-progressbar-icon-bg-surface-default: light-dark(#64748b, #94a3b8);
-    --ids-comp-progressbar-icon-bg-surface-error: light-dark(#dc2626, #fca5a5);
+    --ids-comp-progressbar-icon-bg-surface-error: light-dark(#ef4444, #f87171);
     --ids-comp-progressbar-icon-bg-surface-success: light-dark(#22c55e, #4ade80);
     --ids-comp-progressbar-icon-bg-surface-warning: light-dark(#f97316, #fb923c);
     --ids-comp-progressbar-label-typography-font-family-comfortable: Montserrat;
@@ -53,10 +53,10 @@
     --ids-comp-progressbar-label-typography-line-height-compact: 12px;
     --ids-comp-progressbar-label-typography-line-height-dense: 12px;
     --ids-comp-progressbar-label-typography-line-height-spacious: 16px;
-    --ids-comp-progressbar-message-icon-typoghrapy-font-family-comfortable: "Material Icons";
-    --ids-comp-progressbar-message-icon-typoghrapy-font-family-compact: "Material Icons";
-    --ids-comp-progressbar-message-icon-typoghrapy-font-family-dense: "Material Icons";
-    --ids-comp-progressbar-message-icon-typoghrapy-font-family-spacious: "Material Icons";
+    --ids-comp-progressbar-message-icon-typoghrapy-font-family-comfortable: I-DS-font-icon-material;
+    --ids-comp-progressbar-message-icon-typoghrapy-font-family-compact: I-DS-font-icon-material;
+    --ids-comp-progressbar-message-icon-typoghrapy-font-family-dense: I-DS-font-icon-material;
+    --ids-comp-progressbar-message-icon-typoghrapy-font-family-spacious: I-DS-font-icon-material;
     --ids-comp-progressbar-message-icon-typoghrapy-font-size-comfortable: 12px;
     --ids-comp-progressbar-message-icon-typoghrapy-font-size-compact: 10px;
     --ids-comp-progressbar-message-icon-typoghrapy-font-size-dense: 10px;
@@ -117,10 +117,10 @@
     --ids-comp-progressbar-size-width-compact: 128px;
     --ids-comp-progressbar-size-width-dense: 112px;
     --ids-comp-progressbar-size-width-spacious: 320px;
-    --ids-comp-progressbar-text-label-color-fg-dark-default: light-dark(#020617, #f8fafc);
+    --ids-comp-progressbar-text-label-color-fg-dark-default: light-dark(#0f172a, #f8fafc);
     --ids-comp-progressbar-text-label-color-fg-light-default: light-dark(#f8fafc, #f8fafc);
     --ids-comp-progressbar-text-label-color-fg-surface-default: light-dark(#64748b, #94a3b8);
-    --ids-comp-progressbar-text-value-color-fg-dark-default: light-dark(#020617, #f8fafc);
+    --ids-comp-progressbar-text-value-color-fg-dark-default: light-dark(#0f172a, #f8fafc);
     --ids-comp-progressbar-text-value-color-fg-light-default: light-dark(#f8fafc, #f8fafc);
     --ids-comp-progressbar-text-value-color-fg-surface-default: light-dark(#64748b, #94a3b8);
     --ids-comp-progressbar-track-bg-dark-default: light-dark(#e2e8f0, #1e293b);

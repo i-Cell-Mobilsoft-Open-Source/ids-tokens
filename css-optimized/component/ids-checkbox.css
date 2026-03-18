@@ -93,10 +93,10 @@
     --ids-comp-checkbox-group-vertical-list-size-padding-y-compact: 0px;
     --ids-comp-checkbox-group-vertical-list-size-padding-y-dense: 0px;
     --ids-comp-checkbox-group-vertical-list-size-padding-y-spacious: 0px;
-    --ids-comp-checkbox-input-icon-typography-font-family-comfortable: "Material Icons";
-    --ids-comp-checkbox-input-icon-typography-font-family-compact: "Material Icons";
-    --ids-comp-checkbox-input-icon-typography-font-family-dense: "Material Icons";
-    --ids-comp-checkbox-input-icon-typography-font-family-spacious: "Material Icons";
+    --ids-comp-checkbox-input-icon-typography-font-family-comfortable: I-DS-font-icon-material;
+    --ids-comp-checkbox-input-icon-typography-font-family-compact: I-DS-font-icon-material;
+    --ids-comp-checkbox-input-icon-typography-font-family-dense: I-DS-font-icon-material;
+    --ids-comp-checkbox-input-icon-typography-font-family-spacious: I-DS-font-icon-material;
     --ids-comp-checkbox-input-icon-typography-font-size-comfortable: 24px;
     --ids-comp-checkbox-input-icon-typography-font-size-compact: 20px;
     --ids-comp-checkbox-input-icon-typography-font-size-dense: 12px;
@@ -109,7 +109,7 @@
     --ids-comp-checkbox-input-icon-typography-line-height-compact: 20px;
     --ids-comp-checkbox-input-icon-typography-line-height-dense: 12px;
     --ids-comp-checkbox-input-icon-typography-line-height-spacious: 32px;
-    --ids-comp-checkbox-input-selected-color-bg-dark-default: light-dark(#020617, #f8fafc);
+    --ids-comp-checkbox-input-selected-color-bg-dark-default: light-dark(#0f172a, #f8fafc);
     --ids-comp-checkbox-input-selected-color-bg-dark-disabled: light-dark(#648cb433, #ffffff33);
     --ids-comp-checkbox-input-selected-color-bg-dark-focused: light-dark(#1e293b, #f1f5f9);
     --ids-comp-checkbox-input-selected-color-bg-dark-hovered: light-dark(#1e293b, #f1f5f9);
@@ -224,7 +224,7 @@
     --ids-comp-checkbox-input-unselected-color-bg-surface-focused: light-dark(#f8fafc, #020617);
     --ids-comp-checkbox-input-unselected-color-bg-surface-hovered: light-dark(#648cb40d, #ffffff0d);
     --ids-comp-checkbox-input-unselected-color-bg-surface-pressed: light-dark(#e2e8f0, #1e293b);
-    --ids-comp-checkbox-input-unselected-color-border-dark-default: light-dark(#020617, #f8fafc);
+    --ids-comp-checkbox-input-unselected-color-border-dark-default: light-dark(#0f172a, #f8fafc);
     --ids-comp-checkbox-input-unselected-color-border-dark-disabled: light-dark(#648cb440, #ffffff40);
     --ids-comp-checkbox-input-unselected-color-border-dark-error-default: light-dark(#ef4444, #f87171);
     --ids-comp-checkbox-input-unselected-color-border-dark-error-focused: light-dark(#ef4444, #f87171);
@@ -254,11 +254,11 @@
     --ids-comp-checkbox-input-unselected-color-focused-outline-dark-focused: light-dark(#003cff, #4775ff);
     --ids-comp-checkbox-input-unselected-color-focused-outline-light-focused: light-dark(#ffffff, #000000);
     --ids-comp-checkbox-input-unselected-color-focused-outline-surface-focused: light-dark(#003cff, #4775ff);
-    --ids-comp-checkbox-label-color-fg-dark-default: light-dark(#020617, #f8fafc);
+    --ids-comp-checkbox-label-color-fg-dark-default: light-dark(#0f172a, #f8fafc);
     --ids-comp-checkbox-label-color-fg-dark-disabled: light-dark(#94a3b8, #475569);
-    --ids-comp-checkbox-label-color-fg-dark-focused: light-dark(#020617, #f8fafc);
-    --ids-comp-checkbox-label-color-fg-dark-hovered: light-dark(#020617, #f8fafc);
-    --ids-comp-checkbox-label-color-fg-dark-pressed: light-dark(#020617, #f8fafc);
+    --ids-comp-checkbox-label-color-fg-dark-focused: light-dark(#0f172a, #f8fafc);
+    --ids-comp-checkbox-label-color-fg-dark-hovered: light-dark(#0f172a, #f8fafc);
+    --ids-comp-checkbox-label-color-fg-dark-pressed: light-dark(#0f172a, #f8fafc);
     --ids-comp-checkbox-label-color-fg-light-default: light-dark(#f8fafc, #f8fafc);
     --ids-comp-checkbox-label-color-fg-light-disabled: light-dark(#ffffff80, #ffffff80);
     --ids-comp-checkbox-label-color-fg-light-focused: light-dark(#ffffff, #ffffff);
