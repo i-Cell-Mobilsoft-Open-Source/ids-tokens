@@ -27,30 +27,30 @@
     --ids-comp-message-icon-typography-font-family-compact: I-DS-font-icon-material;
     --ids-comp-message-icon-typography-font-family-dense: I-DS-font-icon-material;
     --ids-comp-message-icon-typography-font-family-spacious: I-DS-font-icon-material;
-    --ids-comp-message-icon-typography-font-size-comfortable: 12px;
+    --ids-comp-message-icon-typography-font-size-comfortable: 16px;
     --ids-comp-message-icon-typography-font-size-compact: 12px;
     --ids-comp-message-icon-typography-font-size-dense: 12px;
-    --ids-comp-message-icon-typography-font-size-spacious: 12px;
+    --ids-comp-message-icon-typography-font-size-spacious: 18px;
     --ids-comp-message-icon-typography-font-weight-comfortable: 400;
     --ids-comp-message-icon-typography-font-weight-compact: 400;
     --ids-comp-message-icon-typography-font-weight-dense: 400;
     --ids-comp-message-icon-typography-font-weight-spacious: 400;
-    --ids-comp-message-icon-typography-line-height-comfortable: 12px;
+    --ids-comp-message-icon-typography-line-height-comfortable: 16px;
     --ids-comp-message-icon-typography-line-height-compact: 12px;
     --ids-comp-message-icon-typography-line-height-dense: 12px;
-    --ids-comp-message-icon-typography-line-height-spacious: 12px;
+    --ids-comp-message-icon-typography-line-height-spacious: 18px;
     --ids-comp-message-size-gap-comfortable: 4px;
     --ids-comp-message-size-gap-compact: 4px;
     --ids-comp-message-size-gap-dense: 4px;
     --ids-comp-message-size-gap-spacious: 4px;
-    --ids-comp-message-size-icon-height-comfortable: 12px;
+    --ids-comp-message-size-icon-height-comfortable: 16px;
     --ids-comp-message-size-icon-height-compact: 12px;
     --ids-comp-message-size-icon-height-dense: 12px;
-    --ids-comp-message-size-icon-height-spacious: 12px;
-    --ids-comp-message-size-icon-width-comfortable: 12px;
+    --ids-comp-message-size-icon-height-spacious: 16px;
+    --ids-comp-message-size-icon-width-comfortable: 16px;
     --ids-comp-message-size-icon-width-compact: 12px;
     --ids-comp-message-size-icon-width-dense: 12px;
-    --ids-comp-message-size-icon-width-spacious: 12px;
+    --ids-comp-message-size-icon-width-spacious: 16px;
     --ids-comp-message-size-padding-x-comfortable: 0px;
     --ids-comp-message-size-padding-x-compact: 0px;
     --ids-comp-message-size-padding-x-dense: 0px;
@@ -63,10 +63,10 @@
     --ids-comp-message-typography-font-family-compact: Montserrat;
     --ids-comp-message-typography-font-family-dense: Montserrat;
     --ids-comp-message-typography-font-family-spacious: Montserrat;
-    --ids-comp-message-typography-font-size-comfortable: 12px;
+    --ids-comp-message-typography-font-size-comfortable: 16px;
     --ids-comp-message-typography-font-size-compact: 12px;
     --ids-comp-message-typography-font-size-dense: 12px;
-    --ids-comp-message-typography-font-size-spacious: 12px;
+    --ids-comp-message-typography-font-size-spacious: 18px;
     --ids-comp-message-typography-font-weight-comfortable: 400;
     --ids-comp-message-typography-font-weight-compact: 400;
     --ids-comp-message-typography-font-weight-dense: 400;
@@ -75,8 +75,8 @@
     --ids-comp-message-typography-letter-spacing-compact: 0em;
     --ids-comp-message-typography-letter-spacing-dense: 0em;
     --ids-comp-message-typography-letter-spacing-spacious: 0em;
-    --ids-comp-message-typography-line-height-comfortable: 12px;
+    --ids-comp-message-typography-line-height-comfortable: 16px;
     --ids-comp-message-typography-line-height-compact: 12px;
     --ids-comp-message-typography-line-height-dense: 12px;
-    --ids-comp-message-typography-line-height-spacious: 12px
+    --ids-comp-message-typography-line-height-spacious: 18px
 }
