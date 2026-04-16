@@ -3229,6 +3229,10 @@
     --ids-comp-forms-form-field-standard-field-wrapper-infix-size-gap-compact: 8px;
     --ids-comp-forms-form-field-standard-field-wrapper-infix-size-gap-dense: 8px;
     --ids-comp-forms-form-field-standard-field-wrapper-infix-size-gap-spacious: 8px;
+    --ids-comp-forms-form-field-standard-field-wrapper-infix-size-padding-right-comfortable: 56px;
+    --ids-comp-forms-form-field-standard-field-wrapper-infix-size-padding-right-compact: 48px;
+    --ids-comp-forms-form-field-standard-field-wrapper-infix-size-padding-right-dense: 32px;
+    --ids-comp-forms-form-field-standard-field-wrapper-infix-size-padding-right-spacious: 64px;
     --ids-comp-forms-form-field-standard-field-wrapper-infix-size-padding-y-comfortable: 8px;
     --ids-comp-forms-form-field-standard-field-wrapper-infix-size-padding-y-compact: 8px;
     --ids-comp-forms-form-field-standard-field-wrapper-infix-size-padding-y-dense: 8px;
