@@ -5979,6 +5979,18 @@
     --ids-comp-radio-button-input-size-width-compact: 24px;
     --ids-comp-radio-button-input-size-width-dense: 20px;
     --ids-comp-radio-button-input-size-width-spacious: 40px;
+    --ids-comp-radio-button-label-group-size-gap-comfortable: 4px;
+    --ids-comp-radio-button-label-group-size-gap-compact: 4px;
+    --ids-comp-radio-button-label-group-size-gap-dense: 4px;
+    --ids-comp-radio-button-label-group-size-gap-spacious: 4px;
+    --ids-comp-radio-button-label-group-size-padding-x-comfortable: 0px;
+    --ids-comp-radio-button-label-group-size-padding-x-compact: 0px;
+    --ids-comp-radio-button-label-group-size-padding-x-dense: 0px;
+    --ids-comp-radio-button-label-group-size-padding-x-spacious: 0px;
+    --ids-comp-radio-button-label-group-size-padding-y-comfortable: 0px;
+    --ids-comp-radio-button-label-group-size-padding-y-compact: 0px;
+    --ids-comp-radio-button-label-group-size-padding-y-dense: 0px;
+    --ids-comp-radio-button-label-group-size-padding-y-spacious: 0px;
     --ids-comp-radio-button-label-size-padding-y-comfortable: 2px;
     --ids-comp-radio-button-label-size-padding-y-compact: 2px;
     --ids-comp-radio-button-label-size-padding-y-dense: 2px;

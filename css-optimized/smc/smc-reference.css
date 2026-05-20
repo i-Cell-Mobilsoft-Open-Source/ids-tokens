@@ -1940,6 +1940,16 @@
     --ids-smc-reference-forms-color-fg-text-surface-success-focused: light-dark(#334155, #e2e8f0);
     --ids-smc-reference-forms-color-fg-text-surface-success-hovered: light-dark(#334155, #e2e8f0);
     --ids-smc-reference-forms-color-fg-text-surface-success-pressed: light-dark(#334155, #e2e8f0);
+    --ids-smc-reference-forms-fieldset-legend-color-fg-text-light-default: light-dark(#f8fafc, #f8fafc);
+    --ids-smc-reference-forms-fieldset-legend-color-fg-text-light-disabled: light-dark(#ffffff80, #ffffff80);
+    --ids-smc-reference-forms-fieldset-legend-color-fg-text-light-focused: light-dark(#ffffff, #ffffff);
+    --ids-smc-reference-forms-fieldset-legend-color-fg-text-light-hovered: light-dark(#ffffff, #ffffff);
+    --ids-smc-reference-forms-fieldset-legend-color-fg-text-light-pressed: light-dark(#f8fafc, #f8fafc);
+    --ids-smc-reference-forms-fieldset-legend-color-fg-text-surface-default: light-dark(#64748b, #94a3b8);
+    --ids-smc-reference-forms-fieldset-legend-color-fg-text-surface-disabled: light-dark(#94a3b8, #475569);
+    --ids-smc-reference-forms-fieldset-legend-color-fg-text-surface-focused: light-dark(#334155, #e2e8f0);
+    --ids-smc-reference-forms-fieldset-legend-color-fg-text-surface-hover: light-dark(#334155, #e2e8f0);
+    --ids-smc-reference-forms-fieldset-legend-color-fg-text-surface-pressed: light-dark(#334155, #e2e8f0);
     --ids-smc-reference-forms-label-color-fg-dark-default: light-dark(#0f172a, #f8fafc);
     --ids-smc-reference-forms-label-color-fg-dark-disabled: light-dark(#94a3b8, #475569);
     --ids-smc-reference-forms-label-color-fg-dark-focused: light-dark(#0f172a, #f8fafc);

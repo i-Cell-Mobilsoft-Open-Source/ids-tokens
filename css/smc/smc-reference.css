@@ -1940,6 +1940,16 @@
   --ids-smc-reference-forms-color-fg-text-surface-success-focused: var(--ids-smc-reference-container-color-fg-surface-darker-70);
   --ids-smc-reference-forms-color-fg-text-surface-success-hovered: var(--ids-smc-reference-container-color-fg-surface-darker-70);
   --ids-smc-reference-forms-color-fg-text-surface-success-pressed: var(--ids-smc-reference-container-color-fg-surface-darker-70);
+  --ids-smc-reference-forms-fieldset-legend-color-fg-text-light-default: var(--ids-smc-reference-forms-color-fg-text-light-default);
+  --ids-smc-reference-forms-fieldset-legend-color-fg-text-light-disabled: var(--ids-smc-reference-forms-color-fg-text-light-disabled);
+  --ids-smc-reference-forms-fieldset-legend-color-fg-text-light-focused: var(--ids-smc-reference-forms-color-fg-text-light-focused);
+  --ids-smc-reference-forms-fieldset-legend-color-fg-text-light-hovered: var(--ids-smc-reference-forms-color-fg-text-light-hovered);
+  --ids-smc-reference-forms-fieldset-legend-color-fg-text-light-pressed: var(--ids-smc-reference-forms-color-fg-text-light-pressed);
+  --ids-smc-reference-forms-fieldset-legend-color-fg-text-surface-default: var(--ids-smc-reference-forms-color-fg-text-surface-default);
+  --ids-smc-reference-forms-fieldset-legend-color-fg-text-surface-disabled: var(--ids-smc-reference-forms-color-fg-text-surface-disabled);
+  --ids-smc-reference-forms-fieldset-legend-color-fg-text-surface-focused: var(--ids-smc-reference-forms-color-fg-text-surface-focused);
+  --ids-smc-reference-forms-fieldset-legend-color-fg-text-surface-hover: var(--ids-smc-reference-forms-color-fg-text-surface-hovered);
+  --ids-smc-reference-forms-fieldset-legend-color-fg-text-surface-pressed: var(--ids-smc-reference-forms-color-fg-text-surface-pressed);
   --ids-smc-reference-forms-label-color-fg-dark-default: var(--ids-smc-reference-forms-color-fg-text-dark-default);
   --ids-smc-reference-forms-label-color-fg-dark-disabled: var(--ids-smc-reference-forms-color-fg-text-dark-disabled);
   --ids-smc-reference-forms-label-color-fg-dark-focused: var(--ids-smc-reference-forms-color-fg-text-dark-focused);

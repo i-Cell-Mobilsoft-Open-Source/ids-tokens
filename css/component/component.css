@@ -5979,6 +5979,18 @@
   --ids-comp-radio-button-input-size-width-compact: var(--ids-smc-reference-container-size-width-24);
   --ids-comp-radio-button-input-size-width-dense: var(--ids-smc-reference-container-size-width-20);
   --ids-comp-radio-button-input-size-width-spacious: var(--ids-smc-reference-container-size-width-40);
+  --ids-comp-radio-button-label-group-size-gap-comfortable: var(--ids-smc-reference-container-gap-4);
+  --ids-comp-radio-button-label-group-size-gap-compact: var(--ids-smc-reference-container-gap-4);
+  --ids-comp-radio-button-label-group-size-gap-dense: var(--ids-smc-reference-container-gap-4);
+  --ids-comp-radio-button-label-group-size-gap-spacious: var(--ids-smc-reference-container-gap-4);
+  --ids-comp-radio-button-label-group-size-padding-x-comfortable: var(--ids-smc-reference-container-padding-none);
+  --ids-comp-radio-button-label-group-size-padding-x-compact: var(--ids-smc-reference-container-padding-none);
+  --ids-comp-radio-button-label-group-size-padding-x-dense: var(--ids-smc-reference-container-padding-none);
+  --ids-comp-radio-button-label-group-size-padding-x-spacious: var(--ids-smc-reference-container-padding-none);
+  --ids-comp-radio-button-label-group-size-padding-y-comfortable: var(--ids-smc-reference-container-padding-none);
+  --ids-comp-radio-button-label-group-size-padding-y-compact: var(--ids-smc-reference-container-padding-none);
+  --ids-comp-radio-button-label-group-size-padding-y-dense: var(--ids-smc-reference-container-padding-none);
+  --ids-comp-radio-button-label-group-size-padding-y-spacious: var(--ids-smc-reference-container-padding-none);
   --ids-comp-radio-button-label-size-padding-y-comfortable: var(--ids-smc-reference-container-padding-2);
   --ids-comp-radio-button-label-size-padding-y-compact: var(--ids-smc-reference-container-padding-2);
   --ids-comp-radio-button-label-size-padding-y-dense: var(--ids-smc-reference-container-padding-2);
