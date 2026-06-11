@@ -2640,7 +2640,7 @@
     --ids-comp-date-picker-size-padding-y-compact: 8px;
     --ids-comp-date-picker-size-padding-y-dense: 4px;
     --ids-comp-date-picker-size-padding-y-spacious: 16px;
-    --ids-comp-dialog-backdrop-background: light-dark(#000000, #ffffff);
+    --ids-comp-dialog-backdrop-background: light-dark(#02061740, #020617b3);
     --ids-comp-dialog-backdrop-size-opacity-comfortable: 100%;
     --ids-comp-dialog-backdrop-size-opacity-compact: 100%;
     --ids-comp-dialog-backdrop-size-opacity-dense: 100%;
@@ -2719,6 +2719,8 @@
     --ids-comp-dialog-footer-padding-y-dense: 0px;
     --ids-comp-dialog-footer-padding-y-spacious: 0px;
     --ids-comp-dialog-header-color-bg-default: #ffffff00;
+    --ids-comp-dialog-header-color-fg-subtitle-default: light-dark(#334155, #e2e8f0);
+    --ids-comp-dialog-header-color-fg-title-default: light-dark(#1b2638, #f2f6fa);
     --ids-comp-dialog-header-size-gap-comfortable: 8px;
     --ids-comp-dialog-header-size-gap-compact: 8px;
     --ids-comp-dialog-header-size-gap-dense: 8px;

@@ -2640,7 +2640,7 @@
   --ids-comp-date-picker-size-padding-y-compact: var(--ids-smc-reference-container-padding-8);
   --ids-comp-date-picker-size-padding-y-dense: var(--ids-smc-reference-container-padding-4);
   --ids-comp-date-picker-size-padding-y-spacious: var(--ids-smc-reference-container-padding-16);
-  --ids-comp-dialog-backdrop-background: var(--ids-smc-reference-container-color-bg-surface-darker-100);
+  --ids-comp-dialog-backdrop-background: var(--ids-smc-reference-container-color-opacity-backdrop-default);
   --ids-comp-dialog-backdrop-size-opacity-comfortable: var(--ids-smc-reference-container-color-opacity-backdrop-percentage);
   --ids-comp-dialog-backdrop-size-opacity-compact: var(--ids-smc-reference-container-color-opacity-backdrop-percentage);
   --ids-comp-dialog-backdrop-size-opacity-dense: var(--ids-smc-reference-container-color-opacity-backdrop-percentage);
@@ -2719,6 +2719,8 @@
   --ids-comp-dialog-footer-padding-y-dense: var(--ids-smc-reference-container-padding-none);
   --ids-comp-dialog-footer-padding-y-spacious: var(--ids-smc-reference-container-padding-none);
   --ids-comp-dialog-header-color-bg-default: var(--ids-smc-reference-container-color-bg-surface-transparent-0);
+  --ids-comp-dialog-header-color-fg-subtitle-default: var(--ids-smc-reference-container-color-bg-surface-darker-70);
+  --ids-comp-dialog-header-color-fg-title-default: var(--ids-smc-reference-container-color-bg-surface-darker-90);
   --ids-comp-dialog-header-size-gap-comfortable: var(--ids-smc-reference-container-gap-8);
   --ids-comp-dialog-header-size-gap-compact: var(--ids-smc-reference-container-gap-8);
   --ids-comp-dialog-header-size-gap-dense: var(--ids-smc-reference-container-gap-8);
