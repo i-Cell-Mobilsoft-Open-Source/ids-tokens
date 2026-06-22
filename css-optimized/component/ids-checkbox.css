@@ -435,6 +435,10 @@
     --ids-comp-checkbox-label-group-size-padding-y-compact: 2px;
     --ids-comp-checkbox-label-group-size-padding-y-dense: 0px;
     --ids-comp-checkbox-label-group-size-padding-y-spacious: 4px;
+    --ids-comp-checkbox-label-size-gap-comfortable: 4px;
+    --ids-comp-checkbox-label-size-gap-compact: 2px;
+    --ids-comp-checkbox-label-size-gap-dense: 2px;
+    --ids-comp-checkbox-label-size-gap-spacious: 4px;
     --ids-comp-checkbox-label-typography-font-family-comfortable: Montserrat;
     --ids-comp-checkbox-label-typography-font-family-compact: Montserrat;
     --ids-comp-checkbox-label-typography-font-family-dense: Montserrat;
